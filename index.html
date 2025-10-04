@@ -1,0 +1,3796 @@
+<!doctype html>
+<html
+  lang="en"
+  data-ws-project="200f64cb-7829-401b-b6cd-b63ce28dd35b"
+  data-ws-last-published="2025-10-04T04:03:35.846Z"
+>
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/static/app_generated_index-6937cd5a.BmFPy7Fz.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="preload"
+      as="image"
+      imagesrcset="/assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg 16w, /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg 32w, /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg 48w, /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg 64w, /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg 96w, /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg 128w, /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg 256w, /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg 384w, /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg 640w, /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg 750w, /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg 828w, /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg 1080w"
+      imagesizes="100vw"
+    />
+    <meta property="og:url" content="https://url/" />
+    <title>Home</title>
+    <meta property="og:title" content="Home" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="philko" />
+    <link
+      rel="preload"
+      href="/assets/NotoSerif-VariableFont_wdth_wght_PtiA1qVDDr3f1K2CFhdzq.ttf"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/assets/Sora-VariableFont_wght_J8RyXtfVXErv7KpluKjag.ttf"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/assets/Exo2-VariableFont_wght_RX-A9biFeoZHq_lhFrSNc.ttf"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "philko",
+        "url": "https://url"
+      }
+    </script>
+  </head>
+  <body class="w-element">
+    <div class="w-box">
+      <div class="w-html-embed">
+        <style>
+          /* header */
+          .header-link-custom::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 3px;
+            background-color: var(--foreground-primary);
+            transition: width 0.4s ease;
+          }
+          .header-link-custom:hover::after {
+            width: 100%;
+          }
+
+          .button--primary {
+            /* background-color: var(--primary-color);
+    color: var(--neutral-light); */
+          }
+          .button--primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+          }
+          .button--secondary {
+            background-color: transparent;
+            color: var(--foreground-primary);
+            border: 2px solid var(--foreground-primary);
+          }
+          .button--secondary:hover {
+            background-color: var(--foreground-primary);
+            color: var(--foreground-secondary);
+          }
+
+          /* dropdown */
+          .li-menu-item {
+            position: relative;
+            /* padding: 0.75rem 0; */
+          }
+          .li-menu-item:hover > .sub-menu {
+            display: block;
+          }
+          .li-menu-item a {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            display: block;
+            /* color: var(--foreground-secondary); */
+          }
+
+          .menu-item {
+            /* flex: 1; */
+            /* padding: 0.75rem 0; */
+            /* line-height: 2.5rem; */
+            position: relative;
+            text-align: center;
+            cursor: pointer;
+            width: 150px;
+          }
+          .menu-item a {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            display: block;
+            /* color: var(--foreground-secondary); */
+          }
+          .menu-item:hover > .sub-menu {
+            display: block;
+          }
+
+          .sub-menu {
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            /* left: 0; */
+            left: -40px;
+            display: none;
+            z-index: 12;
+          }
+          .sub-menu .menu-item {
+            list-style-type: none;
+            padding: 0.75rem 0;
+            background: var(--background-secondary);
+            opacity: 0;
+            transform-origin: bottom;
+            animation: enter 0.2s ease forwards;
+          }
+          .sub-menu .menu-item:nth-child(1) {
+            animation-duration: 0.2s;
+            animation-delay: 0s;
+          }
+          .sub-menu .menu-item:nth-child(2) {
+            animation-duration: 0.3s;
+            animation-delay: 0.1s;
+          }
+          .sub-menu .menu-item:nth-child(3) {
+            animation-duration: 0.4s;
+            animation-delay: 0.2s;
+          }
+          .sub-menu .menu-item:nth-child(4) {
+            animation-duration: 0.5s;
+            animation-delay: 0.3s;
+          }
+          .sub-menu .menu-item:nth-child(5) {
+            animation-duration: 0.6s;
+            animation-delay: 0.4s;
+          }
+          .sub-menu .menu-item:hover {
+            background: var(--foreground-accent);
+            a {
+              color: var(--foreground-secondary);
+            }
+          }
+          .sub-menu .menu-item a {
+            padding: 0 0.75rem;
+          }
+
+          /* my hamburger mobile menu */
+          /* .mobile-nav {
+    align-items: center;
+    background-color: var(--foreground-muted);
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    left: 0px;
+    position: fixed;
+    top: 0px; */
+          /* transition-behavior: normal;
+    transition-delay: 0ms;
+    transition-duration: 200ms;
+    transition-property: opacity;
+    transition-timing-function: ease;
+    translate: -100% 0px 0px; */
+          /* transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
+    width: 70%;
+    z-index: 30
+  }
+  .mobile-nav.open {
+    transform: translateX(0) !important; */ /* Slides the menu into view 
+  }*/
+
+          /* hero */
+          .hero-bg-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -10;
+          }
+
+          /* carousel */
+          .carousel {
+            width: 100%;
+            overflow-x: auto;
+            margin: var(--size-3) auto;
+            display: flex;
+            gap: var(--size-3);
+            scroll-behavior: smooth;
+            anchor-name: --carousel;
+            scroll-snap-type: x mandatory;
+            scroll-marker-group: after;
+
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none;
+          }
+
+          .carousel::scroll-marker-group {
+            display: flex;
+            justify-content: center;
+            gap: var(--size-2);
+          }
+
+          .carousel::-webkit-scrollbar {
+            display: none;
+          }
+
+          .carousel::scroll-button(right),
+          .carousel::scroll-button(left) {
+            background-color: var(--foreground-primary);
+            border: none;
+            border-radius: var(--radius-round);
+            color: var(--foreground-secondary);
+            content: "❯";
+            cursor: pointer;
+            font-size: var(--size-5);
+            height: var(--size-8);
+            padding-bottom: var(--size-00);
+            position: fixed;
+            position-anchor: --carousel;
+            position-area: right center;
+            translate: -50%;
+            width: var(--size-8);
+          }
+
+          .carousel::scroll-button(left) {
+            content: "❮";
+            position-area: left center;
+            translate: 50%;
+          }
+
+          .carousel::scroll-button(right):disabled,
+          .carousel::scroll-button(left):disabled {
+            opacity: 0.5;
+            cursor: auto;
+          }
+
+          /* carousel2 */
+          .carousel2 {
+            width: 100%;
+            overflow-x: auto;
+            margin: var(--size-3) auto;
+            display: flex;
+            gap: var(--size-3);
+            scroll-behavior: smooth;
+            anchor-name: --carousel2;
+            scroll-snap-type: x mandatory;
+            scroll-marker-group: after;
+
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none;
+          }
+
+          .carousel2::scroll-marker-group {
+            display: flex;
+            justify-content: center;
+            gap: var(--size-2);
+          }
+
+          .carousel2::-webkit-scrollbar {
+            display: none;
+          }
+
+          .carousel2::scroll-button(right),
+          .carousel2::scroll-button(left) {
+            background-color: var(--foreground-primary);
+            border: none;
+            border-radius: var(--radius-round);
+            color: var(--foreground-secondary);
+            content: "❯";
+            cursor: pointer;
+            font-size: var(--size-5);
+            height: var(--size-8);
+            padding-bottom: var(--size-00);
+            position: fixed;
+            position-anchor: --carousel2;
+            position-area: right center;
+            translate: -50%;
+            width: var(--size-8);
+          }
+
+          .carousel2::scroll-button(left) {
+            content: "❮";
+            position-area: left center;
+            translate: 50%;
+          }
+
+          .carousel2::scroll-button(right):disabled,
+          .carousel2::scroll-button(left):disabled {
+            opacity: 0.5;
+            cursor: auto;
+          }
+
+          /* card */
+          .c-card {
+            /* for images */
+            aspect-ratio: 3 / 3;
+            /* for text */
+            /* height: var(--size-14); */
+            background-color: var(--foreground-muted);
+            border-radius: var(--radius-3);
+            flex: 0 0 var(--size-14);
+            padding: var(--size-3);
+            scroll-snap-align: start;
+          }
+
+          .c-card::scroll-marker {
+            /*   content: ' '; */
+            /*   content: 'o'; */
+            content: "";
+            height: var(--size-5);
+            width: var(--size-5);
+            background-color: var(--stone-8);
+            border-radius: 50%;
+          }
+
+          /* card2 */
+          .c-card2 {
+            /* for images */
+            aspect-ratio: 5 / 5;
+            /* for text */
+            /* height: var(--size-14); */
+            background-color: var(--foreground-muted);
+            border-radius: var(--radius-3);
+            flex: 0 0 var(--size-14);
+            padding: var(--size-3);
+            scroll-snap-align: start;
+          }
+
+          .c-card2::scroll-marker {
+            /*   content: ' '; */
+            /*   content: 'o'; */
+            content: "";
+            height: var(--size-5);
+            width: var(--size-5);
+            background-color: var(--stone-8);
+            border-radius: 50%;
+          }
+
+          /* carousel events */
+          .carousel-events-1 {
+            /* margin-inline: auto;  */
+            /* Modern way to horizontally center with a fluid container */
+            /* width: min(90vw, 700px); */
+            /* overflow-x: scroll; */
+            /* Improved scrolling for iOS */
+            /* -webkit-overflow-scrolling: touch; */
+            /* padding: var(--size-5) 0; */
+            /* display: flex; */
+            /* scroll-snap-type: x mandatory; */
+            /* &:hover .group {
+      animation-play-state: paused;
+    } */
+          }
+
+          /* Pause any child animations on hover */
+          .carousel-events-1:hover .event-group-1 {
+            animation-play-state: paused;
+          }
+
+          .event-group-1 {
+            /* display: flex;
+    gap: var(--size-5);
+    padding-right: var(--size-5); */
+            /* will-change: transform;  */
+            /* We should be nice to the browser - let it know what we're going to animate. */
+            animation: scrolling 10s linear infinite;
+          }
+
+          .event-card-1 {
+            /* flex: 0 0 100%;  */
+            /* Ensures each card takes up 100% of the carousel's width */
+            /* scroll-snap-align: center;  */
+            /* Snaps the card to the center of the scroll container */
+            /* color: var(--foreground-secondary); */
+            /* border-radius: var(--radius-3); */
+            /* box-shadow: var(--shadow-3); */
+            /* padding: var(--size-3); */
+            /* The card is now its own flex container to center its content */
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* min-height: 200px; */
+            /* Use the fluid font size token */
+            /* font-size: var(--font-size-fluid); */
+            /* background: var(--foreground-muted); */
+          }
+
+          /* animations */
+          @keyframes scrolling {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-100%);
+            }
+          }
+          @keyframes enter {
+            from {
+              opacity: 0;
+              transform: scaleY(0.98) translateY(10px);
+            }
+            to {
+              opacity: 1;
+              transform: none;
+            }
+          }
+          @keyframes fade {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+
+          /* responsive design */
+          @media (max-width: 479px) {
+            .c-card {
+              flex: 0 0 100%;
+            }
+
+            .c-card2 {
+              flex: 0 0 100%;
+            }
+          }
+
+          @media (min-width: 480px) and (max-width: 767px) {
+            .c-card {
+              flex: 0 0 100%;
+            }
+
+            .c-card2 {
+              flex: 0 0 100%;
+            }
+          }
+
+          @media (min-width: 768px) and (max-width: 991px) {
+            .c-card {
+              flex: 0 0 50%;
+            }
+
+            .c-card2 {
+              flex: 0 0 50%;
+            }
+          }
+        </style>
+
+        <script type="module">
+          /* countdown timers */
+          function createCountdown(containerId, targetDate) {
+            const second = 1000,
+              minute = second * 60,
+              hour = minute * 60,
+              day = hour * 24;
+
+            const container = document.getElementById(containerId);
+            if (!container) return; // Exit if the container doesn't exist
+
+            const daysEl = container.querySelector(".days");
+            const hoursEl = container.querySelector(".hours");
+            const minutesEl = container.querySelector(".minutes");
+            const secondsEl = container.querySelector(".seconds");
+            const headlineEl = container.querySelector(".headline");
+            const countdownEl = container.querySelector(".countdown");
+            const contentEl = container.querySelector(".content");
+
+            const countDown = new Date(targetDate).getTime();
+
+            const x = setInterval(function () {
+              const now = new Date().getTime();
+              const distance = countDown - now;
+
+              daysEl.innerText = Math.floor(distance / day);
+              hoursEl.innerText = Math.floor((distance % day) / hour);
+              minutesEl.innerText = Math.floor((distance % hour) / minute);
+              secondsEl.innerText = Math.floor((distance % minute) / second);
+
+              if (distance < 0) {
+                if (headlineEl)
+                  headlineEl.innerText = "Event is happening now!";
+                if (countdownEl) countdownEl.style.display = "none";
+                if (contentEl) contentEl.style.display = "block";
+                clearInterval(x);
+              }
+            }, 1000); // Changed to 1000ms for performance
+          }
+
+          createCountdown("countdown-1", "December 5, 2025 10:00:00");
+          createCountdown("countdown-2", "October 25, 2025 10:00:00");
+          createCountdown("countdown-3", "October 3, 2025 10:00:00");
+          createCountdown("countdown-4", "November 8, 2025 10:00:00");
+
+          /* my hamburger menu */
+
+          // const hamburgerButton = document.getElementById('hamburger-button');
+          // const mobileMenu = document.getElementById('mobile-menu');
+          // const closeButton = document.getElementById('close-button');
+          // if (hamburgerButton && mobileMenu && closeButton) {
+          //   hamburgerButton.addEventListener('click', function() {
+          //     mobileMenu.classList.toggle('open');
+          //   });
+          //   closeButton.addEventListener('click', function() {
+          //     mobileMenu.classList.toggle('open');
+          //   });
+          // }
+
+          // const hamburgerButton = document.getElementById('hamburger-button');
+          // const mobileMenu = document.getElementById('mobile-menu');
+          // const closeButton = document.getElementById('close-button');
+          // const navLinks = document.querySelectorAll('.sheet-nav'); // Selects all elements with the class 'sheet-nav'
+
+          // if (hamburgerButton && mobileMenu && closeButton) {
+          //     // Toggles the menu when the hamburger button is clicked
+          //     hamburgerButton.addEventListener('click', function() {
+          //         mobileMenu.classList.toggle('open');
+          //     });
+
+          //     // Toggles the menu when the close button is clicked
+          //     closeButton.addEventListener('click', function() {
+          //         mobileMenu.classList.toggle('open');
+          //     });
+
+          //     // Closes the menu when a nav link is clicked
+          //     navLinks.forEach(link => {
+          //         link.addEventListener('click', function() {
+          //             mobileMenu.classList.toggle('open');
+          //         });
+          //     });
+          // }
+        </script>
+      </div>
+      <div class="w-html-embed">
+        <style>
+          /* my hamburger mobile menu */
+
+          .mobile-nav {
+            align-items: center;
+            /* background-color: var(--foreground-muted); */
+            display: flex;
+            flex-direction: column;
+            /* height: 80vh; */
+            justify-content: center;
+            left: 0px;
+            position: fixed;
+            top: 0px;
+            /* transition-behavior: normal;
+    transition-delay: 0ms;
+    transition-duration: 200ms;
+    transition-property: opacity;
+    transition-timing-function: ease;
+    translate: -100% 0px 0px; */
+            transform: translateX(-100%);
+            transition: transform 0.4s ease-in-out;
+            /* width: 70%; */
+            z-index: 30;
+          }
+          .mobile-nav.open {
+            transform: translateX(0) !important; /* Slides the menu into view */
+          }
+        </style>
+        <script type="module">
+          /* my hamburger menu */
+
+          // const hamburgerButton = document.getElementById('hamburger-button');
+          // const mobileMenu = document.getElementById('mobile-menu');
+          // const closeButton = document.getElementById('close-button');
+
+          // if (hamburgerButton && mobileMenu && closeButton) {
+          //   hamburgerButton.addEventListener('click', function() {
+          //     mobileMenu.classList.toggle('open');
+          //   });
+
+          //   closeButton.addEventListener('click', function() {
+          //     mobileMenu.classList.toggle('open');
+          //   });
+          // }
+
+          const hamburgerButton = document.getElementById("hamburger-button");
+          const mobileMenu = document.getElementById("mobile-menu");
+          const closeButton = document.getElementById("close-button");
+          const navLinks = document.querySelectorAll(".sheet-nav"); // Selects all elements with the class 'sheet-nav'
+
+          if (hamburgerButton && mobileMenu && closeButton) {
+            // Toggles the menu when the hamburger button is clicked
+            hamburgerButton.addEventListener("click", function () {
+              mobileMenu.classList.toggle("open");
+            });
+
+            // Toggles the menu when the close button is clicked
+            closeButton.addEventListener("click", function () {
+              mobileMenu.classList.toggle("open");
+            });
+
+            // Closes the menu when a nav link is clicked
+            navLinks.forEach((link) => {
+              link.addEventListener("click", function () {
+                mobileMenu.classList.toggle("open");
+              });
+            });
+          }
+        </script>
+      </div>
+      <div class="w-html-embed">
+        <style>
+          /* large device navbar */
+
+          .my-nav {
+            animation: stick-it linear both;
+            background-color: var(--background-primary);
+            z-index: 1000;
+          }
+
+          .desktop-nav {
+            background-color: var(--background-primary);
+            /* position: sticky; */
+            /* top: 0; */
+            /* z-index: 1000; */
+            /* animation: shrink-navbar linear both; */
+          }
+          /* .desktop-nav.scrolled {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  } */
+          /* .desktop-nav.scrolled .phk-logo {
+    
+  } */
+          .phk-logo,
+          .phk-logo-mobile {
+            animation: shrink-logo linear both;
+          }
+          .desktop-nav .phk-logo {
+            animation-timeline: scroll();
+            animation-range: 0 150px;
+          }
+          .phk-logo-mobile {
+            animation-timeline: scroll();
+            animation-range: 0 150px;
+          }
+
+          /* mobile navbar */
+
+          /* animations */
+
+          @keyframes shrink-navbar {
+            to {
+              /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+              /* box-shadow: 0 5px 5px -3px rgba(0,0,0,.26); */
+              /* height: 4.5rem; */
+              /* padding: 0.75rem; */
+              /* margin-top: 0;
+      margin-bottom: 0; */
+            }
+          }
+
+          @keyframes shrink-logo {
+            to {
+              width: 60px;
+            }
+          }
+
+          @keyframes stick-it {
+            to {
+              position: sticky;
+              top: 0;
+              box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+          }
+        </style>
+      </div>
+      <div style="display: contents">
+        <div style="display: contents">
+          <div class="w-html-embed">
+            <style>
+              /* remove margin from all paragraphs so we don't need to use a design token on every paragraph */
+              p {
+                margin: 0;
+              }
+            </style>
+          </div>
+          <nav
+            class="w-box c1h4u1zl c37y94b c18ffmnj c1tp4776 cnyfm53 cc78ph4 c1g4fpo0 c9z6e5w cami5y c12c1scn c1867kps my-nav"
+          >
+            <div
+              class="w-element c1g4fpo0 cami5y c14b2vrf c3b4rn6 c1ebdsgg c1k8m2i4 crm14n8 c1vll1cn c5g2hc8 ccwhjle desktop-nav"
+            >
+              <div style="display: contents">
+                <div style="display: contents">
+                  <div class="w-element c16hxk3o c14u6nxx c1g4fpo0 c1nw3pd4">
+                    <ul
+                      class="w-element c1g4fpo0 c17y6ntw c1s4ookq c8xpt5r c37bj1t c1ah412g cwxmyq1 ckb73m1 c1yatyr3 c15yuqlq cm44h5q ccnc6wf cg65sdj c1snht1w"
+                    >
+                      <li
+                        class="w-element c96rloa c1o7uuju c12vydxu c1ct3ny9 li-menu-item"
+                      >
+                        <a
+                          href="#programs"
+                          class="w-element cfzxpw1 cj38lpk c1geroh3 c1ukzr5q cazwrok c1t52glg c13qg0l8 c1whhgx0 c1acaiwv header-link-custom sheet-nav"
+                          >Programs</a
+                        >
+                        <ol class="w-element sub-menu">
+                          <li class="w-element menu-item">
+                            <a
+                              href="/#features"
+                              class="w-element c1mtaqvs c16l4ds2 cs63arh cfzxpw1 cami5y c14b2vrf c6ffdiq c7hjct6 c20ofbt c1rq3u7j sheet-nav"
+                              >Features</a
+                            >
+                          </li>
+                          <li class="w-element menu-item">
+                            <a
+                              href="/#about"
+                              class="w-element c1mtaqvs c16l4ds2 cs63arh cfzxpw1 cami5y c14b2vrf c6ffdiq c7hjct6 c20ofbt c1rq3u7j sheet-nav"
+                              >About Us</a
+                            >
+                          </li>
+                          <li class="w-element menu-item">
+                            <a
+                              href="/#packages"
+                              class="w-element c1mtaqvs c16l4ds2 cs63arh cfzxpw1 cami5y c14b2vrf c6ffdiq c7hjct6 c20ofbt c1rq3u7j sheet-nav"
+                              >Packages</a
+                            >
+                          </li>
+                          <li class="w-element menu-item">
+                            <a
+                              href="#champions"
+                              class="w-element c1mtaqvs c16l4ds2 cs63arh cfzxpw1 cami5y c14b2vrf c6ffdiq c7hjct6 c20ofbt c1rq3u7j sheet-nav"
+                              >Champions</a
+                            >
+                          </li>
+                          <li class="w-element menu-item">
+                            <a
+                              href="#team"
+                              class="w-element c1mtaqvs c16l4ds2 cs63arh cfzxpw1 cami5y c14b2vrf c6ffdiq c7hjct6 c20ofbt c1rq3u7j sheet-nav"
+                              >Our Team</a
+                            >
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="w-element c96rloa">
+                        <a
+                          href="#events"
+                          class="w-element cfzxpw1 cj38lpk c1geroh3 c1ukzr5q cazwrok c1t52glg c13qg0l8 c1whhgx0 c1acaiwv header-link-custom sheet-nav"
+                          >Events</a
+                        >
+                      </li>
+                      <li class="w-element c96rloa">
+                        <a
+                          href="/#schedules"
+                          class="w-element cfzxpw1 cj38lpk c1geroh3 c1ukzr5q cazwrok c1t52glg c13qg0l8 c1whhgx0 c1acaiwv header-link-custom sheet-nav"
+                          >Schedules</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="w-element c16hxk3o c14u6nxx c1g4fpo0 cami5y c14b2vrf">
+                <a href="/#my-main" class="w-link c1g4fpo0 cami5y c14b2vrf"
+                  ><img
+                    alt=""
+                    width="480"
+                    height="480"
+                    src="/assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg"
+                    class="w-image c162q5fs c19rf484 c3splky cgzxchj c1wyb130 c1v9ltsz c11avmab phk-logo"
+                    sizes="100vw"
+                    srcset="
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg   16w,
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg   32w,
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg   48w,
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg   64w,
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg   96w,
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg  128w,
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg  256w,
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg  384w,
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg  640w,
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg  750w,
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg  828w,
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg 1080w
+                    "
+                    decoding="async"
+                    loading="eager"
+                /></a>
+              </div>
+              <div class="w-element c16hxk3o c14u6nxx c1g4fpo0 cami5y cd1ou0z">
+                <div class="w-element">
+                  <button
+                    class="w-element cct65pc csbryf9 c14froc1 c8wadw6 cg5ig8x c1wsu737 cpso45q c1rfirbm c1f6dlte c12kgrhd cwwcrtu c1tomjjy crlsape cazwrok cfzxpw1 c19z2pq c1qefx17 c96rloa c19pg8rr csjsdgd c1t3sa7q c1tgvid8 cmlf16w c1h21fgg c1gswf1x c1xds4jz c138sjhf button--primary"
+                  >
+                    Contact Us
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-element ca79xse c5g2hc8 cami5y c14b2vrf c3b4rn6 c1ebdsgg c1ok9ali c1jfz12q c14zgkvr"
+            >
+              <div class="w-element c16hxk3o c14u6nxx c1g4fpo0"></div>
+              <div class="w-element c16hxk3o c14u6nxx c1g4fpo0 cami5y c14b2vrf">
+                <a class="w-link c1g4fpo0 cami5y c14b2vrf" href="#"
+                  ><img
+                    alt=""
+                    width="480"
+                    height="480"
+                    src="/assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg"
+                    class="w-image c162q5fs phk-logo-mobile"
+                    sizes="100vw"
+                    srcset="
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg   16w,
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg   32w,
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg   48w,
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg   64w,
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg   96w,
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg  128w,
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg  256w,
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg  384w,
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg  640w,
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg  750w,
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg  828w,
+                      /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg 1080w
+                    "
+                    decoding="async"
+                    loading="eager"
+                /></a>
+              </div>
+              <div class="w-element c16hxk3o c14u6nxx c1g4fpo0 cami5y cd1ou0z">
+                <div class="w-element">
+                  <div class="w-element">
+                    <button
+                      id="hamburger-button"
+                      class="w-element c1okx06k c1jsf9ar c1ej8mr1 c1dfwclm cch4snj c12vydxu c11ti2ug cj804k2 cte67ee c1u1g5wl cu40w12 c1gqmlyh c1erkkdr c167opxi c191lhfq c10bs8f1 c1p36j8n c1qz9bw cx1x28m csi4fjh c1gp5z1w c17lxxf8 cqlkkic"
+                    >
+                      <div class="w-html-embed">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 16 16"
+                          width="100%"
+                          height="100%"
+                          style="display: block"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M2.667 8h10.666M2.667 4h10.666M2.667 12h10.666"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="w-element">
+                    <nav
+                      id="mobile-menu"
+                      class="w-element cwt01to ceigk90 c61cuvr c11z8ju2 c17fs6v3 c1uflmql mobile-nav"
+                    >
+                      <div class="w-element">
+                        <h3 class="w-element">Philko Taekwondo</h3>
+                      </div>
+                      <div style="display: contents">
+                        <div style="display: contents">
+                          <div
+                            class="w-element c16hxk3o c14u6nxx c1g4fpo0 c1nw3pd4"
+                          >
+                            <ul
+                              class="w-element c1g4fpo0 c17y6ntw c1s4ookq c8xpt5r c37bj1t c1ah412g cwxmyq1 ckb73m1 c1yatyr3 c15yuqlq cm44h5q ccnc6wf cg65sdj c1snht1w"
+                            >
+                              <li
+                                class="w-element c96rloa c1o7uuju c12vydxu c1ct3ny9 li-menu-item"
+                              >
+                                <a
+                                  href="#programs"
+                                  class="w-element cfzxpw1 cj38lpk c1geroh3 c1ukzr5q cazwrok c1t52glg c13qg0l8 c1whhgx0 c1acaiwv header-link-custom sheet-nav"
+                                  >Programs</a
+                                >
+                                <ol class="w-element sub-menu">
+                                  <li class="w-element menu-item">
+                                    <a
+                                      href="/#features"
+                                      class="w-element c1mtaqvs c16l4ds2 cs63arh cfzxpw1 cami5y c14b2vrf c6ffdiq c7hjct6 c20ofbt c1rq3u7j sheet-nav"
+                                      >Features</a
+                                    >
+                                  </li>
+                                  <li class="w-element menu-item">
+                                    <a
+                                      href="/#about"
+                                      class="w-element c1mtaqvs c16l4ds2 cs63arh cfzxpw1 cami5y c14b2vrf c6ffdiq c7hjct6 c20ofbt c1rq3u7j sheet-nav"
+                                      >About Us</a
+                                    >
+                                  </li>
+                                  <li class="w-element menu-item">
+                                    <a
+                                      href="/#packages"
+                                      class="w-element c1mtaqvs c16l4ds2 cs63arh cfzxpw1 cami5y c14b2vrf c6ffdiq c7hjct6 c20ofbt c1rq3u7j sheet-nav"
+                                      >Packages</a
+                                    >
+                                  </li>
+                                  <li class="w-element menu-item">
+                                    <a
+                                      href="#champions"
+                                      class="w-element c1mtaqvs c16l4ds2 cs63arh cfzxpw1 cami5y c14b2vrf c6ffdiq c7hjct6 c20ofbt c1rq3u7j sheet-nav"
+                                      >Champions</a
+                                    >
+                                  </li>
+                                  <li class="w-element menu-item">
+                                    <a
+                                      href="#team"
+                                      class="w-element c1mtaqvs c16l4ds2 cs63arh cfzxpw1 cami5y c14b2vrf c6ffdiq c7hjct6 c20ofbt c1rq3u7j sheet-nav"
+                                      >Our Team</a
+                                    >
+                                  </li>
+                                </ol>
+                              </li>
+                              <li class="w-element c96rloa">
+                                <a
+                                  href="#events"
+                                  class="w-element cfzxpw1 cj38lpk c1geroh3 c1ukzr5q cazwrok c1t52glg c13qg0l8 c1whhgx0 c1acaiwv header-link-custom sheet-nav"
+                                  >Events</a
+                                >
+                              </li>
+                              <li class="w-element c96rloa">
+                                <a
+                                  href="/#schedules"
+                                  class="w-element cfzxpw1 cj38lpk c1geroh3 c1ukzr5q cazwrok c1t52glg c13qg0l8 c1whhgx0 c1acaiwv header-link-custom sheet-nav"
+                                  >Schedules</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <button
+                        id="close-button"
+                        class="w-element c14zgkvr cu40w12 c1gqmlyh c1vh5ii0 c1aziwm2 c1tvlap1 cd7icst c1bg6srb c125g1ie c1he05kh c1mppipv c162e8nn c167opxi c191lhfq c10bs8f1 c1p36j8n cjydcku c1k12k60 c1hs5h38 c1oruc9p c1imawpz chutgcs"
+                      >
+                        <div class="w-html-embed">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 16 16"
+                            width="100%"
+                            height="100%"
+                            style="display: block"
+                          >
+                            <path
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M12.5 3 3 12.5M3 3l9.5 9.5"
+                            />
+                          </svg>
+                        </div>
+                      </button>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <main id="my-main" class="w-box c17etyhp">
+        <section
+          id="hero"
+          class="w-box cvzcxdp c16kkgh1 c1yq9r6w c1yjlayw c1gswf1x c20ofbt c1t52glg c1xs1t70 c17t4jnb"
+        >
+          <div
+            class="w-box c1h4u1zl c37y94b c18ffmnj c1tp4776 cnyfm53 cc78ph4 c1g4fpo0 c9z6e5w cami5y c12c1scn"
+          >
+            <div class="w-html-embed">
+              <video class="hero-bg-video" autoplay loop muted playsinline>
+                <source
+                  src="https://cloud-1de12d.b-cdn.net/customfile/d7236c64e9aec88be82c794d841ba4390eebd3a1eb8ceb493187a09f57bcfb63/AQNMYOFwR12HkZ8kFK4g9r-NL1VQMUFAnUahWXwe9upJfA3pYfh9Hu60cIXMAEbdt0mAmZMbPIN-k6JSGMxCD-3b.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div
+              class="w-element cnyfm53 cgn0wj1 cgwhgtj c1vll1cn c12sz1ms c5471os c1gmxfl2"
+            ></div>
+            <div
+              class="w-element c1g4fpo0 c9z6e5w cami5y c14b2vrf c1ogkrf9 cm2gvst c1l0t3u7 c1meqal8 cci79ke c1vem9l c1t52glg cwkcd15 c1hzqhme c1b88wv7 c2urj78 c1n34aii c1qazu25"
+            >
+              <h1 class="w-element c1wvcpid c2prnr5 c17p07q0">
+                Unleash Your Inner Champion
+              </h1>
+              <p
+                class="w-element cv1sbgn c14trdhq c3lr5n8 ce1d4tv c1gnl7iz c1n499rn c1r8a168 c1j5qk3v crraotd c1fjmq8 c8umxwr clkjhvm c1fp6p4e"
+              >
+                Experience the power and discipline of World Class Taekwondo.
+                Join our community and start your journey today.
+              </p>
+              <button
+                class="w-element cct65pc csbryf9 c14froc1 c8wadw6 cg5ig8x c1wsu737 cpso45q c1rfirbm c1f6dlte c12kgrhd cwwcrtu c1tomjjy crlsape cazwrok cfzxpw1 c19z2pq c1qefx17 c96rloa c19pg8rr csjsdgd c1t3sa7q c1tgvid8 cmlf16w c1h21fgg c1gswf1x c1xds4jz button--primary"
+              >
+                Our Programs
+              </button>
+            </div>
+          </div>
+        </section>
+        <section
+          id="features"
+          class="w-box c1fug1v6 c1hf3o8a c1yq9r6w c1kh4ri6"
+        >
+          <div
+            class="w-box c1h4u1zl c37y94b c18ffmnj c1tp4776 cnyfm53 cc78ph4 c1g4fpo0 c9z6e5w cami5y c12c1scn"
+          >
+            <div class="w-element c1g4fpo0 ch4e87b c1liwetm">
+              <div class="w-element c1tqp04k c16hxk3o"></div>
+              <div class="w-element c1tqp04k cx8lzes">
+                <h3
+                  class="w-element c1mtaqvs cazwrok c1xds4jz cit30l3 c1ok9ali"
+                >
+                  Mind &amp; Body
+                </h3>
+                <h2 class="w-element c1p8cej6 chxi1ay c1jfz12q c1crlf23">
+                  More Than Combat
+                </h2>
+                <p class="w-element c1mtaqvs cx0si8w">
+                  Our philosophy is that Taekwondo is a journey of
+                  self-improvement, developing focus, discipline, and respect.
+                  It&#x27;s about building character, not just learning to
+                  fight. We foster an environment where students can grow
+                  mentally and physically.
+                </p>
+              </div>
+            </div>
+            <div class="w-element c1g4fpo0 ch4e87b c1liwetm">
+              <div class="w-element c1tqp04k cx8lzes">
+                <h3
+                  class="w-element c1mtaqvs cazwrok c1xds4jz cit30l3 c1ok9ali"
+                >
+                  Community
+                </h3>
+                <h2 class="w-element c1p8cej6 chxi1ay c1jfz12q c1crlf23">
+                  Collaborative Efforts
+                </h2>
+                <p class="w-element c1mtaqvs cx0si8w">
+                  Join a supportive and encouraging community of all ages. We
+                  believe in lifting each other up and celebrating every
+                  achievement, from the first belt to the last. Our school is
+                  more than a dojang; it&#x27;s a second home.
+                </p>
+              </div>
+              <div class="w-element c1tqp04k c16hxk3o"></div>
+            </div>
+            <div class="w-element c1g4fpo0 ch4e87b c1liwetm">
+              <div class="w-element c1tqp04k c16hxk3o"></div>
+              <div class="w-element c1tqp04k cx8lzes">
+                <h3
+                  class="w-element c1mtaqvs cazwrok c1xds4jz cit30l3 c1ok9ali"
+                >
+                  Expertise
+                </h3>
+                <h2 class="w-element c1p8cej6 chxi1ay c1jfz12q c1crlf23">
+                  Martial Excellence
+                </h2>
+                <p class="w-element c1mtaqvs cx0si8w">
+                  Learn from acclaimed and certified masters who have dedicated
+                  their lives to the art of Taekwondo. Our instructors bring a
+                  wealth of experience, patience, and passion to every class,
+                  ensuring you receive the highest quality of training.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="about"
+          class="w-box c1fug1v6 c1hf3o8a c1yq9r6w clois1c cihilq7 c1md4hs3 c1t52glg c73cz8"
+        >
+          <div
+            class="w-box c1h4u1zl c37y94b c18ffmnj c1tp4776 cnyfm53 cc78ph4 c1g4fpo0 c9z6e5w cami5y c12c1scn c1867kps c13gzjma cr59fh4"
+          >
+            <style>
+              @keyframes ws-scroll-animation-_R3m_ {
+                from {
+                }
+              }
+
+              @media (prefers-reduced-motion: no-preference) {
+                [data-ws-animate-id="_R3m_"]
+                  > :not(
+                    :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                  ),
+                [data-ws-animate-id="_R3m_"]
+                  > [data-ws-animate-id]
+                  > :not(
+                    :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                  ),
+                [data-ws-animate-id="_R3m_"]
+                  > [data-ws-animate-id]
+                  > [data-ws-animate-id]
+                  > :not(
+                    :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                  ),
+                [data-ws-animate-id="_R3m_"]
+                  > [data-ws-animate-id]
+                  > [data-ws-animate-id]
+                  > [data-ws-animate-id]
+                  > :not(
+                    :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                  ),
+                [data-ws-animate-id="_R3m_"]
+                  > [data-ws-animate-id]
+                  > [data-ws-animate-id]
+                  > [data-ws-animate-id]
+                  > [data-ws-animate-id]
+                  > :not(
+                    :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                  ) {
+                  animation-name: ws-scroll-animation-_R3m_;
+                  animation-fill-mode: backwards;
+                  animation-play-state: paused;
+                  animation-duration: 1ms;
+                }
+              }</style
+            ><noscript
+              ><style>
+                [data-ws-animate-id="_R3m_"]
+                  > :not(
+                    :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                  ),
+                [data-ws-animate-id="_R3m_"]
+                  > [data-ws-animate-id]
+                  > :not(
+                    :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                  ),
+                [data-ws-animate-id="_R3m_"]
+                  > [data-ws-animate-id]
+                  > [data-ws-animate-id]
+                  > :not(
+                    :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                  ),
+                [data-ws-animate-id="_R3m_"]
+                  > [data-ws-animate-id]
+                  > [data-ws-animate-id]
+                  > [data-ws-animate-id]
+                  > :not(
+                    :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                  ),
+                [data-ws-animate-id="_R3m_"]
+                  > [data-ws-animate-id]
+                  > [data-ws-animate-id]
+                  > [data-ws-animate-id]
+                  > [data-ws-animate-id]
+                  > :not(
+                    :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                  ) {
+                  animation: none;
+                }
+              </style></noscript
+            >
+            <div
+              data-ws-animate-id="_R3m_"
+              class="c9jm5i1"
+              style="display: contents"
+            >
+              <style>
+                @keyframes ws-scroll-animation-_R6jm_ {
+                  from {
+                    opacity: 0%;
+                    translate: 0 100px;
+                  }
+                }
+
+                @media (prefers-reduced-motion: no-preference) {
+                  [data-ws-animate-id="_R6jm_"]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_R6jm_"]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_R6jm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_R6jm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_R6jm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ) {
+                    animation-name: ws-scroll-animation-_R6jm_;
+                    animation-fill-mode: backwards;
+                    animation-play-state: paused;
+                    animation-duration: 1ms;
+                  }
+                }</style
+              ><noscript
+                ><style>
+                  [data-ws-animate-id="_R6jm_"]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_R6jm_"]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_R6jm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_R6jm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_R6jm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ) {
+                    animation: none;
+                  }
+                </style></noscript
+              >
+              <div data-ws-animate-id="_R6jm_" style="display: contents">
+                <div
+                  data-ws-subject-for="_R56jm_"
+                  class="w-stagger-animation c20ofbt"
+                >
+                  <div
+                    data-ws-staggering-animation-id="_Rt6jm_"
+                    style="display: contents"
+                  >
+                    <h2
+                      class="w-element cco1x2a cdwwkmh c1yd10hd c1xjkhhc ccz0q13"
+                    >
+                      Your Path to Strength,
+                    </h2>
+                    <h2
+                      class="w-element cco1x2a cdwwkmh c1yd10hd c1xjkhhc ccz0q13"
+                    >
+                      Discipline, and Confidence
+                    </h2>
+                  </div>
+                </div>
+                <style>
+                  #_R56jm_ {
+                    position: fixed;
+                    visibility: hidden;
+                    pointer-events: none;
+                    top: -10000px;
+                    right: 10000px;
+                    contain: strict;
+                  }
+
+                  #_R56jm_-sample {
+                    position: fixed;
+                    visibility: hidden;
+                    pointer-events: none;
+                    top: -9000px;
+                    right: 9000px;
+                    willchange: translate, scale, opacity;
+                    contain: strict;
+                  }
+                </style>
+                <div
+                  id="_R56jm_"
+                  inert="true"
+                  data-ws-no-initial-animation=""
+                ></div>
+                <div
+                  id="_R56jm_-sample"
+                  inert="true"
+                  data-ws-no-initial-animation=""
+                ></div>
+              </div>
+              <style>
+                @keyframes ws-scroll-animation-_Rajm_ {
+                  from {
+                    opacity: 0;
+                  }
+                }
+
+                @media (prefers-reduced-motion: no-preference) {
+                  [data-ws-animate-id="_Rajm_"]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rajm_"]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rajm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rajm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rajm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ) {
+                    animation-name: ws-scroll-animation-_Rajm_;
+                    animation-fill-mode: backwards;
+                    animation-play-state: paused;
+                    animation-duration: 1ms;
+                  }
+                }</style
+              ><noscript
+                ><style>
+                  [data-ws-animate-id="_Rajm_"]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rajm_"]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rajm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rajm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rajm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ) {
+                    animation: none;
+                  }
+                </style></noscript
+              >
+              <div data-ws-animate-id="_Rajm_" style="display: contents">
+                <div
+                  class="w-element c73cz8 c1g4fpo0 cami5y c14b2vrf cqz30e c1mh84xv c1x1y0ji cnd6737"
+                >
+                  <img
+                    alt=""
+                    width="1080"
+                    height="1062"
+                    src="/assets/full-circle_mZ5dD5IUqm3e2opzER5Wf.png"
+                    class="w-image c73cz8 cau4uwn chpspui c5j9g5j"
+                    sizes="100vw"
+                    srcset="
+                      /assets/full-circle_mZ5dD5IUqm3e2opzER5Wf.png   16w,
+                      /assets/full-circle_mZ5dD5IUqm3e2opzER5Wf.png   32w,
+                      /assets/full-circle_mZ5dD5IUqm3e2opzER5Wf.png   48w,
+                      /assets/full-circle_mZ5dD5IUqm3e2opzER5Wf.png   64w,
+                      /assets/full-circle_mZ5dD5IUqm3e2opzER5Wf.png   96w,
+                      /assets/full-circle_mZ5dD5IUqm3e2opzER5Wf.png  128w,
+                      /assets/full-circle_mZ5dD5IUqm3e2opzER5Wf.png  256w,
+                      /assets/full-circle_mZ5dD5IUqm3e2opzER5Wf.png  384w,
+                      /assets/full-circle_mZ5dD5IUqm3e2opzER5Wf.png  640w,
+                      /assets/full-circle_mZ5dD5IUqm3e2opzER5Wf.png  750w,
+                      /assets/full-circle_mZ5dD5IUqm3e2opzER5Wf.png  828w,
+                      /assets/full-circle_mZ5dD5IUqm3e2opzER5Wf.png 1080w,
+                      /assets/full-circle_mZ5dD5IUqm3e2opzER5Wf.png 1200w,
+                      /assets/full-circle_mZ5dD5IUqm3e2opzER5Wf.png 1920w,
+                      /assets/full-circle_mZ5dD5IUqm3e2opzER5Wf.png 2048w,
+                      /assets/full-circle_mZ5dD5IUqm3e2opzER5Wf.png 3840w
+                    "
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <style>
+                @keyframes ws-scroll-animation-_Rejm_ {
+                  from {
+                    opacity: 0%;
+                    translate: 0px 100%;
+                  }
+                }
+
+                @media (prefers-reduced-motion: no-preference) {
+                  [data-ws-animate-id="_Rejm_"]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rejm_"]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rejm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rejm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rejm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ) {
+                    animation-name: ws-scroll-animation-_Rejm_;
+                    animation-fill-mode: backwards;
+                    animation-play-state: paused;
+                    animation-duration: 1ms;
+                  }
+                }</style
+              ><noscript
+                ><style>
+                  [data-ws-animate-id="_Rejm_"]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rejm_"]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rejm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rejm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rejm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ) {
+                    animation: none;
+                  }
+                </style></noscript
+              >
+              <div data-ws-animate-id="_Rejm_" style="display: contents">
+                <div
+                  class="w-element cgwhgtj c9z6e5w c1g4fpo0 c12c1scn cami5y chrq20v ccvnl4c ci6c62w czkgmj4 cif8dze c4y8vpp"
+                >
+                  <img
+                    alt=""
+                    width="240"
+                    height="320"
+                    src="/assets/half-coach_vBcOv95X1nhful031PSQe.png"
+                    class="w-image cau4uwn cqos0jd"
+                    sizes="100vw"
+                    srcset="
+                      /assets/half-coach_vBcOv95X1nhful031PSQe.png  16w,
+                      /assets/half-coach_vBcOv95X1nhful031PSQe.png  32w,
+                      /assets/half-coach_vBcOv95X1nhful031PSQe.png  48w,
+                      /assets/half-coach_vBcOv95X1nhful031PSQe.png  64w,
+                      /assets/half-coach_vBcOv95X1nhful031PSQe.png  96w,
+                      /assets/half-coach_vBcOv95X1nhful031PSQe.png 128w,
+                      /assets/half-coach_vBcOv95X1nhful031PSQe.png 256w,
+                      /assets/half-coach_vBcOv95X1nhful031PSQe.png 384w,
+                      /assets/half-coach_vBcOv95X1nhful031PSQe.png 640w
+                    "
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <style>
+                @keyframes ws-scroll-animation-_Rijm_ {
+                  from {
+                    translate: 0 100px;
+                  }
+                }
+
+                @media (prefers-reduced-motion: no-preference) {
+                  [data-ws-animate-id="_Rijm_"]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rijm_"]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rijm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rijm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rijm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ) {
+                    animation-name: ws-scroll-animation-_Rijm_;
+                    animation-fill-mode: backwards;
+                    animation-play-state: paused;
+                    animation-duration: 1ms;
+                  }
+                }</style
+              ><noscript
+                ><style>
+                  [data-ws-animate-id="_Rijm_"]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rijm_"]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rijm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rijm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rijm_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ) {
+                    animation: none;
+                  }
+                </style></noscript
+              >
+              <div data-ws-animate-id="_Rijm_" style="display: contents">
+                <div
+                  data-ws-subject-for="_R5ijm_"
+                  class="w-stagger-animation c1fh1x7u"
+                >
+                  <div
+                    data-ws-staggering-animation-id="_Rtijm_"
+                    style="display: contents"
+                  >
+                    <div class="w-element cc0waet">
+                      <p class="w-element c1mtaqvs cx0si8w">
+                        At <b class="w-element">PhilKO Taekwondo</b>, we don’t
+                        just teach martial arts—we shape champions in mind,
+                        body, and spirit. Led by
+                        <b class="w-element"
+                          >Head Instructor Pablo Calatong Jr.</b
+                        >, our programs cater to all ages and skill levels,
+                        offering group classes, private training, school varsity
+                        programs, and competition coaching.
+                      </p>
+                    </div>
+                    <div class="w-element cc0waet">
+                      <p class="w-element c1mtaqvs cx0si8w">
+                        Join the <b class="w-element">PhilKO</b> family today
+                        and experience training that builds more than just
+                        skills—it builds character, confidence, and lifelong
+                        discipline.
+                      </p>
+                    </div>
+                    <div class="w-element cc0waet">
+                      <p class="w-element c1mtaqvs cx0si8w">
+                        From our main chapter in
+                        <b class="w-element">Ayala, Olongapo</b> to our branches
+                        in <b class="w-element">Subic</b> and
+                        <b class="w-element">San Marcelino</b>, we provide
+                        world-class Taekwondo instruction designed to help you
+                        achieve your goals—whether it’s fitness, self-defense,
+                        competition, or personal growth.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <style>
+                  #_R5ijm_ {
+                    position: fixed;
+                    visibility: hidden;
+                    pointer-events: none;
+                    top: -10000px;
+                    right: 10000px;
+                    contain: strict;
+                  }
+
+                  #_R5ijm_-sample {
+                    position: fixed;
+                    visibility: hidden;
+                    pointer-events: none;
+                    top: -9000px;
+                    right: 9000px;
+                    willchange: translate, scale, opacity;
+                    contain: strict;
+                  }
+                </style>
+                <div
+                  id="_R5ijm_"
+                  inert="true"
+                  data-ws-no-initial-animation=""
+                ></div>
+                <div
+                  id="_R5ijm_-sample"
+                  inert="true"
+                  data-ws-no-initial-animation=""
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="programs" class="w-box c1fug1v6 c1hf3o8a c1yq9r6w">
+          <div
+            class="w-box c1h4u1zl c37y94b ckc2ozn cedkuye cnyfm53 cc78ph4 c1g4fpo0 c9z6e5w cami5y c12c1scn c1mkgktm c1vcscdb"
+          >
+            <div class="w-element ccyosah">
+              <h2 class="w-element cco1x2a">Pick Your Bundle</h2>
+            </div>
+            <div
+              class="w-element c1g4fpo0 c1l08whc c263agt c1ogkrf9 cm2gvst cami5y c14b2vrf ccnc6wf cop38ja cwxmyq1 cr93anc c1kpxxty cfn52ch ciu1cf3 cq430d0"
+            >
+              <div
+                class="w-element c1g4fpo0 c1l08whc c6ffdiq c7hjct6 c15qqx8z c24jis6 cvd1ifq c1hivrn7 c1cx6li4 c169rqou c1cqf9xn c5kv0eo cuxc7d5 cg5ig8x c1wsu737 cpso45q c1rfirbm c1xd3goi csaa28p clk8f6n c322uvt c3w7vke c33lp8m c14zgkvr ciu1cf3 c883lhe"
+              >
+                <div
+                  class="w-element c1g4fpo0 c12c1scn c6ffdiq c7hjct6 c17ltxht c1qocz8t ccplh8u cr4dnh3 cvmqxam"
+                >
+                  <div class="w-element cce03hg co7w9gs cd1x0l6">
+                    <div class="w-html-embed cckbws cami5y c1lqv7dp cxvkaqg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        id="nc_icon"
+                        xml:space="preserve"
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 24 24"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-miterlimit="10"
+                          class="nc-icon-wrapper"
+                        >
+                          <path
+                            stroke-linecap="square"
+                            d="M12 14V8M16 14v-4M8 14v-2"
+                            data-color="color-2"
+                            vector-effect="non-scaling-stroke"
+                          />
+                          <path
+                            stroke-linecap="square"
+                            d="M12 19v3"
+                            vector-effect="non-scaling-stroke"
+                          />
+                          <path
+                            d="m10 19-4 4M14 19l4 4"
+                            data-cap="butt"
+                            vector-effect="non-scaling-stroke"
+                          />
+                          <path
+                            stroke-linecap="square"
+                            d="M21 19V3H3v16M1 19h22M12 3V1"
+                            vector-effect="non-scaling-stroke"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-element">
+                  <h3 class="w-element">Group Classes</h3>
+                  <p class="w-element">
+                    Group classes offer structured sessions at diverse
+                    locations, fostering teamwork and camaraderie among
+                    students.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-element c1g4fpo0 c1l08whc c6ffdiq c7hjct6 c15qqx8z c24jis6 cvd1ifq c1hivrn7 c1cx6li4 c169rqou c1cqf9xn c5kv0eo cuxc7d5 cg5ig8x c1wsu737 cpso45q c1rfirbm c1xd3goi csaa28p clk8f6n c322uvt c3w7vke c33lp8m c14zgkvr ciu1cf3 c883lhe"
+              >
+                <div
+                  class="w-element c1g4fpo0 c12c1scn c6ffdiq c7hjct6 c17ltxht c1qocz8t ccplh8u cr4dnh3 cvmqxam"
+                >
+                  <div class="w-element cce03hg co7w9gs cd1x0l6">
+                    <div class="w-html-embed cckbws cami5y c1lqv7dp cxvkaqg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        id="nc_icon"
+                        xml:space="preserve"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="square"
+                          stroke-miterlimit="10"
+                          d="M20.4 16.8C22 15.2 23 13.2 23 11c0-5-4.9-9-11-9S1 6 1 11s4.9 9 11 9c1.1 0 2.1-.1 3.1-.4L21 22l-.6-5.2z"
+                          class="nc-icon-wrapper"
+                          vector-effect="non-scaling-stroke"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-element">
+                  <h3 class="w-element">Private Training</h3>
+                  <p class="w-element">
+                    Private training provides personalized instruction to
+                    accelerate your progress and refine your techniques.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-element c1g4fpo0 c1l08whc c6ffdiq c7hjct6 c15qqx8z c24jis6 cvd1ifq c1hivrn7 c1cx6li4 c169rqou c1cqf9xn c5kv0eo cuxc7d5 cg5ig8x c1wsu737 cpso45q c1rfirbm c1xd3goi csaa28p clk8f6n c322uvt c3w7vke c33lp8m c14zgkvr ciu1cf3 c883lhe"
+              >
+                <div
+                  class="w-element c1g4fpo0 c12c1scn c6ffdiq c7hjct6 c17ltxht c1qocz8t ccplh8u cr4dnh3 cvmqxam"
+                >
+                  <div class="w-element cce03hg co7w9gs cd1x0l6">
+                    <div class="w-html-embed cckbws cami5y c1lqv7dp cxvkaqg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        id="nc_icon"
+                        xml:space="preserve"
+                        viewBox="0 0 24 24"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="square"
+                          stroke-miterlimit="10"
+                          class="nc-icon-wrapper"
+                        >
+                          <path
+                            d="M8 8h8v8H8zM2 5c0-1.7 1.3-3 3-3s3 1.3 3 3v3H5C3.3 8 2 6.7 2 5zM22 5c0-1.7-1.3-3-3-3s-3 1.3-3 3v3h3c1.7 0 3-1.3 3-3zM22 19c0 1.7-1.3 3-3 3s-3-1.3-3-3v-3h3c1.7 0 3 1.3 3 3zM2 19c0 1.7 1.3 3 3 3s3-1.3 3-3v-3H5c-1.7 0-3 1.3-3 3z"
+                            vector-effect="non-scaling-stroke"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-element">
+                  <h3 class="w-element">PE Programs</h3>
+                  <p class="w-element">
+                    Our PE programs develop young athletes and leaders,
+                    instilling confidence and discipline from an early age.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-element c1g4fpo0 c1l08whc c6ffdiq c7hjct6 c15qqx8z c24jis6 cvd1ifq c1hivrn7 c1cx6li4 c169rqou c1cqf9xn c5kv0eo cuxc7d5 cg5ig8x c1wsu737 cpso45q c1rfirbm c1xd3goi csaa28p clk8f6n c322uvt c3w7vke c33lp8m c14zgkvr ciu1cf3 c883lhe"
+              >
+                <div
+                  class="w-element c1g4fpo0 c12c1scn c6ffdiq c7hjct6 c17ltxht c1qocz8t ccplh8u cr4dnh3 cvmqxam"
+                >
+                  <div class="w-element cce03hg co7w9gs cd1x0l6">
+                    <div class="w-html-embed cckbws cami5y c1lqv7dp cxvkaqg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1"
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 256 256"
+                        xml:space="preserve"
+                      >
+                        <g
+                          style="
+                            stroke: none;
+                            stroke-width: 0;
+                            stroke-dasharray: none;
+                            stroke-linecap: butt;
+                            stroke-linejoin: miter;
+                            stroke-miterlimit: 10;
+                            fill: none;
+                            fill-rule: nonzero;
+                            opacity: 1;
+                          "
+                          transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+                        >
+                          <path
+                            d="M 45 81.299 c -11.787 0 -21.375 -9.589 -21.375 -21.375 c 0 -0.553 0.448 -1 1 -1 s 1 0.447 1 1 c 0 10.684 8.692 19.375 19.375 19.375 c 0.552 0 1 0.447 1 1 S 45.552 81.299 45 81.299 z"
+                            style="
+                              stroke: none;
+                              stroke-width: 1;
+                              stroke-dasharray: none;
+                              stroke-linecap: butt;
+                              stroke-linejoin: miter;
+                              stroke-miterlimit: 10;
+                              fill: currentColor;
+                              fill-rule: nonzero;
+                              opacity: 1;
+                            "
+                            transform=" matrix(1 0 0 1 0 0) "
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M 65.375 60.924 c -0.553 0 -1 -0.447 -1 -1 c 0 -10.684 -8.691 -19.375 -19.375 -19.375 c -0.552 0 -1 -0.448 -1 -1 s 0.448 -1 1 -1 c 11.786 0 21.375 9.589 21.375 21.375 C 66.375 60.477 65.928 60.924 65.375 60.924 z"
+                            style="
+                              stroke: none;
+                              stroke-width: 1;
+                              stroke-dasharray: none;
+                              stroke-linecap: butt;
+                              stroke-linejoin: miter;
+                              stroke-miterlimit: 10;
+                              fill: currentColor;
+                              fill-rule: nonzero;
+                              opacity: 1;
+                            "
+                            transform=" matrix(1 0 0 1 0 0) "
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M 65.271 37.727 l 7.611 -25.866 c 0.125 -0.424 -0.044 -0.88 -0.415 -1.121 l -16.3 -10.579 c -0.021 -0.013 -0.047 -0.012 -0.068 -0.024 c -0.082 -0.045 -0.169 -0.073 -0.263 -0.094 c -0.052 -0.012 -0.1 -0.028 -0.153 -0.031 C 55.662 0.011 55.644 0 55.623 0 H 34.378 c -0.022 0 -0.04 0.011 -0.061 0.012 c -0.052 0.003 -0.099 0.019 -0.15 0.03 c -0.094 0.021 -0.182 0.048 -0.264 0.094 c -0.022 0.012 -0.048 0.011 -0.069 0.025 l -16.3 10.579 c -0.371 0.241 -0.54 0.697 -0.415 1.121 l 7.611 25.866 c -6.021 5.503 -9.805 13.416 -9.805 22.197 C 14.924 76.508 28.416 90 45 90 s 30.076 -13.492 30.076 -30.076 C 75.076 51.143 71.292 43.23 65.271 37.727 z M 63.602 36.317 c -4.302 -3.397 -9.548 -5.648 -15.277 -6.281 l 7.887 -27.462 l 14.541 9.438 L 63.602 36.317 z M 43.711 29.881 l -4.26 -14.833 h 11.097 l -4.26 14.833 c -0.428 -0.018 -0.857 -0.033 -1.289 -0.033 C 44.568 29.848 44.139 29.863 43.711 29.881 z M 51.123 13.047 H 38.878 L 35.705 2 h 18.59 L 51.123 13.047 z M 19.248 12.012 L 33.79 2.574 l 7.886 27.462 c -5.729 0.633 -10.974 2.883 -15.277 6.28 L 19.248 12.012 z M 45 88 c -15.481 0 -28.076 -12.595 -28.076 -28.076 c 0 -15.481 12.595 -28.076 28.076 -28.076 s 28.076 12.595 28.076 28.076 C 73.076 75.405 60.481 88 45 88 z"
+                            style="
+                              stroke: none;
+                              stroke-width: 1;
+                              stroke-dasharray: none;
+                              stroke-linecap: butt;
+                              stroke-linejoin: miter;
+                              stroke-miterlimit: 10;
+                              fill: currentColor;
+                              fill-rule: nonzero;
+                              opacity: 1;
+                            "
+                            transform=" matrix(1 0 0 1 0 0) "
+                            stroke-linecap="round"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-element">
+                  <h3 class="w-element">Competition Events</h3>
+                  <p class="w-element">
+                    Join us for competition events and engage in local,
+                    national, and international tournaments for an exhilarating
+                    experience.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-element c1g4fpo0 c1l08whc c6ffdiq c7hjct6 c15qqx8z c24jis6 cvd1ifq c1hivrn7 c1cx6li4 c169rqou c1cqf9xn c5kv0eo cuxc7d5 cg5ig8x c1wsu737 cpso45q c1rfirbm c1xd3goi csaa28p clk8f6n c322uvt c3w7vke c33lp8m c14zgkvr ciu1cf3 c883lhe"
+              >
+                <div
+                  class="w-element c1g4fpo0 c12c1scn c6ffdiq c7hjct6 c17ltxht c1qocz8t ccplh8u cr4dnh3 cvmqxam"
+                >
+                  <div class="w-element cce03hg co7w9gs cd1x0l6">
+                    <div class="w-html-embed cckbws cami5y c1lqv7dp cxvkaqg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        id="nc_icon"
+                        xml:space="preserve"
+                        viewBox="0 0 24 24"
+                      >
+                        <g fill="currentColor" class="nc-icon-wrapper">
+                          <path
+                            d="m22.319 8.922-6.638-.965-2.969-6.015a.794.794 0 0 0-1.424 0L8.319 7.957l-6.638.965a.794.794 0 0 0-.44 1.354l4.804 4.682L4.91 21.57a.794.794 0 0 0 1.152.837L12 19.286l.03.016C12.024 19.2 12 19.103 12 19a5 5 0 0 1 5-5c.576 0 1.12.117 1.635.296l4.124-4.02a.793.793 0 0 0-.44-1.354z"
+                          />
+                          <path
+                            d="M20 18h-2v-2h-2v2h-2v2h2v2h2v-2h2z"
+                            data-color="color-2"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-element">
+                  <h3 class="w-element">Personal Development</h3>
+                  <p class="w-element">
+                    Experience personal development through our enriching
+                    programs, cultivating resilience, respect, and excellence.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-element c1g4fpo0 c1l08whc c6ffdiq c7hjct6 c15qqx8z c24jis6 cvd1ifq c1hivrn7 c1cx6li4 c169rqou c1cqf9xn c5kv0eo cuxc7d5 cg5ig8x c1wsu737 cpso45q c1rfirbm c1xd3goi csaa28p clk8f6n c322uvt c3w7vke c33lp8m c14zgkvr ciu1cf3 c883lhe"
+              >
+                <div
+                  class="w-element c1g4fpo0 c12c1scn c6ffdiq c7hjct6 c17ltxht c1qocz8t ccplh8u cr4dnh3 cvmqxam"
+                >
+                  <div class="w-element cce03hg co7w9gs cd1x0l6">
+                    <div class="w-html-embed cckbws cami5y c1lqv7dp cxvkaqg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1"
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 256 256"
+                        xml:space="preserve"
+                      >
+                        <g
+                          style="
+                            stroke: none;
+                            stroke-width: 0;
+                            stroke-dasharray: none;
+                            stroke-linecap: butt;
+                            stroke-linejoin: miter;
+                            stroke-miterlimit: 10;
+                            fill: none;
+                            fill-rule: nonzero;
+                            opacity: 1;
+                          "
+                          transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+                        >
+                          <path
+                            d="M 7.378 54.677 c -1.104 0 -2 -0.896 -2 -2 V 15.514 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 v 37.163 C 9.378 53.781 8.483 54.677 7.378 54.677 z"
+                            style="
+                              stroke: none;
+                              stroke-width: 1;
+                              stroke-dasharray: none;
+                              stroke-linecap: butt;
+                              stroke-linejoin: miter;
+                              stroke-miterlimit: 10;
+                              fill: currentColor;
+                              fill-rule: nonzero;
+                              opacity: 1;
+                            "
+                            transform=" matrix(1 0 0 1 0 0) "
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M 9.354 89.026 h -3.95 C 2.424 89.026 0 86.603 0 83.623 V 56.08 c 0 -2.979 2.424 -5.403 5.404 -5.403 h 3.95 c 2.979 0 5.403 2.424 5.403 5.403 v 27.543 C 14.757 86.603 12.333 89.026 9.354 89.026 z M 5.404 54.677 C 4.63 54.677 4 55.307 4 56.08 v 27.543 c 0 0.773 0.63 1.403 1.404 1.403 h 3.95 c 0.774 0 1.403 -0.63 1.403 -1.403 V 56.08 c 0 -0.773 -0.629 -1.403 -1.403 -1.403 H 5.404 z"
+                            style="
+                              stroke: none;
+                              stroke-width: 1;
+                              stroke-dasharray: none;
+                              stroke-linecap: butt;
+                              stroke-linejoin: miter;
+                              stroke-miterlimit: 10;
+                              fill: currentColor;
+                              fill-rule: nonzero;
+                              opacity: 1;
+                            "
+                            transform=" matrix(1 0 0 1 0 0) "
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M 32.459 57.618 c -1.104 0 -2 -0.896 -2 -2 V 15.514 c 0 -5.812 -4.729 -10.541 -10.541 -10.541 S 9.378 9.702 9.378 15.514 c 0 1.104 -0.896 2 -2 2 s -2 -0.896 -2 -2 c 0 -8.018 6.523 -14.541 14.541 -14.541 s 14.541 6.523 14.541 14.541 v 40.104 C 34.459 56.723 33.564 57.618 32.459 57.618 z"
+                            style="
+                              stroke: none;
+                              stroke-width: 1;
+                              stroke-dasharray: none;
+                              stroke-linecap: butt;
+                              stroke-linejoin: miter;
+                              stroke-miterlimit: 10;
+                              fill: currentColor;
+                              fill-rule: nonzero;
+                              opacity: 1;
+                            "
+                            transform=" matrix(1 0 0 1 0 0) "
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M 45 70.158 c -8.018 0 -14.541 -6.522 -14.541 -14.54 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 c 0 5.812 4.729 10.54 10.541 10.54 c 5.812 0 10.54 -4.729 10.54 -10.54 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 C 59.54 63.636 53.018 70.158 45 70.158 z"
+                            style="
+                              stroke: none;
+                              stroke-width: 1;
+                              stroke-dasharray: none;
+                              stroke-linecap: butt;
+                              stroke-linejoin: miter;
+                              stroke-miterlimit: 10;
+                              fill: currentColor;
+                              fill-rule: nonzero;
+                              opacity: 1;
+                            "
+                            transform=" matrix(1 0 0 1 0 0) "
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M 82.621 54.677 c -1.104 0 -2 -0.896 -2 -2 V 15.514 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 v 37.163 C 84.621 53.781 83.726 54.677 82.621 54.677 z"
+                            style="
+                              stroke: none;
+                              stroke-width: 1;
+                              stroke-dasharray: none;
+                              stroke-linecap: butt;
+                              stroke-linejoin: miter;
+                              stroke-miterlimit: 10;
+                              fill: currentColor;
+                              fill-rule: nonzero;
+                              opacity: 1;
+                            "
+                            transform=" matrix(1 0 0 1 0 0) "
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M 84.597 89.026 h -3.95 c -2.979 0 -5.403 -2.424 -5.403 -5.403 V 56.08 c 0 -2.979 2.424 -5.403 5.403 -5.403 h 3.95 c 2.979 0 5.403 2.424 5.403 5.403 v 27.543 C 90 86.603 87.576 89.026 84.597 89.026 z M 80.646 54.677 c -0.773 0 -1.403 0.63 -1.403 1.403 v 27.543 c 0 0.773 0.63 1.403 1.403 1.403 h 3.95 c 0.773 0 1.403 -0.63 1.403 -1.403 V 56.08 c 0 -0.773 -0.63 -1.403 -1.403 -1.403 H 80.646 z"
+                            style="
+                              stroke: none;
+                              stroke-width: 1;
+                              stroke-dasharray: none;
+                              stroke-linecap: butt;
+                              stroke-linejoin: miter;
+                              stroke-miterlimit: 10;
+                              fill: currentColor;
+                              fill-rule: nonzero;
+                              opacity: 1;
+                            "
+                            transform=" matrix(1 0 0 1 0 0) "
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M 57.54 57.618 c -1.104 0 -2 -0.896 -2 -2 V 15.514 c 0 -8.018 6.523 -14.541 14.541 -14.541 s 14.54 6.523 14.54 14.541 c 0 1.104 -0.896 2 -2 2 s -2 -0.896 -2 -2 c 0 -5.812 -4.729 -10.541 -10.54 -10.541 c -5.813 0 -10.541 4.729 -10.541 10.541 v 40.104 C 59.54 56.723 58.645 57.618 57.54 57.618 z"
+                            style="
+                              stroke: none;
+                              stroke-width: 1;
+                              stroke-dasharray: none;
+                              stroke-linecap: butt;
+                              stroke-linejoin: miter;
+                              stroke-miterlimit: 10;
+                              fill: currentColor;
+                              fill-rule: nonzero;
+                              opacity: 1;
+                            "
+                            transform=" matrix(1 0 0 1 0 0) "
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M 12.757 62.376 H 2 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 10.757 c 1.104 0 2 0.896 2 2 S 13.861 62.376 12.757 62.376 z"
+                            style="
+                              stroke: none;
+                              stroke-width: 1;
+                              stroke-dasharray: none;
+                              stroke-linecap: butt;
+                              stroke-linejoin: miter;
+                              stroke-miterlimit: 10;
+                              fill: currentColor;
+                              fill-rule: nonzero;
+                              opacity: 1;
+                            "
+                            transform=" matrix(1 0 0 1 0 0) "
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M 88 62.376 H 77.243 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 H 88 c 1.104 0 2 0.896 2 2 S 89.104 62.376 88 62.376 z"
+                            style="
+                              stroke: none;
+                              stroke-width: 1;
+                              stroke-dasharray: none;
+                              stroke-linecap: butt;
+                              stroke-linejoin: miter;
+                              stroke-miterlimit: 10;
+                              fill: currentColor;
+                              fill-rule: nonzero;
+                              opacity: 1;
+                            "
+                            transform=" matrix(1 0 0 1 0 0) "
+                            stroke-linecap="round"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-element">
+                  <h3 class="w-element">Athlete Training</h3>
+                  <p class="w-element">
+                    Athlete training hones skills and prepares individuals for
+                    advanced levels, fostering a spirit of continuous
+                    improvement.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="packages" class="w-box c1fug1v6 c1hf3o8a c1yq9r6w">
+          <div
+            class="w-box c1h4u1zl c37y94b ckc2ozn cedkuye cnyfm53 cc78ph4 c1g4fpo0 c9z6e5w cami5y c12c1scn c1mkgktm c1vcscdb"
+          >
+            <div class="w-element ccyosah">
+              <h2 class="w-element cco1x2a c1897cul c1vx2te8">Packages</h2>
+            </div>
+            <div
+              class="w-element c263agt c1l08whc c1g4fpo0 c14b2vrf c13zl0f2 c1ogkrf9 cm2gvst cwxmyq1 c11erauh cs4dq4m c1i3x1tl cjo004h c1hzqhme c1b88wv7"
+            >
+              <div
+                class="w-element c1dw77so c13c2fuh cugcg0u c1s9w7or c24jis6 cvd1ifq c1hivrn7 c1cx6li4 c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 c9z6e5w c14b2vrf cami5y c1ogkrf9 cm2gvst c20ofbt c6yneaj c322uvt c1068uz3 c1p0jd8a c33lp8m cjerngu c2htz77 c1lg6cup chdpqbz cmx1u9b c45q4vm c1zm8p7 czcwj0m c131ynld"
+              >
+                <div class="w-element">
+                  <div class="w-element">
+                    <h4 class="w-element ccyzivu">Annual Membership</h4>
+                  </div>
+                  <div class="w-element">
+                    <h2 class="w-element c15ieg54 cco1x2a">P2,500</h2>
+                  </div>
+                  <div class="w-element">
+                    <p class="w-element c15ieg54">
+                      Inclusive for Free Extra Training During UpComing Event
+                      &amp; Promotion
+                    </p>
+                  </div>
+                </div>
+                <div class="w-element">
+                  <div class="w-element">
+                    <h4 class="w-element ccyzivu">Taekwondo Kit</h4>
+                  </div>
+                  <div class="w-element">
+                    <h2 class="w-element c15ieg54 cco1x2a">P6,000</h2>
+                  </div>
+                  <div class="w-element">
+                    <p class="w-element c15ieg54">
+                      Inclusive TKD Uniform TKD Shirt Kick Pad Or Tumbler &amp;
+                      TKD Manual
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-element c1dw77so c13c2fuh cugcg0u c1s9w7or c24jis6 cvd1ifq c1hivrn7 c1cx6li4 c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 c9z6e5w c14b2vrf cami5y c1ogkrf9 cm2gvst c20ofbt c6yneaj c322uvt c1068uz3 c1p0jd8a c33lp8m cjerngu c2htz77 c1lg6cup chdpqbz cmx1u9b c45q4vm c1zm8p7 czcwj0m c131ynld"
+              >
+                <div class="w-element">
+                  <div class="w-element">
+                    <h4 class="w-element ccyzivu">Age 9 &amp; Below Package</h4>
+                  </div>
+                  <div class="w-element">
+                    <h2 class="w-element c15ieg54 cco1x2a">P4,000</h2>
+                  </div>
+                  <div class="w-element">
+                    <p class="w-element c15ieg54">
+                      12 session per month with 2 hours per session
+                    </p>
+                  </div>
+                </div>
+                <div class="w-element">
+                  <div class="w-element">
+                    <h4 class="w-element ccyzivu"></h4>
+                  </div>
+                  <div class="w-element">
+                    <h2 class="w-element c15ieg54 cco1x2a">P3,000</h2>
+                  </div>
+                  <div class="w-element">
+                    <p class="w-element c15ieg54">
+                      8 session per month with 2 hours per session
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-element c1dw77so c13c2fuh cugcg0u c1s9w7or c24jis6 cvd1ifq c1hivrn7 c1cx6li4 c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 c9z6e5w c14b2vrf cami5y c1ogkrf9 cm2gvst c20ofbt c6yneaj c322uvt c1068uz3 c1p0jd8a c33lp8m cjerngu c2htz77 c1lg6cup chdpqbz cmx1u9b c45q4vm c1zm8p7 czcwj0m c131ynld"
+              >
+                <div class="w-element">
+                  <div class="w-element">
+                    <h4 class="w-element ccyzivu">
+                      Age 10 &amp; Above Package
+                    </h4>
+                  </div>
+                  <div class="w-element">
+                    <h2 class="w-element c15ieg54 cco1x2a">P3,000</h2>
+                  </div>
+                  <div class="w-element">
+                    <p class="w-element c15ieg54">
+                      12 session per month with 2 hours per session
+                    </p>
+                  </div>
+                </div>
+                <div class="w-element">
+                  <div class="w-element">
+                    <h4 class="w-element ccyzivu"></h4>
+                  </div>
+                  <div class="w-element">
+                    <h2 class="w-element c15ieg54 cco1x2a">P2,000</h2>
+                  </div>
+                  <div class="w-element">
+                    <p class="w-element c15ieg54">
+                      8 session per month with 2 hours per session
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-element c1dw77so c13c2fuh cugcg0u c1s9w7or c24jis6 cvd1ifq c1hivrn7 c1cx6li4 c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 c9z6e5w c14b2vrf cami5y c1ogkrf9 cm2gvst c20ofbt c6yneaj c322uvt c1068uz3 c1p0jd8a c33lp8m cjerngu c2htz77 c1lg6cup chdpqbz cmx1u9b c45q4vm c1zm8p7 czcwj0m c131ynld"
+              >
+                <div class="w-element">
+                  <div class="w-element">
+                    <h4 class="w-element ccyzivu">
+                      Specialization For Poomsae / Kyorugi &amp; Freestyle
+                    </h4>
+                  </div>
+                  <div class="w-element">
+                    <h2 class="w-element c15ieg54 cco1x2a">P2,000</h2>
+                  </div>
+                  <div class="w-element">
+                    <p class="w-element c15ieg54">
+                      8 session per month with 2 hours per session
+                    </p>
+                  </div>
+                </div>
+                <div class="w-element">
+                  <div class="w-element">
+                    <h4 class="w-element ccyzivu">
+                      Group Private &amp; 1 on 1 Program
+                    </h4>
+                  </div>
+                  <div class="w-element">
+                    <h2 class="w-element c15ieg54 c1p8cej6">
+                      P6,000 - P10,000
+                    </h2>
+                  </div>
+                  <div class="w-element">
+                    <p class="w-element c15ieg54">
+                      12 session per month with 2 hours per session
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-element c7ptt2b">
+              <p class="w-element">
+                <i class="w-element"
+                  >*Limited offer - Free Dobuk , Tumbler, Shirt once you bring a
+                  friend to get enrolled from August to December 2025</i
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="schedules" class="w-box c1fug1v6 c1hf3o8a c1yq9r6w">
+          <div
+            class="w-box c1h4u1zl c37y94b ckc2ozn cedkuye cnyfm53 cc78ph4 c1g4fpo0 c9z6e5w cami5y c12c1scn c1mkgktm c1vcscdb"
+          >
+            <div class="w-element c9z6e5w">
+              <div
+                class="w-element ccyosah c20ofbt c1g4fpo0 c9z6e5w cami5y c14b2vrf"
+              >
+                <h2 class="w-element cco1x2a c1yd10hd">
+                  Training Locations &amp; Class Schedules
+                </h2>
+                <h3 class="w-element chwgwgx">
+                  Find a PhilKO Taekwondo class near you and start your journey
+                  today
+                </h3>
+              </div>
+            </div>
+            <div class="w-element c20ofbt c1t52glg cnyfm53 cla9kb1">
+              <div
+                class="w-element c1g4fpo0 c15qqx8z cvmqxam cnyfm53 c1yq9r6w c1ogkrf9 cm2gvst c1dw77so c13c2fuh cugcg0u c1s9w7or c1t52glg cwxmyq1 cu40w12 c1gqmlyh"
+              >
+                <div
+                  class="w-element c1t5y75d c82f6tt c14u6nxx cwmjtyh cqveaal cqy7su8 map-wrapper"
+                >
+                  <div class="w-html-embed">
+                    <!-- <div class="map-wrapper">
+  <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCcywKcxXeMZiMwLDcLgyEnNglcLOyB_qw&amp;q=PHILKO AYALA HARBOR POINT&amp;zoom=14" title="map" style="pointer-events: none;"></iframe>
+</div> -->
+
+                    <style>
+                      .map-wrapper {
+                        position: relative;
+                        width: 100%;
+                        /* This is for a 16:9 aspect ratio */
+                        /* padding-bottom: 56.25%;  */
+                        padding-bottom: var(--my-map-height);
+                        height: 0;
+                        overflow: hidden;
+                        z-index: 10;
+                      }
+
+                      .map-wrapper iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-style: none;
+                      }
+                    </style>
+
+                    <iframe
+                      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCcywKcxXeMZiMwLDcLgyEnNglcLOyB_qw&amp;q=PHILKO AYALA HARBOR POINT&amp;zoom=14"
+                      title="map"
+                      style="pointer-events: none"
+                    ></iframe>
+
+                    <!-- <style>
+  .map-wrapper iframe {
+    width: 100%; /* Ensure the iframe fills its parent wrapper */
+    height: 300px; /* Maintain your desired height, or make it responsive with padding-bottom */
+    border-style: none;
+  }
+</style> -->
+                  </div>
+                </div>
+                <div
+                  class="w-element c1ebdsgg c1g4fpo0 c9z6e5w c1wsc683 cqy7su8 c1iom500 cc1osnn c2e5bpx"
+                >
+                  <div class="w-element">
+                    <h4 class="w-element">Philko Jaguars Main Chapter</h4>
+                    <h3 class="w-element">Ayala Harbor Point</h3>
+                  </div>
+                  <div class="w-element c2f4i88">
+                    <h4 class="w-element cy8uoz7 c1k8m2i4">
+                      Monday • Wednesday • Friday
+                    </h4>
+                    <div class="w-element">
+                      <table class="w-element">
+                        <thead class="w-element"></thead>
+                        <tbody class="w-element c129vkf6">
+                          <tr class="w-element">
+                            <td class="w-element">10:00 AM - 11:30 NN</td>
+                            <td class="w-element">White &amp; Yellow Belt</td>
+                          </tr>
+                          <tr class="w-element">
+                            <td class="w-element">1:30 PM - 3:30 PM</td>
+                            <td class="w-element">White &amp; Yellow Belt</td>
+                          </tr>
+                          <tr class="w-element">
+                            <td class="w-element">3:30 PM - 5:30 PM</td>
+                            <td class="w-element">
+                              White , Yellow &amp; BlueBelt
+                            </td>
+                          </tr>
+                          <tr class="w-element">
+                            <td class="w-element">5:30 PM - 7:30 PM</td>
+                            <td class="w-element">
+                              All Level Poomse &amp; Kyorugi
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="w-element c2f4i88">
+                    <h4 class="w-element cy8uoz7 c1k8m2i4">
+                      Tuesday • Thursday
+                    </h4>
+                    <div class="w-element">
+                      <table class="w-element">
+                        <thead class="w-element"></thead>
+                        <tbody class="w-element c129vkf6">
+                          <tr class="w-element">
+                            <td class="w-element">10:00 AM - 11:30 NN</td>
+                            <td class="w-element">White &amp; Yellow Belt</td>
+                          </tr>
+                          <tr class="w-element">
+                            <td class="w-element">1:30 PM - 3:30 PM</td>
+                            <td class="w-element">White &amp; Yellow Belt</td>
+                          </tr>
+                          <tr class="w-element">
+                            <td class="w-element">3:30 PM - 5:30 PM</td>
+                            <td class="w-element">
+                              White , Yellow &amp; BlueBelt
+                            </td>
+                          </tr>
+                          <tr class="w-element">
+                            <td class="w-element">5:30 PM - 7:30 PM</td>
+                            <td class="w-element">
+                              All Level Specialization Poomse,
+                            </td>
+                          </tr>
+                          <tr class="w-element">
+                            <td class="w-element"></td>
+                            <td class="w-element">Kyorugi &amp; Freestyle</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="w-element c2f4i88">
+                    <h4 class="w-element cy8uoz7 c1k8m2i4">Saturday</h4>
+                    <div class="w-element">
+                      <table class="w-element">
+                        <thead class="w-element"></thead>
+                        <tbody class="w-element c129vkf6">
+                          <tr class="w-element">
+                            <td class="w-element">10:00 AM - 12:00 NN</td>
+                            <td class="w-element">
+                              White , Yellow &amp; BlueBelt
+                            </td>
+                          </tr>
+                          <tr class="w-element">
+                            <td class="w-element">2:00 PM - 4:00 PM</td>
+                            <td class="w-element">ALL LEVEL POOMSE</td>
+                          </tr>
+                          <tr class="w-element">
+                            <td class="w-element">4:00 PM - 7:00 PM</td>
+                            <td class="w-element">ALL LEVEL KYORUGI</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-element c20ofbt c1t52glg cnyfm53 c2prnr5">
+              <div
+                class="w-element c1g4fpo0 c15qqx8z cvmqxam cnyfm53 c1yq9r6w c1ogkrf9 cm2gvst c1dw77so c13c2fuh cugcg0u c1s9w7or c1t52glg cwxmyq1 cu40w12 c1gqmlyh"
+              >
+                <div class="w-element c1t5y75d c14u6nxx map-wrapper-2">
+                  <div class="w-html-embed">
+                    <!-- <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCcywKcxXeMZiMwLDcLgyEnNglcLOyB_qw&amp;q=Acupella&amp;zoom=17" title="map" style="pointer-events: none;"></iframe> -->
+
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3856.057364592349!2d120.23033160542111!3d14.878070423114373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396770048d35b6f%3A0xb8351eba993c88fd!2sAcuppella%20Cafe!5e0!3m2!1sen!2sus!4v1758682237366!5m2!1sen!2sus"
+                      width="600"
+                      height="450"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+
+                    <!-- <style>
+  .map-wrapper-2 iframe {
+    width: 100%; /* Ensure the iframe fills its parent wrapper */
+    height: 300px; /* Maintain your desired height, or make it responsive with padding-bottom */
+    border-style: none;
+  }
+</style> -->
+
+                    <style>
+                      .map-wrapper-2 {
+                        position: relative;
+                        width: 100%;
+                        /* This is for a 16:9 aspect ratio */
+                        /* padding-bottom: 56.25%;  */
+                        padding-bottom: var(--my-map-height-2);
+                        height: 0;
+                        overflow: hidden;
+                      }
+
+                      .map-wrapper-2 iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-style: none;
+                      }
+                    </style>
+                  </div>
+                </div>
+                <div
+                  class="w-element c1ebdsgg c1g4fpo0 c9z6e5w c16hxk3o c14u6nxx c1wsc683 cqy7su8 c1iom500 cc1osnn c2e5bpx"
+                >
+                  <div class="w-element">
+                    <h4 class="w-element">Philko Jaguars Subic</h4>
+                    <h3 class="w-element">2nd Floor, Acupella Subic</h3>
+                  </div>
+                  <div class="w-element c2f4i88">
+                    <h4 class="w-element cy8uoz7 c1k8m2i4">
+                      Monday • Thursday
+                    </h4>
+                    <div class="w-element">
+                      <table class="w-element">
+                        <thead class="w-element"></thead>
+                        <tbody class="w-element c129vkf6">
+                          <tr class="w-element">
+                            <td class="w-element">3:00 PM - 5:00 PM</td>
+                            <td class="w-element">Soon to Open</td>
+                          </tr>
+                          <tr class="w-element">
+                            <td class="w-element">5:00 PM - 7:00 PM</td>
+                            <td class="w-element">1st Session</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="w-element c2f4i88">
+                    <h4 class="w-element cy8uoz7 c1k8m2i4">Saturday</h4>
+                    <div class="w-element">
+                      <table class="w-element">
+                        <thead class="w-element"></thead>
+                        <tbody class="w-element c129vkf6">
+                          <tr class="w-element">
+                            <td class="w-element">9:00 AM - 11:00 AM</td>
+                            <td class="w-element">1st Session</td>
+                          </tr>
+                          <tr class="w-element">
+                            <td class="w-element">2:00 PM - 4:00 PM</td>
+                            <td class="w-element">Soon to Open</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-element c20ofbt c1t52glg cnyfm53 c2prnr5">
+              <div
+                class="w-element c1g4fpo0 c15qqx8z cvmqxam cnyfm53 c1yq9r6w c1ogkrf9 cm2gvst c1dw77so c13c2fuh cugcg0u c1s9w7or c1t52glg cwxmyq1 cu40w12 c1gqmlyh"
+              >
+                <div class="w-element c1t5y75d c14u6nxx map-wrapper-3">
+                  <div class="w-html-embed">
+                    <!-- <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCcywKcxXeMZiMwLDcLgyEnNglcLOyB_qw&amp;q=Ayonib Gym&amp;zoom=17" title="map" style="pointer-events: none;"></iframe> -->
+
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3854.31504134429!2d120.15104938490295!3d14.975206973078286!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3395d70c77e94709%3A0xb52f7e5e16cf0fbc!2sAyonib%20Fitness%20Gym!5e0!3m2!1sen!2sus!4v1758681049440!5m2!1sen!2sus"
+                      width="600"
+                      height="450"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+
+                    <!-- <style>
+  .map-wrapper-3 iframe {
+    width: 100%; /* Ensure the iframe fills its parent wrapper */
+    height: 250px; /* Maintain your desired height, or make it responsive with padding-bottom */
+    border-style: none;
+  }
+</style> -->
+
+                    <style>
+                      .map-wrapper-3 {
+                        position: relative;
+                        width: 100%;
+                        /* This is for a 16:9 aspect ratio */
+                        /* padding-bottom: 56.25%;  */
+                        padding-bottom: var(--my-map-height-3);
+                        height: 0;
+                        overflow: hidden;
+                      }
+
+                      .map-wrapper-3 iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-style: none;
+                      }
+                    </style>
+                  </div>
+                </div>
+                <div
+                  class="w-element c1ebdsgg c1g4fpo0 c9z6e5w c16hxk3o c14u6nxx c1wsc683 cqy7su8 c1iom500 cc1osnn c2e5bpx"
+                >
+                  <div class="w-element">
+                    <h4 class="w-element">Philko Jaguars San Marcelino</h4>
+                    <h3 class="w-element">Ayonib San Marcelino</h3>
+                  </div>
+                  <div class="w-element c2f4i88">
+                    <h4 class="w-element cy8uoz7 c1k8m2i4">
+                      Tuesday • Friday • Saturday
+                    </h4>
+                    <div class="w-element">
+                      <table class="w-element">
+                        <thead class="w-element"></thead>
+                        <tbody class="w-element c129vkf6">
+                          <tr class="w-element">
+                            <td class="w-element">5:30 PM - 7:30 PM</td>
+                            <td class="w-element">1st Session</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-element c20ofbt c1t52glg cnyfm53 c2prnr5">
+              <div
+                class="w-element c1g4fpo0 c15qqx8z cvmqxam cnyfm53 c1yq9r6w c1ogkrf9 cm2gvst c1dw77so c13c2fuh cugcg0u c1s9w7or c1t52glg cwxmyq1 cu40w12 c1gqmlyh"
+              >
+                <div class="w-element c1t5y75d c14u6nxx map-wrapper-3">
+                  <div class="w-html-embed">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3856.9786327156517!2d120.28055697525652!3d14.826457285687082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33967124b18f22bd%3A0x403c65951060241b!2sSM%20City%20Olongapo%20Downtown!5e0!3m2!1sen!2sus!4v1758538503167!5m2!1sen!2sus"
+                      width="600"
+                      height="450"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+
+                    <!-- <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCcywKcxXeMZiMwLDcLgyEnNglcLOyB_qw&amp;q=Ayonib Gym&amp;zoom=17" title="map" style="pointer-events: none;"></iframe> -->
+
+                    <!-- <style>
+  .map-wrapper-3 iframe {
+    width: 100%; /* Ensure the iframe fills its parent wrapper */
+    height: 250px; /* Maintain your desired height, or make it responsive with padding-bottom */
+    border-style: none;
+  }
+</style> -->
+
+                    <style>
+                      .map-wrapper-3 {
+                        position: relative;
+                        width: 100%;
+                        /* This is for a 16:9 aspect ratio */
+                        /* padding-bottom: 56.25%;  */
+                        padding-bottom: var(--my-map-height-3);
+                        height: 0;
+                        overflow: hidden;
+                      }
+
+                      .map-wrapper-3 iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-style: none;
+                      }
+                    </style>
+                  </div>
+                </div>
+                <div
+                  class="w-element c1ebdsgg c1g4fpo0 c9z6e5w c16hxk3o c14u6nxx c1wsc683 cqy7su8 c1iom500 cc1osnn c2e5bpx"
+                >
+                  <div class="w-element">
+                    <h4 class="w-element cglyyr">
+                      Philko Jaguars SM Downtown Olongapo City
+                    </h4>
+                    <h3 class="w-element">SM Down Town</h3>
+                  </div>
+                  <div class="w-element c2f4i88">
+                    <h4 class="w-element cy8uoz7 c1k8m2i4">
+                      Monday • Wednesday • Saturday
+                    </h4>
+                    <div class="w-element">
+                      <table class="w-element">
+                        <thead class="w-element"></thead>
+                        <tbody class="w-element c129vkf6">
+                          <tr class="w-element">
+                            <td class="w-element">5:30 PM - 7:30 PM</td>
+                            <td class="w-element">All Level</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="champions"
+          class="w-box c1fug1v6 c1hf3o8a c1yq9r6w c1vmh7gs"
+        >
+          <div
+            class="w-box c1h4u1zl c37y94b c18ffmnj c1tp4776 cnyfm53 cc78ph4 c1g4fpo0 c9z6e5w cami5y c12c1scn"
+          >
+            <div class="w-element">
+              <div class="w-element c20ofbt">
+                <h2 class="w-element cco1x2a">Where Dedication Meets Action</h2>
+              </div>
+              <div
+                class="w-element c1g4fpo0 cami5y c14b2vrf c1d83zv cbdgk63 c1ba3gyn c9jtqy9"
+              >
+                <img
+                  alt=""
+                  src="https://cloud-1de12d.b-cdn.net/media/iW=468&amp;iH=351&amp;oX=44&amp;oY=0&amp;cW=380&amp;cH=351/6904b52d84c347590ad82d7da51b019b/001C00B1-2154-4228-844E-CA4A6DA2F8EA-4-5005-c.jpg"
+                  class="w-image c1spesu9 cgolm7f c16hxk3o c14u6nxx c72y85n cxwdgfw cxhuk6l cgn0wj1 c7gin8s c1bbfzox c1t3sa7q c1tgvid8 cmlf16w c1y4ums3 c1yh3zyx c1kl77cw cqhpuzm c1gmwv2t c1dni9nd"
+                  sizes="(min-width: 1280px) 50vw, 100vw"
+                  srcset="
+                    https://cloud-1de12d.b-cdn.net/media/iW=468&amp;iH=351&amp;oX=44&amp;oY=0&amp;cW=380&amp;cH=351/6904b52d84c347590ad82d7da51b019b/001C00B1-2154-4228-844E-CA4A6DA2F8EA-4-5005-c.jpg  384w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=468&amp;iH=351&amp;oX=44&amp;oY=0&amp;cW=380&amp;cH=351/6904b52d84c347590ad82d7da51b019b/001C00B1-2154-4228-844E-CA4A6DA2F8EA-4-5005-c.jpg  640w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=468&amp;iH=351&amp;oX=44&amp;oY=0&amp;cW=380&amp;cH=351/6904b52d84c347590ad82d7da51b019b/001C00B1-2154-4228-844E-CA4A6DA2F8EA-4-5005-c.jpg  750w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=468&amp;iH=351&amp;oX=44&amp;oY=0&amp;cW=380&amp;cH=351/6904b52d84c347590ad82d7da51b019b/001C00B1-2154-4228-844E-CA4A6DA2F8EA-4-5005-c.jpg  828w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=468&amp;iH=351&amp;oX=44&amp;oY=0&amp;cW=380&amp;cH=351/6904b52d84c347590ad82d7da51b019b/001C00B1-2154-4228-844E-CA4A6DA2F8EA-4-5005-c.jpg 1080w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=468&amp;iH=351&amp;oX=44&amp;oY=0&amp;cW=380&amp;cH=351/6904b52d84c347590ad82d7da51b019b/001C00B1-2154-4228-844E-CA4A6DA2F8EA-4-5005-c.jpg 1200w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=468&amp;iH=351&amp;oX=44&amp;oY=0&amp;cW=380&amp;cH=351/6904b52d84c347590ad82d7da51b019b/001C00B1-2154-4228-844E-CA4A6DA2F8EA-4-5005-c.jpg 1920w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=468&amp;iH=351&amp;oX=44&amp;oY=0&amp;cW=380&amp;cH=351/6904b52d84c347590ad82d7da51b019b/001C00B1-2154-4228-844E-CA4A6DA2F8EA-4-5005-c.jpg 2048w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=468&amp;iH=351&amp;oX=44&amp;oY=0&amp;cW=380&amp;cH=351/6904b52d84c347590ad82d7da51b019b/001C00B1-2154-4228-844E-CA4A6DA2F8EA-4-5005-c.jpg 3840w
+                  "
+                  decoding="async"
+                  loading="lazy"
+                /><img
+                  alt=""
+                  src="https://cloud-1de12d.b-cdn.net/media/iW=731&amp;iH=548&amp;oX=0&amp;oY=98&amp;cW=731&amp;cH=353/65b3d74f51802f83bc1a71d2e8f4c1c8/506939535-1135946701886973-6919370739684681248-n.jpg"
+                  class="w-image c1spesu9 cgolm7f c16hxk3o c14u6nxx c72y85n cxwdgfw cxhuk6l cgn0wj1 c7gin8s c1bbfzox c1t3sa7q c1tgvid8 cmlf16w c1y4ums3 c1yh3zyx c1kl77cw cqhpuzm c1gmwv2t c1dni9nd"
+                  sizes="(min-width: 1280px) 50vw, 100vw"
+                  srcset="
+                    https://cloud-1de12d.b-cdn.net/media/iW=731&amp;iH=548&amp;oX=0&amp;oY=98&amp;cW=731&amp;cH=353/65b3d74f51802f83bc1a71d2e8f4c1c8/506939535-1135946701886973-6919370739684681248-n.jpg  384w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=731&amp;iH=548&amp;oX=0&amp;oY=98&amp;cW=731&amp;cH=353/65b3d74f51802f83bc1a71d2e8f4c1c8/506939535-1135946701886973-6919370739684681248-n.jpg  640w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=731&amp;iH=548&amp;oX=0&amp;oY=98&amp;cW=731&amp;cH=353/65b3d74f51802f83bc1a71d2e8f4c1c8/506939535-1135946701886973-6919370739684681248-n.jpg  750w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=731&amp;iH=548&amp;oX=0&amp;oY=98&amp;cW=731&amp;cH=353/65b3d74f51802f83bc1a71d2e8f4c1c8/506939535-1135946701886973-6919370739684681248-n.jpg  828w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=731&amp;iH=548&amp;oX=0&amp;oY=98&amp;cW=731&amp;cH=353/65b3d74f51802f83bc1a71d2e8f4c1c8/506939535-1135946701886973-6919370739684681248-n.jpg 1080w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=731&amp;iH=548&amp;oX=0&amp;oY=98&amp;cW=731&amp;cH=353/65b3d74f51802f83bc1a71d2e8f4c1c8/506939535-1135946701886973-6919370739684681248-n.jpg 1200w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=731&amp;iH=548&amp;oX=0&amp;oY=98&amp;cW=731&amp;cH=353/65b3d74f51802f83bc1a71d2e8f4c1c8/506939535-1135946701886973-6919370739684681248-n.jpg 1920w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=731&amp;iH=548&amp;oX=0&amp;oY=98&amp;cW=731&amp;cH=353/65b3d74f51802f83bc1a71d2e8f4c1c8/506939535-1135946701886973-6919370739684681248-n.jpg 2048w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=731&amp;iH=548&amp;oX=0&amp;oY=98&amp;cW=731&amp;cH=353/65b3d74f51802f83bc1a71d2e8f4c1c8/506939535-1135946701886973-6919370739684681248-n.jpg 3840w
+                  "
+                  decoding="async"
+                  loading="lazy"
+                /><img
+                  alt=""
+                  src="https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1096&amp;oX=0&amp;oY=224&amp;cW=1462&amp;cH=646/0a8dd02c024a2409c4e829dbea32944b/805425A9-30ED-43D1-BE8C-0BD56C680724-1-105-c.jpg"
+                  class="w-image c1spesu9 cgolm7f c16hxk3o c14u6nxx c72y85n cxwdgfw cxhuk6l cgn0wj1 c7gin8s c1bbfzox c1t3sa7q c1tgvid8 cmlf16w c1y4ums3 c1yh3zyx c1kl77cw cqhpuzm c1gmwv2t c1dni9nd"
+                  sizes="(min-width: 1280px) 50vw, 100vw"
+                  srcset="
+                    https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1096&amp;oX=0&amp;oY=224&amp;cW=1462&amp;cH=646/0a8dd02c024a2409c4e829dbea32944b/805425A9-30ED-43D1-BE8C-0BD56C680724-1-105-c.jpg  384w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1096&amp;oX=0&amp;oY=224&amp;cW=1462&amp;cH=646/0a8dd02c024a2409c4e829dbea32944b/805425A9-30ED-43D1-BE8C-0BD56C680724-1-105-c.jpg  640w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1096&amp;oX=0&amp;oY=224&amp;cW=1462&amp;cH=646/0a8dd02c024a2409c4e829dbea32944b/805425A9-30ED-43D1-BE8C-0BD56C680724-1-105-c.jpg  750w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1096&amp;oX=0&amp;oY=224&amp;cW=1462&amp;cH=646/0a8dd02c024a2409c4e829dbea32944b/805425A9-30ED-43D1-BE8C-0BD56C680724-1-105-c.jpg  828w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1096&amp;oX=0&amp;oY=224&amp;cW=1462&amp;cH=646/0a8dd02c024a2409c4e829dbea32944b/805425A9-30ED-43D1-BE8C-0BD56C680724-1-105-c.jpg 1080w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1096&amp;oX=0&amp;oY=224&amp;cW=1462&amp;cH=646/0a8dd02c024a2409c4e829dbea32944b/805425A9-30ED-43D1-BE8C-0BD56C680724-1-105-c.jpg 1200w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1096&amp;oX=0&amp;oY=224&amp;cW=1462&amp;cH=646/0a8dd02c024a2409c4e829dbea32944b/805425A9-30ED-43D1-BE8C-0BD56C680724-1-105-c.jpg 1920w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1096&amp;oX=0&amp;oY=224&amp;cW=1462&amp;cH=646/0a8dd02c024a2409c4e829dbea32944b/805425A9-30ED-43D1-BE8C-0BD56C680724-1-105-c.jpg 2048w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1096&amp;oX=0&amp;oY=224&amp;cW=1462&amp;cH=646/0a8dd02c024a2409c4e829dbea32944b/805425A9-30ED-43D1-BE8C-0BD56C680724-1-105-c.jpg 3840w
+                  "
+                  decoding="async"
+                  loading="lazy"
+                /><img
+                  alt=""
+                  src="https://cloud-1de12d.b-cdn.net/media/iW=380&amp;iH=506&amp;oX=0&amp;oY=90&amp;cW=380&amp;cH=325/71e4a01e735256014574d10ea412c984/D8E7C6AC-7DAA-407A-919B-9DB85A42CC2F-1-105-c.jpg"
+                  class="w-image c1spesu9 cgolm7f c16hxk3o c14u6nxx c72y85n cxwdgfw cxhuk6l cgn0wj1 c7gin8s c1bbfzox c1t3sa7q c1tgvid8 cmlf16w c1y4ums3 c1yh3zyx c1kl77cw cqhpuzm c1gmwv2t c1dni9nd"
+                  sizes="(min-width: 1280px) 50vw, 100vw"
+                  srcset="
+                    https://cloud-1de12d.b-cdn.net/media/iW=380&amp;iH=506&amp;oX=0&amp;oY=90&amp;cW=380&amp;cH=325/71e4a01e735256014574d10ea412c984/D8E7C6AC-7DAA-407A-919B-9DB85A42CC2F-1-105-c.jpg  384w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=380&amp;iH=506&amp;oX=0&amp;oY=90&amp;cW=380&amp;cH=325/71e4a01e735256014574d10ea412c984/D8E7C6AC-7DAA-407A-919B-9DB85A42CC2F-1-105-c.jpg  640w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=380&amp;iH=506&amp;oX=0&amp;oY=90&amp;cW=380&amp;cH=325/71e4a01e735256014574d10ea412c984/D8E7C6AC-7DAA-407A-919B-9DB85A42CC2F-1-105-c.jpg  750w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=380&amp;iH=506&amp;oX=0&amp;oY=90&amp;cW=380&amp;cH=325/71e4a01e735256014574d10ea412c984/D8E7C6AC-7DAA-407A-919B-9DB85A42CC2F-1-105-c.jpg  828w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=380&amp;iH=506&amp;oX=0&amp;oY=90&amp;cW=380&amp;cH=325/71e4a01e735256014574d10ea412c984/D8E7C6AC-7DAA-407A-919B-9DB85A42CC2F-1-105-c.jpg 1080w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=380&amp;iH=506&amp;oX=0&amp;oY=90&amp;cW=380&amp;cH=325/71e4a01e735256014574d10ea412c984/D8E7C6AC-7DAA-407A-919B-9DB85A42CC2F-1-105-c.jpg 1200w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=380&amp;iH=506&amp;oX=0&amp;oY=90&amp;cW=380&amp;cH=325/71e4a01e735256014574d10ea412c984/D8E7C6AC-7DAA-407A-919B-9DB85A42CC2F-1-105-c.jpg 1920w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=380&amp;iH=506&amp;oX=0&amp;oY=90&amp;cW=380&amp;cH=325/71e4a01e735256014574d10ea412c984/D8E7C6AC-7DAA-407A-919B-9DB85A42CC2F-1-105-c.jpg 2048w,
+                    https://cloud-1de12d.b-cdn.net/media/iW=380&amp;iH=506&amp;oX=0&amp;oY=90&amp;cW=380&amp;cH=325/71e4a01e735256014574d10ea412c984/D8E7C6AC-7DAA-407A-919B-9DB85A42CC2F-1-105-c.jpg 3840w
+                  "
+                  decoding="async"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div id="champion-1" class="w-element c13zl0f2">
+              <div class="w-element c20ofbt">
+                <h2 class="w-element c1p8cej6">
+                  The 17th ATF Championship 2025
+                </h2>
+              </div>
+              <div
+                class="w-element c1g4fpo0 cami5y c14b2vrf c1d83zv cbdgk63 c1ba3gyn c6mmpf0"
+              >
+                <div
+                  class="w-element c1t52glg cgn0wj1 c16hxk3o c1tqp04k cxwdgfw cxhuk6l chasws7 c1sdwnec c13najsn cjqp38u c1nz0u69 cai552s c18f413s c13zy1z0"
+                >
+                  <img
+                    alt=""
+                    src="https://cloud-1de12d.b-cdn.net/media/original/9ec56dd18b99fcae2115a87cb69f2e0c/2A58B592-E4F8-4201-A579-32908F101817.png"
+                    class="w-image c1spesu9 cgolm7f c1yh3zyx cnyfm53 cgn0wj1 c72y85n cxwdgfw cxhuk6l c1yiazps c1sdwnec c13najsn cjqp38u c1nz0u69 c1y4ums3 c1dni9nd c1kl77cw cqhpuzm"
+                    sizes="(min-width: 1280px) 50vw, 100vw"
+                    srcset="
+                      https://cloud-1de12d.b-cdn.net/media/original/9ec56dd18b99fcae2115a87cb69f2e0c/2A58B592-E4F8-4201-A579-32908F101817.png  384w,
+                      https://cloud-1de12d.b-cdn.net/media/original/9ec56dd18b99fcae2115a87cb69f2e0c/2A58B592-E4F8-4201-A579-32908F101817.png  640w,
+                      https://cloud-1de12d.b-cdn.net/media/original/9ec56dd18b99fcae2115a87cb69f2e0c/2A58B592-E4F8-4201-A579-32908F101817.png  750w,
+                      https://cloud-1de12d.b-cdn.net/media/original/9ec56dd18b99fcae2115a87cb69f2e0c/2A58B592-E4F8-4201-A579-32908F101817.png  828w,
+                      https://cloud-1de12d.b-cdn.net/media/original/9ec56dd18b99fcae2115a87cb69f2e0c/2A58B592-E4F8-4201-A579-32908F101817.png 1080w,
+                      https://cloud-1de12d.b-cdn.net/media/original/9ec56dd18b99fcae2115a87cb69f2e0c/2A58B592-E4F8-4201-A579-32908F101817.png 1200w,
+                      https://cloud-1de12d.b-cdn.net/media/original/9ec56dd18b99fcae2115a87cb69f2e0c/2A58B592-E4F8-4201-A579-32908F101817.png 1920w,
+                      https://cloud-1de12d.b-cdn.net/media/original/9ec56dd18b99fcae2115a87cb69f2e0c/2A58B592-E4F8-4201-A579-32908F101817.png 2048w,
+                      https://cloud-1de12d.b-cdn.net/media/original/9ec56dd18b99fcae2115a87cb69f2e0c/2A58B592-E4F8-4201-A579-32908F101817.png 3840w
+                    "
+                    decoding="async"
+                    loading="lazy"
+                  /><span
+                    class="w-element c1rq3u7j cgm9sf0 c1sdwnec c13najsn cjqp38u c1nz0u69 cgcm3a6 cgwhgtj c3b4rn6 c1ebdsgg ct2l2pn c1fykdyw coakq82"
+                    ><b class="w-element">MAXIMUZ SUBASTE</b>,
+                    <b class="w-element"
+                      >Bronze Medalist Team Events @ 17th ATF Championship
+                      2025</b
+                    >, <b class="w-element">Nha Trang City Vietnam</b></span
+                  >
+                </div>
+                <div
+                  class="w-element c1t52glg cgn0wj1 c16hxk3o c1tqp04k cxwdgfw cxhuk6l chasws7 c1sdwnec c13najsn cjqp38u c1nz0u69 cai552s c18f413s c13zy1z0"
+                >
+                  <img
+                    alt=""
+                    src="https://cloud-1de12d.b-cdn.net/media/original/0e7e9ffe2732ee42b10292f7ee90164d/EEEF608F-1DE4-4AFA-9AB8-F8C8BE0C9C64-4-5005-c.jpg"
+                    class="w-image c1spesu9 cgolm7f c1yh3zyx cnyfm53 cgn0wj1 c72y85n cxwdgfw cxhuk6l c1yiazps c1sdwnec c13najsn cjqp38u c1nz0u69 c1y4ums3 c1dni9nd c1kl77cw cqhpuzm"
+                    sizes="(min-width: 1280px) 50vw, 100vw"
+                    srcset="
+                      https://cloud-1de12d.b-cdn.net/media/original/0e7e9ffe2732ee42b10292f7ee90164d/EEEF608F-1DE4-4AFA-9AB8-F8C8BE0C9C64-4-5005-c.jpg  384w,
+                      https://cloud-1de12d.b-cdn.net/media/original/0e7e9ffe2732ee42b10292f7ee90164d/EEEF608F-1DE4-4AFA-9AB8-F8C8BE0C9C64-4-5005-c.jpg  640w,
+                      https://cloud-1de12d.b-cdn.net/media/original/0e7e9ffe2732ee42b10292f7ee90164d/EEEF608F-1DE4-4AFA-9AB8-F8C8BE0C9C64-4-5005-c.jpg  750w,
+                      https://cloud-1de12d.b-cdn.net/media/original/0e7e9ffe2732ee42b10292f7ee90164d/EEEF608F-1DE4-4AFA-9AB8-F8C8BE0C9C64-4-5005-c.jpg  828w,
+                      https://cloud-1de12d.b-cdn.net/media/original/0e7e9ffe2732ee42b10292f7ee90164d/EEEF608F-1DE4-4AFA-9AB8-F8C8BE0C9C64-4-5005-c.jpg 1080w,
+                      https://cloud-1de12d.b-cdn.net/media/original/0e7e9ffe2732ee42b10292f7ee90164d/EEEF608F-1DE4-4AFA-9AB8-F8C8BE0C9C64-4-5005-c.jpg 1200w,
+                      https://cloud-1de12d.b-cdn.net/media/original/0e7e9ffe2732ee42b10292f7ee90164d/EEEF608F-1DE4-4AFA-9AB8-F8C8BE0C9C64-4-5005-c.jpg 1920w,
+                      https://cloud-1de12d.b-cdn.net/media/original/0e7e9ffe2732ee42b10292f7ee90164d/EEEF608F-1DE4-4AFA-9AB8-F8C8BE0C9C64-4-5005-c.jpg 2048w,
+                      https://cloud-1de12d.b-cdn.net/media/original/0e7e9ffe2732ee42b10292f7ee90164d/EEEF608F-1DE4-4AFA-9AB8-F8C8BE0C9C64-4-5005-c.jpg 3840w
+                    "
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </div>
+                <div
+                  class="w-element c1t52glg cgn0wj1 c16hxk3o c1tqp04k cxwdgfw cxhuk6l chasws7 c1sdwnec c13najsn cjqp38u c1nz0u69 cai552s c18f413s c13zy1z0"
+                >
+                  <img
+                    alt=""
+                    src="https://cloud-1de12d.b-cdn.net/media/original/ef4b447c7a4dd2d4f48a4593966f70e3/4FD5C323-82FD-4668-B877-D9062063B8E5.jpg"
+                    class="w-image c1spesu9 cgolm7f c1yh3zyx cnyfm53 cgn0wj1 c72y85n cxwdgfw cxhuk6l c1yiazps c1sdwnec c13najsn cjqp38u c1nz0u69 c1y4ums3 c1dni9nd c1kl77cw cqhpuzm"
+                    sizes="(min-width: 1280px) 50vw, 100vw"
+                    srcset="
+                      https://cloud-1de12d.b-cdn.net/media/original/ef4b447c7a4dd2d4f48a4593966f70e3/4FD5C323-82FD-4668-B877-D9062063B8E5.jpg  384w,
+                      https://cloud-1de12d.b-cdn.net/media/original/ef4b447c7a4dd2d4f48a4593966f70e3/4FD5C323-82FD-4668-B877-D9062063B8E5.jpg  640w,
+                      https://cloud-1de12d.b-cdn.net/media/original/ef4b447c7a4dd2d4f48a4593966f70e3/4FD5C323-82FD-4668-B877-D9062063B8E5.jpg  750w,
+                      https://cloud-1de12d.b-cdn.net/media/original/ef4b447c7a4dd2d4f48a4593966f70e3/4FD5C323-82FD-4668-B877-D9062063B8E5.jpg  828w,
+                      https://cloud-1de12d.b-cdn.net/media/original/ef4b447c7a4dd2d4f48a4593966f70e3/4FD5C323-82FD-4668-B877-D9062063B8E5.jpg 1080w,
+                      https://cloud-1de12d.b-cdn.net/media/original/ef4b447c7a4dd2d4f48a4593966f70e3/4FD5C323-82FD-4668-B877-D9062063B8E5.jpg 1200w,
+                      https://cloud-1de12d.b-cdn.net/media/original/ef4b447c7a4dd2d4f48a4593966f70e3/4FD5C323-82FD-4668-B877-D9062063B8E5.jpg 1920w,
+                      https://cloud-1de12d.b-cdn.net/media/original/ef4b447c7a4dd2d4f48a4593966f70e3/4FD5C323-82FD-4668-B877-D9062063B8E5.jpg 2048w,
+                      https://cloud-1de12d.b-cdn.net/media/original/ef4b447c7a4dd2d4f48a4593966f70e3/4FD5C323-82FD-4668-B877-D9062063B8E5.jpg 3840w
+                    "
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="w-element c13zl0f2">
+              <div class="w-element c20ofbt">
+                <h2 class="w-element c1p8cej6">
+                  2025 R3 MPV Regional Poomsae Taekwondo Champ
+                </h2>
+              </div>
+              <div
+                class="w-element c1g4fpo0 c9z6e5w c12c1scn cami5y c37y94b c1h4u1zl ce98q5t cnyfm53 c1meftjj cpl6e15 c1l8cn2d"
+              >
+                <div class="w-element carousel">
+                  <div
+                    class="w-element c13fgldp c1jbnup9 cowxp2h c10wvwqh cquynsg chjgqxm c1dw77so c13c2fuh cugcg0u c1s9w7or cyv1wzr cz2w75y c-card"
+                  >
+                    <div class="w-element c1g4fpo0 c9z6e5w cd1ou0z cgn0wj1">
+                      <h3
+                        class="w-element crm14n8 c1k8m2i4 c1gswf1x ckwzz2g ccyzivu"
+                      >
+                        <b class="w-element">Jamella Salazar</b>
+                      </h3>
+                      <h2
+                        class="w-element crm14n8 c1k8m2i4 c1gswf1x c1xds4jz c191srj0"
+                      >
+                        silver
+                      </h2>
+                    </div>
+                  </div>
+                  <div
+                    class="w-element cggj59f cddzzoz cowxp2h c10wvwqh cquynsg chjgqxm c1dw77so c13c2fuh cugcg0u c1s9w7or c2gfbl2 c1ub3eva c-card"
+                  >
+                    <div class="w-element c1g4fpo0 c9z6e5w cd1ou0z cgn0wj1">
+                      <h3
+                        class="w-element crm14n8 c1k8m2i4 c1gswf1x ckwzz2g ccyzivu"
+                      >
+                        <b class="w-element">Tricia Belnas</b>
+                      </h3>
+                      <h2
+                        class="w-element crm14n8 c1k8m2i4 c1gswf1x c1xds4jz cl7nftx"
+                      >
+                        gold
+                      </h2>
+                    </div>
+                  </div>
+                  <div
+                    class="w-element c1qcgv2j cddzzoz cowxp2h c10wvwqh cquynsg chjgqxm c1dw77so c13c2fuh cugcg0u c1s9w7or c1sdg66b c16cagnw c-card"
+                  >
+                    <div class="w-element c1g4fpo0 c9z6e5w cd1ou0z cgn0wj1">
+                      <h3
+                        class="w-element crm14n8 c1k8m2i4 c1gswf1x ckwzz2g ccyzivu"
+                      >
+                        <b class="w-element">Khameeko Tomanda</b>
+                      </h3>
+                      <h2
+                        class="w-element crm14n8 c1k8m2i4 c1gswf1x c1xds4jz cl7nftx"
+                      >
+                        gold
+                      </h2>
+                    </div>
+                  </div>
+                  <div
+                    class="w-element c4lt85t c1bpxca6 cowxp2h c10wvwqh cquynsg chjgqxm c1dw77so c13c2fuh cugcg0u c1s9w7or c109650n c1sv7ezh c-card"
+                  >
+                    <div class="w-element c1g4fpo0 c9z6e5w cd1ou0z cgn0wj1">
+                      <h3
+                        class="w-element crm14n8 c1k8m2i4 c1gswf1x c4nkodc ccyzivu"
+                      >
+                        <b class="w-element">Ramon Tomanda</b>
+                      </h3>
+                      <h2
+                        class="w-element crm14n8 c1k8m2i4 c1gswf1x c1xds4jz c191srj0"
+                      >
+                        silver
+                      </h2>
+                    </div>
+                  </div>
+                  <div
+                    class="w-element chi3j8k c1ud1rxy cowxp2h c10wvwqh cquynsg chjgqxm c1dw77so c13c2fuh cugcg0u c1s9w7or c1vnivok c-card"
+                  >
+                    <div class="w-element c1g4fpo0 c9z6e5w cd1ou0z cgn0wj1">
+                      <h3
+                        class="w-element crm14n8 c1k8m2i4 c1gswf1x c4nkodc ccyzivu"
+                      >
+                        <b class="w-element">John Symon Punzaran &amp; </b>
+                      </h3>
+                      <h3
+                        class="w-element crm14n8 c1k8m2i4 c1gswf1x ckwzz2g ccyzivu"
+                      >
+                        <b class="w-element">Alliana Denise Eclarinal</b>
+                      </h3>
+                      <h2
+                        class="w-element crm14n8 c1k8m2i4 c1gswf1x c1xds4jz cl7nftx"
+                      >
+                        Gold Individual
+                      </h2>
+                    </div>
+                  </div>
+                  <div
+                    class="w-element c9gj4bo c1w9neoe cowxp2h c10wvwqh cquynsg chjgqxm c1dw77so c13c2fuh cugcg0u c1s9w7or ctch85x c-card"
+                  >
+                    <div class="w-element c1g4fpo0 c9z6e5w cd1ou0z cgn0wj1">
+                      <h3
+                        class="w-element crm14n8 c1k8m2i4 c1gswf1x c4nkodc ccyzivu"
+                      >
+                        <b class="w-element">Clark Kent Calatong</b>
+                      </h3>
+                      <h2
+                        class="w-element crm14n8 c1k8m2i4 c1gswf1x c1xds4jz cl7nftx"
+                      >
+                        Gold Freestyle
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-element c13zl0f2">
+              <div class="w-element c20ofbt">
+                <h2 class="w-element c1p8cej6">
+                  2025 National Interschool Taekwondo Championship
+                </h2>
+              </div>
+              <div
+                class="w-element c1g4fpo0 c9z6e5w c12c1scn cami5y c37y94b c1h4u1zl ce98q5t cnyfm53 c1meftjj cpl6e15 c1l8cn2d"
+              >
+                <div class="w-element carousel2">
+                  <div
+                    class="w-element c16x87ny c1jbnup9 cowxp2h c10wvwqh cquynsg chjgqxm c1dw77so c13c2fuh cugcg0u c1s9w7or cyv1wzr cz2w75y c-card2"
+                  ></div>
+                  <div
+                    class="w-element c3g3492 c1jbnup9 cowxp2h c10wvwqh cquynsg chjgqxm c1dw77so c13c2fuh cugcg0u c1s9w7or c1qcz22q c1ub3eva c-card"
+                  ></div>
+                  <div
+                    class="w-element c1ei5u9l c1jbnup9 cowxp2h c10wvwqh cquynsg chjgqxm c1dw77so c13c2fuh cugcg0u c1s9w7or cyv1wzr c16cagnw c-card"
+                  ></div>
+                  <div
+                    class="w-element c1rgqt2b c1jbnup9 cowxp2h c10wvwqh cquynsg chjgqxm c1dw77so c13c2fuh cugcg0u c1s9w7or cyv1wzr c1sv7ezh c-card"
+                  ></div>
+                  <div
+                    class="w-element c1xv7lkx c1jbnup9 cowxp2h c10wvwqh cquynsg chjgqxm c1dw77so c13c2fuh cugcg0u c1s9w7or cyv1wzr c-card"
+                  ></div>
+                  <div
+                    class="w-element cv85meb c1jbnup9 cowxp2h c10wvwqh cquynsg chjgqxm c1dw77so c13c2fuh cugcg0u c1s9w7or cyv1wzr c-card"
+                  >
+                    <div class="w-element c1g4fpo0 c9z6e5w cd1ou0z cgn0wj1">
+                      <h3
+                        class="w-element crm14n8 c1k8m2i4 c1gswf1x cl7nftx ccyzivu"
+                      >
+                        <b class="w-element">Clark Kent Calatong</b>
+                      </h3>
+                      <h2
+                        class="w-element crm14n8 c1k8m2i4 c1gswf1x c1xds4jz cl7nftx"
+                      >
+                        Gold Freestyle
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="events" class="w-box c1fug1v6 c1hf3o8a c1yq9r6w">
+          <div
+            class="w-box c1h4u1zl c37y94b c18ffmnj c1tp4776 cnyfm53 cc78ph4 c1g4fpo0 c9z6e5w cami5y c12c1scn"
+          >
+            <div class="w-element">
+              <div class="w-element c20ofbt">
+                <h2 class="w-element cco1x2a">Upcoming Competition</h2>
+              </div>
+            </div>
+            <div class="w-element">
+              <div class="w-element">
+                <div
+                  class="w-element c1g4fpo0 c1ogkrf9 cm2gvst c1offavs c1qsija cwxmyq1"
+                >
+                  <div class="w-element cgn0wj1">
+                    <div class="w-element">
+                      <img
+                        alt=""
+                        width="800"
+                        height="800"
+                        src="https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg"
+                        class="w-image cnyfm53"
+                        sizes="100vw"
+                        srcset="
+                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg   16w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg   32w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg   48w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg   64w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg   96w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  128w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  256w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  384w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  640w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  750w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  828w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg 1080w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg 1200w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg 1920w
+                        "
+                        decoding="async"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="w-element c1g4fpo0 cami5y c14b2vrf">
+                      <div
+                        id="countdown-1"
+                        class="w-element cami5y c20ofbt c37y94b c1h4u1zl countdown"
+                      >
+                        <ul class="w-element c1g4fpo0 cnwuh9t cami5y c14b2vrf">
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 days"></span
+                            ><span class="w-element">Days</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 hours"></span
+                            ><span class="w-element">Hours</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 minutes"></span
+                            ><span class="w-element">Minutes</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 seconds"></span
+                            ><span class="w-element">Seconds</span>
+                          </li>
+                        </ul>
+                        <h3 class="w-element headline"></h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-element cgn0wj1">
+                    <div class="w-element">
+                      <img
+                        alt=""
+                        width="800"
+                        height="800"
+                        src="https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg"
+                        class="w-image cnyfm53"
+                        sizes="100vw"
+                        srcset="
+                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg   16w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg   32w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg   48w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg   64w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg   96w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  128w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  256w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  384w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  640w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  750w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  828w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg 1080w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg 1200w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg 1920w
+                        "
+                        decoding="async"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="w-element">
+                      <div
+                        id="countdown-2"
+                        class="w-element cami5y c20ofbt c37y94b c1h4u1zl c19hlkr2 c1oadoov countdown"
+                      >
+                        <ul class="w-element c1g4fpo0 cnwuh9t cami5y c14b2vrf">
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 days"></span
+                            ><span class="w-element">Days</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 hours"></span
+                            ><span class="w-element">Hours</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 minutes"></span
+                            ><span class="w-element">Minutes</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 seconds"></span
+                            ><span class="w-element">Seconds</span>
+                          </li>
+                        </ul>
+                        <h3 class="w-element headline"></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-element c1g4fpo0 c1ogkrf9 cm2gvst c1offavs c1qsija cwxmyq1"
+                >
+                  <div class="w-element cgn0wj1">
+                    <div class="w-element">
+                      <img
+                        alt=""
+                        width="800"
+                        height="800"
+                        src="https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg"
+                        class="w-image"
+                        sizes="100vw"
+                        srcset="
+                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg   16w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg   32w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg   48w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg   64w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg   96w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  128w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  256w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  384w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  640w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  750w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  828w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg 1080w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg 1200w,
+                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg 1920w
+                        "
+                        decoding="async"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="w-element">
+                      <div
+                        id="countdown-3"
+                        class="w-element cami5y c20ofbt c37y94b c1h4u1zl countdown"
+                      >
+                        <ul class="w-element c1g4fpo0 cnwuh9t cami5y c14b2vrf">
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 days"></span
+                            ><span class="w-element">Days</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 hours"></span
+                            ><span class="w-element">Hours</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 minutes"></span
+                            ><span class="w-element">Minutes</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 seconds"></span
+                            ><span class="w-element">Seconds</span>
+                          </li>
+                        </ul>
+                        <h3 class="w-element headline"></h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-element cgn0wj1">
+                    <div class="w-element">
+                      <img
+                        alt=""
+                        width="800"
+                        height="800"
+                        src="https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg"
+                        class="w-image"
+                        sizes="100vw"
+                        srcset="
+                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg   16w,
+                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg   32w,
+                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg   48w,
+                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg   64w,
+                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg   96w,
+                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  128w,
+                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  256w,
+                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  384w,
+                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  640w,
+                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  750w,
+                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  828w,
+                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg 1080w,
+                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg 1200w,
+                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg 1920w
+                        "
+                        decoding="async"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="w-element">
+                      <div
+                        id="countdown-4"
+                        class="w-element cami5y c20ofbt c37y94b c1h4u1zl c19hlkr2 c1oadoov countdown"
+                      >
+                        <ul class="w-element c1g4fpo0 cnwuh9t cami5y c14b2vrf">
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 days"></span
+                            ><span class="w-element">Days</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 hours"></span
+                            ><span class="w-element">Hours</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 minutes"></span
+                            ><span class="w-element">Minutes</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 seconds"></span
+                            ><span class="w-element">Seconds</span>
+                          </li>
+                        </ul>
+                        <h3 class="w-element headline"></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="team" class="w-box c1fug1v6 c1hf3o8a c1yq9r6w c1kh4ri6">
+          <div
+            class="w-box c1h4u1zl c37y94b c18ffmnj c1tp4776 cnyfm53 cc78ph4 c1g4fpo0 c9z6e5w cami5y c12c1scn"
+          >
+            <div class="w-element">
+              <h2 class="w-element cco1x2a">Our Awesome Team</h2>
+            </div>
+            <div
+              class="w-element c1g4fpo0 c6ffdiq c7hjct6 cbljs81 cn97074 ccityyr"
+            >
+              <div
+                class="w-element c20ofbt cni23tv c1ol1vcj ccnc6wf cop38ja c1o7uuju"
+              >
+                <div
+                  class="w-element c1g4fpo0 cami5y c14b2vrf cq0e3d3 c1dyzn2l c1m8rso3 c1jbnup9 cowxp2h c10wvwqh cquynsg chjgqxm c1rw43cx cswzupm"
+                ></div>
+                <h3 class="w-element c1yd10hd cazwrok">Pablo Calatong Jr.</h3>
+                <p class="w-element cazwrok">Head Instructor PHILKO</p>
+              </div>
+              <div
+                class="w-element c20ofbt cni23tv c1ol1vcj ccnc6wf cop38ja c1o7uuju"
+              >
+                <div
+                  class="w-element c1g4fpo0 cami5y c14b2vrf cq0e3d3 c1dyzn2l c13o83t9 cshb05t cowxp2h c10wvwqh cquynsg chjgqxm c1njn3py cswzupm"
+                ></div>
+                <h3 class="w-element c1yd10hd cazwrok">
+                  Charmaigne Gay Calatong
+                </h3>
+                <p class="w-element cazwrok">
+                  Coach / Deped instructor/ Official
+                </p>
+              </div>
+              <div
+                class="w-element c20ofbt cni23tv c1ol1vcj ccnc6wf cop38ja c1o7uuju"
+              >
+                <div
+                  class="w-element c1g4fpo0 cami5y c14b2vrf cq0e3d3 c1dyzn2l chui8ku c16zkhm7 cowxp2h c10wvwqh cquynsg chjgqxm c1ln6u5c cswzupm"
+                ></div>
+                <h3 class="w-element c1yd10hd cazwrok">Amiel Baluyot</h3>
+                <p class="w-element cazwrok">Coach / Trainer</p>
+              </div>
+              <div
+                class="w-element c20ofbt cni23tv c1ol1vcj ccnc6wf cop38ja c1o7uuju"
+              >
+                <div
+                  class="w-element c1g4fpo0 cami5y c14b2vrf cq0e3d3 c1dyzn2l cormkvr c1jbnup9 cowxp2h c10wvwqh cquynsg chjgqxm c1rw43cx cswzupm c11vsbkd"
+                ></div>
+                <h3 class="w-element c1yd10hd cazwrok">Jimmy Binoya</h3>
+                <p class="w-element cazwrok">
+                  Coach Trainor Ayonib &amp; Astorian School
+                </p>
+              </div>
+              <div
+                class="w-element c20ofbt cni23tv c1ol1vcj ccnc6wf cop38ja c1o7uuju"
+              >
+                <div
+                  class="w-element c1g4fpo0 cami5y c14b2vrf cq0e3d3 c1dyzn2l c100czhv cytsk5 cowxp2h c10wvwqh cquynsg chjgqxm c1ybr2ys cswzupm"
+                ></div>
+                <h3 class="w-element c1yd10hd cazwrok">Deo Gratias Pozon</h3>
+                <p class="w-element cazwrok">Instructor, Pozon Elite / SPS</p>
+              </div>
+            </div>
+            <div class="w-element c7ptt2b">
+              <div class="w-element">
+                <button
+                  class="w-element cct65pc csbryf9 c14froc1 c8wadw6 cg5ig8x c1wsu737 cpso45q c1rfirbm c1f6dlte c12kgrhd cwwcrtu c1tomjjy crlsape cazwrok cfzxpw1 c19z2pq c1qefx17 c96rloa c19pg8rr csjsdgd c1t3sa7q c1tgvid8 cmlf16w c1h21fgg c1gswf1x c1xds4jz button--primary"
+                >
+                  See all team members
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div style="display: contents">
+        <div style="display: contents">
+          <footer id="footer" class="w-box">
+            <div
+              class="w-box c1h4u1zl c37y94b cnwuh9t c24hq8y cnyfm53 cc78ph4 c1g4fpo0 c9z6e5w cami5y c12c1scn"
+            >
+              <div
+                class="w-element c1g4fpo0 cami5y ch4e87b c5g2hc8 csfack9 c1i3fm9s c7uisk5 c263agt cwxmyq1 c1krchm4"
+              >
+                <div class="w-element c1g4fpo0 cd1x0l6 cmscda3">
+                  <div class="w-element">
+                    <img
+                      alt=""
+                      width="480"
+                      height="480"
+                      src="/assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg"
+                      class="w-image c19rf484 c3splky cgzxchj c1wyb130 c1y8adv9"
+                      sizes="100vw"
+                      srcset="
+                        /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg   16w,
+                        /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg   32w,
+                        /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg   48w,
+                        /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg   64w,
+                        /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg   96w,
+                        /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg  128w,
+                        /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg  256w,
+                        /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg  384w,
+                        /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg  640w,
+                        /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg  750w,
+                        /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg  828w,
+                        /assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg 1080w
+                      "
+                      decoding="async"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div class="w-element">
+                  <div class="w-element c1gswf1x c1g4fpo0 c9z6e5w">
+                    <h3 class="w-element c1yd10hd chwgwgx">Philko Taekwondo</h3>
+                    <p class="w-element">
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-element c1c6smwj"
+                      >
+                        <path
+                          d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 448c-110.532 0-200-89.451-200-200 0-110.531 89.451-200 200-200 110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200zm107.351-101.064c-9.614 9.712-45.53 41.396-104.065 41.396-82.43 0-140.484-61.425-140.484-141.567 0-79.152 60.275-139.401 139.762-139.401 55.531 0 88.738 26.62 97.593 34.779a11.965 11.965 0 0 1 1.936 15.322l-18.155 28.113c-3.841 5.95-11.966 7.282-17.499 2.921-8.595-6.776-31.814-22.538-61.708-22.538-48.303 0-77.916 35.33-77.916 80.082 0 41.589 26.888 83.692 78.277 83.692 32.657 0 56.843-19.039 65.726-27.225 5.27-4.857 13.596-4.039 17.82 1.738l19.865 27.17a11.947 11.947 0 0 1-1.152 15.518z"
+                          class="w-element"
+                        ></path></svg
+                      ><span class="w-element cq9fnq8">
+                        Philko Taekwondo Training Center</span
+                      >
+                    </p>
+                    <p class="w-element cq9fnq8">All rights reserved</p>
+                  </div>
+                  <div
+                    class="w-element c1gswf1x c1g4fpo0 c9z6e5w cu40w12 c1gqmlyh"
+                  >
+                    <a class="w-element c1g4fpo0 c1jfz12q"
+                      ><div class="w-element csf9ypu c1905jw7">
+                        <div class="w-html-embed">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            id="nc_icon"
+                            xml:space="preserve"
+                            viewBox="0 0 24 24"
+                          >
+                            <g fill="currentColor" class="nc-icon-wrapper">
+                              <path
+                                d="M20 1H4a4 4 0 0 0-4 4v3h7V5h10v3h7V5a4 4 0 0 0-4-4z"
+                                data-color="color-2"
+                              />
+                              <path
+                                d="m22.759 17.35-6-7A.999.999 0 0 0 16 10H8a.999.999 0 0 0-.759.35l-6 7A.994.994 0 0 0 1 18v5a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1v-5a.994.994 0 0 0-.241-.65zM12 20a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                              />
+                            </g>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="w-element">+63 991-165-2389</span></a
+                    ><a class="w-element c1g4fpo0"
+                      ><div class="w-element csf9ypu c1905jw7"></div>
+                      <span class="w-element">+63 968-470-1340</span></a
+                    ><a class="w-element c1g4fpo0"
+                      ><div class="w-element csf9ypu c1905jw7"></div>
+                      <span class="w-element">+63 966-822-6459</span></a
+                    ><a class="w-element c1g4fpo0"
+                      ><div class="w-element c1905jw7 ct1jwry">
+                        <div class="w-html-embed">
+                          <svg
+                            class="w-6 h-6 text-gray-800 dark:text-white"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="100%"
+                            height="100%"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M2.038 5.61A2.01 2.01 0 0 0 2 6v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-.12-.01-.238-.03-.352l-.866.65-7.89 6.032a2 2 0 0 1-2.429 0L2.884 6.288l-.846-.677Z"
+                            ></path>
+                            <path
+                              d="M20.677 4.117A1.996 1.996 0 0 0 20 4H4c-.225 0-.44.037-.642.105l.758.607L12 10.742 19.9 4.7l.777-.583Z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="w-element">philkotkd@gmail.com</span></a
+                    >
+                  </div>
+                  <div
+                    class="w-element c1gswf1x ch0frra c1g4fpo0 c6ffdiq c7hjct6 cu40w12 c1gqmlyh citksws"
+                  >
+                    <div
+                      class="w-element c1gswf1x cckbws cami5y c6x01l4 c5czto csaa28p"
+                    >
+                      <a
+                        href="https://www.facebook.com/philkotkd"
+                        class="w-element"
+                        ><span
+                          class="w-element c3bn1s4 ctykj1j cshygaw c1j45z3b ccg45eu c19v6tmp c1ujyq4d civ8wf5 cckbws cami5y c14b2vrf c1iyqwgw c1c6smwj ce9kfo9 c1r7w2c8 c7hwocb c8xy86l c1b1zpb6 c1a61uuk c132pgfn c1lbltyi cll7sdh"
+                          ><div class="w-element cdvu8ym c193mkx3">
+                            <div class="w-html-embed">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                id="nc_icon"
+                                xml:space="preserve"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  fill="currentColor"
+                                  d="M9.032 23 9 13H5V9h4V6.5C9 2.789 11.298 1 14.61 1c1.585 0 2.948.118 3.345.17v3.88H15.66c-1.8 0-2.15.856-2.15 2.112V9h5.241l-2 4h-3.24v10H9.032z"
+                                  class="nc-icon-wrapper"
+                                />
+                              </svg>
+                            </div></div></span
+                      ></a>
+                    </div>
+                    <div
+                      class="w-element c1gswf1x cckbws cami5y c6x01l4 c5czto csaa28p"
+                    >
+                      <a
+                        href="https://www.tiktok.com/@jaguars182"
+                        class="w-element"
+                        ><span
+                          class="w-element c3bn1s4 ctykj1j cshygaw c1j45z3b ccg45eu c19v6tmp c1ujyq4d civ8wf5 cckbws cami5y c14b2vrf c1c6smwj ce9kfo9 c1r7w2c8 c7hwocb c8xy86l c1b1zpb6 c1a61uuk c132pgfn c1lbltyi cll7sdh"
+                          ><div class="w-element cdvu8ym c193mkx3 cckbws">
+                            <div class="w-html-embed">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                id="fa_icon"
+                                viewBox="0 0 512 512"
+                              >
+                                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                  fill="currentColor"
+                                  path=""
+                                  d="M448 209.91a210.06 210.06 0 0 1-122.77-39.25v178.72A162.55 162.55 0 1 1 185 188.31v89.89a74.62 74.62 0 1 0 52.23 71.18V0h88a121.18 121.18 0 0 0 1.86 22.17A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14Z"
+                                ></path>
+                              </svg>
+                            </div></div></span
+                      ></a>
+                    </div>
+                    <div
+                      class="w-element c1gswf1x cckbws cami5y c6x01l4 c5czto csaa28p"
+                    >
+                      <a class="w-element"
+                        ><span
+                          class="w-element c3bn1s4 ctykj1j cshygaw c1j45z3b ccg45eu c19v6tmp c1ujyq4d civ8wf5 cckbws cami5y c14b2vrf c1iyqwgw c1c6smwj ce9kfo9 c1r7w2c8 c7hwocb c8xy86l c1b1zpb6 c1a61uuk c132pgfn c1lbltyi cll7sdh"
+                          ><div class="w-element ct1jwry cvb056m">
+                            <div class="w-html-embed">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                id="nc_icon"
+                                xml:space="preserve"
+                                viewBox="0 0 24 24"
+                              >
+                                <g fill="currentColor" class="nc-icon-wrapper">
+                                  <path
+                                    d="M12 2.162c3.204 0 3.584.012 4.849.07 1.366.062 2.633.336 3.608 1.311.975.975 1.249 2.242 1.311 3.608.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.336 2.633-1.311 3.608-.975.975-2.242 1.249-3.608 1.311-1.265.058-1.645.07-4.849.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.336-3.608-1.311-.975-.975-1.249-2.242-1.311-3.608-.058-1.265-.07-1.645-.07-4.849s.012-3.584.07-4.849c.062-1.366.336-2.633 1.311-3.608.975-.975 2.242-1.249 3.608-1.311 1.265-.058 1.645-.07 4.849-.07M12 0C8.741 0 8.332.014 7.052.072c-1.95.089-3.663.567-5.038 1.942C.639 3.389.161 5.102.072 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.089 1.95.567 3.663 1.942 5.038 1.375 1.375 3.088 1.853 5.038 1.942C8.332 23.986 8.741 24 12 24s3.668-.014 4.948-.072c1.95-.089 3.663-.567 5.038-1.942 1.375-1.375 1.853-3.088 1.942-5.038.058-1.28.072-1.689.072-4.948s-.014-3.668-.072-4.948c-.089-1.95-.567-3.663-1.942-5.038C20.611.639 18.898.161 16.948.072 15.668.014 15.259 0 12 0z"
+                                  />
+                                  <path
+                                    d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"
+                                    data-color="color-2"
+                                  />
+                                  <circle
+                                    cx="18.406"
+                                    cy="5.594"
+                                    r="1.44"
+                                    data-color="color-2"
+                                  />
+                                </g>
+                              </svg>
+                            </div></div></span
+                      ></a>
+                    </div>
+                    <div
+                      class="w-element c1gswf1x cckbws cami5y c6x01l4 c5czto csaa28p"
+                    >
+                      <a class="w-element"
+                        ><span
+                          class="w-element c3bn1s4 ctykj1j cshygaw c1j45z3b ccg45eu c19v6tmp c1ujyq4d civ8wf5 cckbws cami5y c14b2vrf c1iyqwgw c1c6smwj ce9kfo9 c1r7w2c8 c7hwocb c8xy86l c1b1zpb6 c1a61uuk c132pgfn c1lbltyi cll7sdh"
+                          ><div class="w-element ct1jwry cvb056m">
+                            <div class="w-html-embed">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                id="nc_icon"
+                                xml:space="preserve"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  fill="currentColor"
+                                  d="M23.8 7.2s-.2-1.7-1-2.4c-.9-1-1.9-1-2.4-1-3.4-.2-8.4-.2-8.4-.2s-5 0-8.4.2c-.5.1-1.5.1-2.4 1-.7.7-1 2.4-1 2.4S0 9.1 0 11.1v1.8c0 1.9.2 3.9.2 3.9s.2 1.7 1 2.4c.9 1 2.1.9 2.6 1 1.9.2 8.2.2 8.2.2s5 0 8.4-.3c.5-.1 1.5-.1 2.4-1 .7-.7 1-2.4 1-2.4s.2-1.9.2-3.9V11c0-1.9-.2-3.8-.2-3.8zM9.5 15.1V8.4l6.5 3.4-6.5 3.3z"
+                                  class="nc-icon-wrapper"
+                                />
+                              </svg>
+                            </div></div></span
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-element">
+                  <div class="w-element c1gswf1x">
+                    <h3 class="w-element chwgwgx c2prnr5">Affiliated with</h3>
+                  </div>
+                  <div
+                    class="w-element c1g4fpo0 cami5y c14b2vrf cgviwlw c1i3x1tl cjo004h cl0tgci"
+                  >
+                    <div
+                      class="w-element c1v9ltsz c1g4fpo0 c9z6e5w c1n60etq chfia8c c1qbkrjf c1jo91vf c18z3pjb clfc8xc c1nsc57y ccg45eu c19v6tmp c1ujyq4d civ8wf5 c162q5fs"
+                    >
+                      <img
+                        alt=""
+                        src="https://cloud-1de12d.b-cdn.net/media/original/6b1e958cc3ff3b0e92ed586df994d9ba/world-taekwondo-logo-png-seeklogo-343297.png"
+                        class="w-image cnyfm53"
+                        sizes="(min-width: 1280px) 50vw, 100vw"
+                        srcset="
+                          https://cloud-1de12d.b-cdn.net/media/original/6b1e958cc3ff3b0e92ed586df994d9ba/world-taekwondo-logo-png-seeklogo-343297.png  384w,
+                          https://cloud-1de12d.b-cdn.net/media/original/6b1e958cc3ff3b0e92ed586df994d9ba/world-taekwondo-logo-png-seeklogo-343297.png  640w,
+                          https://cloud-1de12d.b-cdn.net/media/original/6b1e958cc3ff3b0e92ed586df994d9ba/world-taekwondo-logo-png-seeklogo-343297.png  750w,
+                          https://cloud-1de12d.b-cdn.net/media/original/6b1e958cc3ff3b0e92ed586df994d9ba/world-taekwondo-logo-png-seeklogo-343297.png  828w,
+                          https://cloud-1de12d.b-cdn.net/media/original/6b1e958cc3ff3b0e92ed586df994d9ba/world-taekwondo-logo-png-seeklogo-343297.png 1080w,
+                          https://cloud-1de12d.b-cdn.net/media/original/6b1e958cc3ff3b0e92ed586df994d9ba/world-taekwondo-logo-png-seeklogo-343297.png 1200w,
+                          https://cloud-1de12d.b-cdn.net/media/original/6b1e958cc3ff3b0e92ed586df994d9ba/world-taekwondo-logo-png-seeklogo-343297.png 1920w,
+                          https://cloud-1de12d.b-cdn.net/media/original/6b1e958cc3ff3b0e92ed586df994d9ba/world-taekwondo-logo-png-seeklogo-343297.png 2048w,
+                          https://cloud-1de12d.b-cdn.net/media/original/6b1e958cc3ff3b0e92ed586df994d9ba/world-taekwondo-logo-png-seeklogo-343297.png 3840w
+                        "
+                        decoding="async"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div
+                      class="w-element c1v9ltsz c1g4fpo0 c9z6e5w c1n60etq chfia8c c1qbkrjf c1jo91vf c18z3pjb clfc8xc c1nsc57y ccg45eu c19v6tmp c1ujyq4d civ8wf5 c162q5fs"
+                    >
+                      <img
+                        alt=""
+                        src="https://cloud-1de12d.b-cdn.net/media/original/45099268163b0843d3dc6115c040fe17/Kukkiwon.png"
+                        class="w-image cnyfm53"
+                        sizes="(min-width: 1280px) 50vw, 100vw"
+                        srcset="
+                          https://cloud-1de12d.b-cdn.net/media/original/45099268163b0843d3dc6115c040fe17/Kukkiwon.png  384w,
+                          https://cloud-1de12d.b-cdn.net/media/original/45099268163b0843d3dc6115c040fe17/Kukkiwon.png  640w,
+                          https://cloud-1de12d.b-cdn.net/media/original/45099268163b0843d3dc6115c040fe17/Kukkiwon.png  750w,
+                          https://cloud-1de12d.b-cdn.net/media/original/45099268163b0843d3dc6115c040fe17/Kukkiwon.png  828w,
+                          https://cloud-1de12d.b-cdn.net/media/original/45099268163b0843d3dc6115c040fe17/Kukkiwon.png 1080w,
+                          https://cloud-1de12d.b-cdn.net/media/original/45099268163b0843d3dc6115c040fe17/Kukkiwon.png 1200w,
+                          https://cloud-1de12d.b-cdn.net/media/original/45099268163b0843d3dc6115c040fe17/Kukkiwon.png 1920w,
+                          https://cloud-1de12d.b-cdn.net/media/original/45099268163b0843d3dc6115c040fe17/Kukkiwon.png 2048w,
+                          https://cloud-1de12d.b-cdn.net/media/original/45099268163b0843d3dc6115c040fe17/Kukkiwon.png 3840w
+                        "
+                        decoding="async"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div
+                      class="w-element c1v9ltsz c1g4fpo0 c9z6e5w c1n60etq chfia8c c1qbkrjf c1ccg03i c1oto7p6 clfc8xc c1nsc57y ccg45eu c19v6tmp c1ujyq4d civ8wf5 c162q5fs"
+                    >
+                      <img
+                        alt=""
+                        src="https://cloud-1de12d.b-cdn.net/media/original/501dffa022a4b5a95b6517aee89d4f23/download-3.jpg"
+                        class="w-image cnyfm53"
+                        sizes="(min-width: 1280px) 50vw, 100vw"
+                        srcset="
+                          https://cloud-1de12d.b-cdn.net/media/original/501dffa022a4b5a95b6517aee89d4f23/download-3.jpg  384w,
+                          https://cloud-1de12d.b-cdn.net/media/original/501dffa022a4b5a95b6517aee89d4f23/download-3.jpg  640w,
+                          https://cloud-1de12d.b-cdn.net/media/original/501dffa022a4b5a95b6517aee89d4f23/download-3.jpg  750w,
+                          https://cloud-1de12d.b-cdn.net/media/original/501dffa022a4b5a95b6517aee89d4f23/download-3.jpg  828w,
+                          https://cloud-1de12d.b-cdn.net/media/original/501dffa022a4b5a95b6517aee89d4f23/download-3.jpg 1080w,
+                          https://cloud-1de12d.b-cdn.net/media/original/501dffa022a4b5a95b6517aee89d4f23/download-3.jpg 1200w,
+                          https://cloud-1de12d.b-cdn.net/media/original/501dffa022a4b5a95b6517aee89d4f23/download-3.jpg 1920w,
+                          https://cloud-1de12d.b-cdn.net/media/original/501dffa022a4b5a95b6517aee89d4f23/download-3.jpg 2048w,
+                          https://cloud-1de12d.b-cdn.net/media/original/501dffa022a4b5a95b6517aee89d4f23/download-3.jpg 3840w
+                        "
+                        decoding="async"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div
+                      class="w-element c1v9ltsz c1g4fpo0 c9z6e5w c1n60etq chfia8c c1qbkrjf c1jo91vf c18z3pjb clfc8xc c1nsc57y ccg45eu c19v6tmp c1ujyq4d civ8wf5 c162q5fs"
+                    >
+                      <img
+                        alt=""
+                        src="https://cloud-1de12d.b-cdn.net/media/original/8fdd9e67b4c52bfc4689d373f0c169eb/APPROVED-BRAND-LOGO.jpg"
+                        class="w-image cnyfm53"
+                        sizes="(min-width: 1280px) 50vw, 100vw"
+                        srcset="
+                          https://cloud-1de12d.b-cdn.net/media/original/8fdd9e67b4c52bfc4689d373f0c169eb/APPROVED-BRAND-LOGO.jpg  384w,
+                          https://cloud-1de12d.b-cdn.net/media/original/8fdd9e67b4c52bfc4689d373f0c169eb/APPROVED-BRAND-LOGO.jpg  640w,
+                          https://cloud-1de12d.b-cdn.net/media/original/8fdd9e67b4c52bfc4689d373f0c169eb/APPROVED-BRAND-LOGO.jpg  750w,
+                          https://cloud-1de12d.b-cdn.net/media/original/8fdd9e67b4c52bfc4689d373f0c169eb/APPROVED-BRAND-LOGO.jpg  828w,
+                          https://cloud-1de12d.b-cdn.net/media/original/8fdd9e67b4c52bfc4689d373f0c169eb/APPROVED-BRAND-LOGO.jpg 1080w,
+                          https://cloud-1de12d.b-cdn.net/media/original/8fdd9e67b4c52bfc4689d373f0c169eb/APPROVED-BRAND-LOGO.jpg 1200w,
+                          https://cloud-1de12d.b-cdn.net/media/original/8fdd9e67b4c52bfc4689d373f0c169eb/APPROVED-BRAND-LOGO.jpg 1920w,
+                          https://cloud-1de12d.b-cdn.net/media/original/8fdd9e67b4c52bfc4689d373f0c169eb/APPROVED-BRAND-LOGO.jpg 2048w,
+                          https://cloud-1de12d.b-cdn.net/media/original/8fdd9e67b4c52bfc4689d373f0c169eb/APPROVED-BRAND-LOGO.jpg 3840w
+                        "
+                        decoding="async"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script id="vike_pageContext" type="application/json">
+      {
+        "_urlRewrite": null,
+        "pageId": "/pages/index",
+        "routeParams": {},
+        "data": {
+          "url": "https://url/",
+          "system": { "params": {}, "search": {}, "origin": "https://url" },
+          "resources": {},
+          "pageMeta": {
+            "title": "Home",
+            "description": "!undefined",
+            "excludePageFromSearch": "!undefined",
+            "language": "!undefined",
+            "socialImageAssetName": "!undefined",
+            "socialImageUrl": "!undefined",
+            "status": "!undefined",
+            "redirect": "!undefined",
+            "custom": []
+          }
+        }
+      }
+    </script>
+    <script id="vike_globalContext" type="application/json">
+      {}
+    </script>
+    <script
+      src="/assets/entries/entry-server-routing.B-GT0J4e.js"
+      type="module"
+      async
+    ></script>
+    <link
+      rel="modulepreload"
+      href="/assets/entries/pages_index.C_XODaS8.js"
+      as="script"
+      type="text/javascript"
+    /><link
+      rel="modulepreload"
+      href="/assets/chunks/chunk-gX4dvCzY.js"
+      as="script"
+      type="text/javascript"
+    /><link
+      rel="modulepreload"
+      href="/assets/chunks/chunk-ckwbz45p.js"
+      as="script"
+      type="text/javascript"
+    />
+  </body>
+</html>
