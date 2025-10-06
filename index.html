@@ -2,13 +2,13 @@
 <html
   lang="en"
   data-ws-project="200f64cb-7829-401b-b6cd-b63ce28dd35b"
-  data-ws-last-published="2025-10-06T07:23:21.255Z"
+  data-ws-last-published="2025-10-06T09:18:51.599Z"
 >
   <head>
     <link
       rel="stylesheet"
       type="text/css"
-      href="/assets/static/app_generated_index-6937cd5a.wDAFX3Zi.css"
+      href="/assets/static/app_generated_index-6937cd5a.BFR_xlW4.css"
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -795,9 +795,13 @@
       animation-play-state: paused;
     } */
           }
-
           /* Pause any child animations on hover */
           .carousel-events-1:hover .event-group-1 {
+            animation-play-state: paused;
+          }
+          /* Touch/Tap Toggle Pause (NEW SOLUTION) */
+          /* When the 'is-paused' class is added by JavaScript, pause the animation */
+          .carousel-events-1.is-paused .event-group-1 {
             animation-play-state: paused;
           }
 
@@ -830,6 +834,19 @@
             /* background: var(--foreground-muted); */
           }
         </style>
+        <script type="module">
+          const carousel = document.querySelector(".carousel-events-1");
+
+          if (carousel) {
+            // 2. Attach the click listener for tap-to-toggle functionality
+            carousel.addEventListener("click", () => {
+              // Toggles the 'is-paused' class:
+              // - Adds it on the first tap (animation pauses).
+              // - Removes it on the second tap (animation resumes).
+              carousel.classList.toggle("is-paused");
+            });
+          }
+        </script>
       </div>
       <div style="display: contents">
         <div style="display: contents">
@@ -3210,7 +3227,7 @@
                   class="w-element c1g4fpo0 cu7ezdi c132mewz c11xqvu3 csaa28p c322uvt cjx30c9 event-group-1"
                 >
                   <div
-                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1cmk8ys c154j0mp c1m0srx4 ccqmsqo cuxwgiu"
+                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1iag713 cytrw08 c1m0srx4 ccqmsqo cuxwgiu"
                   >
                     <img
                       alt=""
@@ -3244,36 +3261,36 @@
                       >
                         <ul class="w-element c1g4fpo0 cnwuh9t cami5y c14b2vrf">
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 days"></span
                             ><span class="w-element">Days</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 hours"></span
                             ><span class="w-element">Hours</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 minutes"></span
                             ><span class="w-element">Minutes</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 seconds"></span
                             ><span class="w-element">Seconds</span>
                           </li>
                         </ul>
-                        <h3 class="w-element headline"></h3>
+                        <h3 class="w-element c1kmebbh headline"></h3>
                       </div>
                     </div>
                   </div>
                   <div
-                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1cmk8ys cb53gre c1m0srx4 ccqmsqo cuxwgiu c1jess14"
+                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1iag713 c1w1osl9 c1m0srx4 ccqmsqo cuxwgiu c1jess14"
                   >
                     <img
                       alt=""
@@ -3309,36 +3326,36 @@
                       >
                         <ul class="w-element c1g4fpo0 cnwuh9t cami5y c14b2vrf">
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 days"></span
                             ><span class="w-element">Days</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 hours"></span
                             ><span class="w-element">Hours</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 minutes"></span
                             ><span class="w-element">Minutes</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 seconds"></span
                             ><span class="w-element">Seconds</span>
                           </li>
                         </ul>
-                        <h3 class="w-element headline"></h3>
+                        <h3 class="w-element c1kmebbh headline"></h3>
                       </div>
                     </div>
                   </div>
                   <div
-                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1cmk8ys c154j0mp c1m0srx4 ccqmsqo cuxwgiu"
+                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1iag713 cytrw08 c1m0srx4 ccqmsqo cuxwgiu"
                   >
                     <img
                       alt=""
@@ -3374,25 +3391,25 @@
                           class="w-element c1g4fpo0 cnwuh9t cami5y c14b2vrf counter"
                         >
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 days"></span
                             ><span class="w-element">Days</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 hours"></span
                             ><span class="w-element">Hours</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 minutes"></span
                             ><span class="w-element">Minutes</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 seconds"></span
                             ><span class="w-element">Seconds</span>
@@ -3403,7 +3420,7 @@
                     </div>
                   </div>
                   <div
-                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1cmk8ys c154j0mp c1m0srx4 ccqmsqo cuxwgiu"
+                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1iag713 cytrw08 c1m0srx4 ccqmsqo cuxwgiu"
                   >
                     <img
                       alt=""
@@ -3436,31 +3453,31 @@
                       >
                         <ul class="w-element c1g4fpo0 cnwuh9t cami5y c14b2vrf">
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 days"></span
                             ><span class="w-element">Days</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 hours"></span
                             ><span class="w-element">Hours</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 minutes"></span
                             ><span class="w-element">Minutes</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 seconds"></span
                             ><span class="w-element">Seconds</span>
                           </li>
                         </ul>
-                        <h3 class="w-element headline"></h3>
+                        <h3 class="w-element c1kmebbh headline"></h3>
                       </div>
                     </div>
                   </div>
@@ -3469,7 +3486,7 @@
                   class="w-element c1g4fpo0 cu7ezdi c132mewz c11xqvu3 csaa28p c322uvt cjx30c9 event-group-1"
                 >
                   <div
-                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1cmk8ys c154j0mp c1m0srx4 ccqmsqo cuxwgiu"
+                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1iag713 cytrw08 c1m0srx4 ccqmsqo cuxwgiu"
                   >
                     <img
                       alt=""
@@ -3503,36 +3520,36 @@
                       >
                         <ul class="w-element c1g4fpo0 cnwuh9t cami5y c14b2vrf">
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 days"></span
                             ><span class="w-element">Days</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 hours"></span
                             ><span class="w-element">Hours</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 minutes"></span
                             ><span class="w-element">Minutes</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 seconds"></span
                             ><span class="w-element">Seconds</span>
                           </li>
                         </ul>
-                        <h3 class="w-element headline"></h3>
+                        <h3 class="w-element c1kmebbh headline"></h3>
                       </div>
                     </div>
                   </div>
                   <div
-                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1cmk8ys cb53gre c1m0srx4 ccqmsqo cuxwgiu c1jess14"
+                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1iag713 c1w1osl9 c1m0srx4 ccqmsqo cuxwgiu c1jess14"
                   >
                     <img
                       alt=""
@@ -3568,36 +3585,36 @@
                       >
                         <ul class="w-element c1g4fpo0 cnwuh9t cami5y c14b2vrf">
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 days"></span
                             ><span class="w-element">Days</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 hours"></span
                             ><span class="w-element">Hours</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 minutes"></span
                             ><span class="w-element">Minutes</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 seconds"></span
                             ><span class="w-element">Seconds</span>
                           </li>
                         </ul>
-                        <h3 class="w-element headline"></h3>
+                        <h3 class="w-element c1kmebbh headline"></h3>
                       </div>
                     </div>
                   </div>
                   <div
-                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1cmk8ys c154j0mp c1m0srx4 ccqmsqo cuxwgiu"
+                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1iag713 cytrw08 c1m0srx4 ccqmsqo cuxwgiu"
                   >
                     <img
                       alt=""
@@ -3633,25 +3650,25 @@
                           class="w-element c1g4fpo0 cnwuh9t cami5y c14b2vrf counter"
                         >
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 days"></span
                             ><span class="w-element">Days</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 hours"></span
                             ><span class="w-element">Hours</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 minutes"></span
                             ><span class="w-element">Minutes</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 seconds"></span
                             ><span class="w-element">Seconds</span>
@@ -3662,7 +3679,7 @@
                     </div>
                   </div>
                   <div
-                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1cmk8ys c154j0mp c1m0srx4 ccqmsqo cuxwgiu"
+                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1iag713 cytrw08 c1m0srx4 ccqmsqo cuxwgiu"
                   >
                     <img
                       alt=""
@@ -3695,31 +3712,31 @@
                       >
                         <ul class="w-element c1g4fpo0 cnwuh9t cami5y c14b2vrf">
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 days"></span
                             ><span class="w-element">Days</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 hours"></span
                             ><span class="w-element">Hours</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 minutes"></span
                             ><span class="w-element">Minutes</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok cd1x0l6 cbd9o7m c1iom500 c8r22pi c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 seconds"></span
                             ><span class="w-element">Seconds</span>
                           </li>
                         </ul>
-                        <h3 class="w-element headline"></h3>
+                        <h3 class="w-element c1kmebbh headline"></h3>
                       </div>
                     </div>
                   </div>
@@ -4165,18 +4182,18 @@
       {}
     </script>
     <script
-      src="/assets/entries/entry-server-routing.vzqhyAPI.js"
+      src="/assets/entries/entry-server-routing.BQToeV2L.js"
       type="module"
       async
     ></script>
     <link
       rel="modulepreload"
-      href="/assets/entries/pages_index.BG7s14Ne.js"
+      href="/assets/entries/pages_index.D-ViC7m3.js"
       as="script"
       type="text/javascript"
     /><link
       rel="modulepreload"
-      href="/assets/chunks/chunk-BnucqAaj.js"
+      href="/assets/chunks/chunk-B25GMRgj.js"
       as="script"
       type="text/javascript"
     /><link
