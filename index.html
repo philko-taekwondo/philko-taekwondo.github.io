@@ -2,13 +2,13 @@
 <html
   lang="en"
   data-ws-project="200f64cb-7829-401b-b6cd-b63ce28dd35b"
-  data-ws-last-published="2025-10-04T07:04:26.301Z"
+  data-ws-last-published="2025-10-06T07:23:21.255Z"
 >
   <head>
     <link
       rel="stylesheet"
       type="text/css"
-      href="/assets/static/app_generated_index-6937cd5a.D26gqzUI.css"
+      href="/assets/static/app_generated_index-6937cd5a.wDAFX3Zi.css"
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -23,6 +23,7 @@
     <meta property="og:title" content="Home" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="philko" />
+    <link rel="icon" href="/assets/philko-jaguars_H3HL-KheCyQ6ZJgnj6gXK.svg" />
     <link
       rel="preload"
       href="/assets/NotoSerif-VariableFont_wdth_wght_PtiA1qVDDr3f1K2CFhdzq.ttf"
@@ -223,17 +224,14 @@
             scrollbar-width: none; /* Firefox */
             -ms-overflow-style: none;
           }
-
           .carousel::scroll-marker-group {
             display: flex;
             justify-content: center;
             gap: var(--size-2);
           }
-
           .carousel::-webkit-scrollbar {
             display: none;
           }
-
           .carousel::scroll-button(right),
           .carousel::scroll-button(left) {
             background-color: var(--foreground-primary);
@@ -251,13 +249,11 @@
             translate: -50%;
             width: var(--size-8);
           }
-
           .carousel::scroll-button(left) {
             content: "❮";
             position-area: left center;
             translate: 50%;
           }
-
           .carousel::scroll-button(right):disabled,
           .carousel::scroll-button(left):disabled {
             opacity: 0.5;
@@ -279,17 +275,14 @@
             scrollbar-width: none; /* Firefox */
             -ms-overflow-style: none;
           }
-
           .carousel2::scroll-marker-group {
             display: flex;
             justify-content: center;
             gap: var(--size-2);
           }
-
           .carousel2::-webkit-scrollbar {
             display: none;
           }
-
           .carousel2::scroll-button(right),
           .carousel2::scroll-button(left) {
             background-color: var(--foreground-primary);
@@ -307,13 +300,11 @@
             translate: -50%;
             width: var(--size-8);
           }
-
           .carousel2::scroll-button(left) {
             content: "❮";
             position-area: left center;
             translate: 50%;
           }
-
           .carousel2::scroll-button(right):disabled,
           .carousel2::scroll-button(left):disabled {
             opacity: 0.5;
@@ -332,7 +323,6 @@
             padding: var(--size-3);
             scroll-snap-align: start;
           }
-
           .c-card::scroll-marker {
             /*   content: ' '; */
             /*   content: 'o'; */
@@ -355,7 +345,6 @@
             padding: var(--size-3);
             scroll-snap-align: start;
           }
-
           .c-card2::scroll-marker {
             /*   content: ' '; */
             /*   content: 'o'; */
@@ -364,56 +353,6 @@
             width: var(--size-5);
             background-color: var(--stone-8);
             border-radius: 50%;
-          }
-
-          /* carousel events */
-          .carousel-events-1 {
-            /* margin-inline: auto;  */
-            /* Modern way to horizontally center with a fluid container */
-            /* width: min(90vw, 700px); */
-            /* overflow-x: scroll; */
-            /* Improved scrolling for iOS */
-            /* -webkit-overflow-scrolling: touch; */
-            /* padding: var(--size-5) 0; */
-            /* display: flex; */
-            /* scroll-snap-type: x mandatory; */
-            /* &:hover .group {
-      animation-play-state: paused;
-    } */
-          }
-
-          /* Pause any child animations on hover */
-          .carousel-events-1:hover .event-group-1 {
-            animation-play-state: paused;
-          }
-
-          .event-group-1 {
-            /* display: flex;
-    gap: var(--size-5);
-    padding-right: var(--size-5); */
-            /* will-change: transform;  */
-            /* We should be nice to the browser - let it know what we're going to animate. */
-            animation: scrolling 10s linear infinite;
-          }
-
-          .event-card-1 {
-            /* flex: 0 0 100%;  */
-            /* Ensures each card takes up 100% of the carousel's width */
-            /* scroll-snap-align: center;  */
-            /* Snaps the card to the center of the scroll container */
-            /* color: var(--foreground-secondary); */
-            /* border-radius: var(--radius-3); */
-            /* box-shadow: var(--shadow-3); */
-            /* padding: var(--size-3); */
-            /* The card is now its own flex container to center its content */
-            /* display: flex; */
-            /* flex-direction: column; */
-            /* justify-content: center; */
-            /* align-items: center; */
-            /* min-height: 200px; */
-            /* Use the fluid font size token */
-            /* font-size: var(--font-size-fluid); */
-            /* background: var(--foreground-muted); */
           }
 
           /* animations */
@@ -478,58 +417,55 @@
 
         <script type="module">
           /* countdown timers */
-          function createCountdown(containerId, targetDate) {
-            const second = 1000,
-              minute = second * 60,
-              hour = minute * 60,
-              day = hour * 24;
+          // function createCountdown(containerId, targetDate) {
+          //   const second = 1000,
+          //         minute = second * 60,
+          //         hour = minute * 60,
+          //         day = hour * 24;
+          //   const container = document.getElementById(containerId);
+          //   if (!container) return; // Exit if the container doesn't exist
+          //   const daysEl = container.querySelector(".days");
+          //   const hoursEl = container.querySelector(".hours");
+          //   const minutesEl = container.querySelector(".minutes");
+          //   const secondsEl = container.querySelector(".seconds");
+          //   const headlineEl = container.querySelector(".headline");
+          //   const countdownEl = container.querySelector(".countdown");
+          //   const contentEl = container.querySelector(".content");
+          //   const countDown = new Date(targetDate).getTime();
+          //   const x = setInterval(function() {
+          //     const now = new Date().getTime();
+          //     const distance = countDown - now;
 
-            const container = document.getElementById(containerId);
-            if (!container) return; // Exit if the container doesn't exist
+          //     daysEl.innerText = Math.floor(distance / day);
+          //     hoursEl.innerText = Math.floor((distance % day) / hour);
+          //     minutesEl.innerText = Math.floor((distance % hour) / minute);
+          //     secondsEl.innerText = Math.floor((distance % minute) / second);
 
-            const daysEl = container.querySelector(".days");
-            const hoursEl = container.querySelector(".hours");
-            const minutesEl = container.querySelector(".minutes");
-            const secondsEl = container.querySelector(".seconds");
-            const headlineEl = container.querySelector(".headline");
-            const countdownEl = container.querySelector(".countdown");
-            const contentEl = container.querySelector(".content");
+          //     if (distance < 0) {
+          //       if (headlineEl) headlineEl.innerText = "Event is happening now!";
+          //       if (countdownEl) countdownEl.style.display = "none";
+          //       if (contentEl) contentEl.style.display = "block";
+          //       clearInterval(x);
+          //     }
+          //   }, 1000); // Changed to 1000ms for performance
+          // }
 
-            const countDown = new Date(targetDate).getTime();
-
-            const x = setInterval(function () {
-              const now = new Date().getTime();
-              const distance = countDown - now;
-
-              daysEl.innerText = Math.floor(distance / day);
-              hoursEl.innerText = Math.floor((distance % day) / hour);
-              minutesEl.innerText = Math.floor((distance % hour) / minute);
-              secondsEl.innerText = Math.floor((distance % minute) / second);
-
-              if (distance < 0) {
-                if (headlineEl)
-                  headlineEl.innerText = "Event is happening now!";
-                if (countdownEl) countdownEl.style.display = "none";
-                if (contentEl) contentEl.style.display = "block";
-                clearInterval(x);
-              }
-            }, 1000); // Changed to 1000ms for performance
-          }
-
-          createCountdown("countdown-1", "December 5, 2025 10:00:00");
-          createCountdown("countdown-2", "October 25, 2025 10:00:00");
-          createCountdown("countdown-3", "October 3, 2025 10:00:00");
-          createCountdown("countdown-4", "November 8, 2025 10:00:00");
+          // createCountdown('countdown-1', 'December 5, 2025 10:00:00');
+          // createCountdown('countdown-2', 'October 25, 2025 10:00:00');
+          // createCountdown('countdown-3', 'October 3, 2025 10:00:00');
+          // createCountdown('countdown-4', 'November 8, 2025 10:00:00');
 
           /* my hamburger menu */
 
           // const hamburgerButton = document.getElementById('hamburger-button');
           // const mobileMenu = document.getElementById('mobile-menu');
           // const closeButton = document.getElementById('close-button');
+
           // if (hamburgerButton && mobileMenu && closeButton) {
           //   hamburgerButton.addEventListener('click', function() {
           //     mobileMenu.classList.toggle('open');
           //   });
+
           //   closeButton.addEventListener('click', function() {
           //     mobileMenu.classList.toggle('open');
           //   });
@@ -716,6 +652,185 @@
             .addEventListener("click", scrollToTop);
         </script>
       </div>
+      <div class="w-html-embed">
+        <script type="module">
+          /* countdown timers */
+          function createCountdown(containerId, startDate, endDate) {
+            const second = 1000,
+              minute = second * 60,
+              hour = minute * 60,
+              day = hour * 24;
+
+            const container = document.getElementById(containerId);
+            if (!container) return; // Exit if the container doesn't exist
+
+            const daysEl = container.querySelector(".days");
+            const hoursEl = container.querySelector(".hours");
+            const minutesEl = container.querySelector(".minutes");
+            const secondsEl = container.querySelector(".seconds");
+            const headlineEl = container.querySelector(".headline");
+            const countdownEl = container.querySelector(".countdown");
+            const counterEl = container.querySelector(".counter");
+            // const contentEl = container.querySelector(".content"); // No longer strictly needed for this logic
+
+            const startTime = new Date(startDate).getTime();
+            const endTime = new Date(endDate).getTime();
+
+            const x = setInterval(function () {
+              const now = new Date().getTime();
+
+              // 1. Calculate the distance to the START of the event (the countdown logic)
+              const distanceToStart = startTime - now;
+
+              // 2. Check the event status based on current time
+
+              // **A. Event is DONE (current time is past the end date)**
+              if (now > endTime) {
+                if (headlineEl)
+                  headlineEl.innerText =
+                    "This event has finished. Thank you for attending!";
+                // if (countdownEl) countdownEl.style.display = "none";
+                if (counterEl) counterEl.style.display = "none";
+                clearInterval(x);
+                return; // Stop the interval and exit the function call for this tick
+              }
+
+              // **B. Event is HAPPENING NOW (current time is between start and end date)**
+              if (now >= startTime && now <= endTime) {
+                if (headlineEl)
+                  headlineEl.innerText = "Event is happening now!";
+                // if (countdownEl) countdownEl.style.display = "none";
+                // contentEl would typically be displayed here if present
+                return; // Stop the countdown display and exit the function call for this tick
+              }
+
+              // **C. Countdown is ACTIVE (current time is before the start date)**
+
+              // Ensure the countdown element is visible
+              if (countdownEl) countdownEl.style.display = "flex";
+              // Update headline for countdown state (optional, can be left blank/default)
+              // if (headlineEl) headlineEl.innerText = "Event starts in:";
+
+              daysEl.innerText = Math.floor(distanceToStart / day);
+              hoursEl.innerText = Math.floor((distanceToStart % day) / hour)
+                .toString()
+                .padStart(2, "0");
+              minutesEl.innerText = Math.floor(
+                (distanceToStart % hour) / minute,
+              )
+                .toString()
+                .padStart(2, "0");
+              secondsEl.innerText = Math.floor(
+                (distanceToStart % minute) / second,
+              )
+                .toString()
+                .padStart(2, "0");
+            }, 1000);
+          }
+
+          // Example usage with START and END dates:
+          // The countdown now counts down to the START date.
+          // If the current time is between START and END, it shows "Event is happening now!".
+          // If the current time is past END, it shows "This event has finished!".
+          createCountdown(
+            "countdown-1",
+            "December 5, 2025 10:00:00", // Start Date
+            "December 7, 2025 18:00:00", // End Date
+          );
+          createCountdown(
+            "countdown-1b",
+            "December 5, 2025 10:00:00", // Start Date
+            "December 7, 2025 18:00:00", // End Date
+          );
+
+          createCountdown(
+            "countdown-2",
+            "October 25, 2025 10:00:00", // Start Date
+            "October 25, 2025 17:00:00", // End Date
+          );
+          createCountdown(
+            "countdown-2b",
+            "October 25, 2025 10:00:00", // Start Date
+            "October 25, 2025 17:00:00", // End Date
+          );
+
+          // Example of an event that has already finished (based on today's date: 2025-10-06)
+          createCountdown(
+            "countdown-3",
+            "October 3, 2025 10:00:00", // Start Date
+            "October 3, 2025 12:00:00", // End Date
+          );
+          createCountdown(
+            "countdown-3b",
+            "October 3, 2025 10:00:00", // Start Date
+            "October 3, 2025 12:00:00", // End Date
+          );
+
+          createCountdown(
+            "countdown-4",
+            "November 8, 2025 10:00:00", // Start Date
+            "November 8, 2025 14:00:00", // End Date
+          );
+          createCountdown(
+            "countdown-4b",
+            "November 8, 2025 10:00:00", // Start Date
+            "November 8, 2025 14:00:00", // End Date
+          );
+        </script>
+      </div>
+      <div class="w-html-embed">
+        <style>
+          /* carousel events */
+          .carousel-events-1 {
+            /* margin-inline: auto;  */
+            /* Modern way to horizontally center with a fluid container */
+            /* width: min(90vw, 700px); */
+            /* overflow-x: scroll; */
+            /* Improved scrolling for iOS */
+            /* -webkit-overflow-scrolling: touch; */
+            /* padding: var(--size-5) 0; */
+            /* display: flex; */
+            /* scroll-snap-type: x mandatory; */
+            /* &:hover .group {
+      animation-play-state: paused;
+    } */
+          }
+
+          /* Pause any child animations on hover */
+          .carousel-events-1:hover .event-group-1 {
+            animation-play-state: paused;
+          }
+
+          .event-group-1 {
+            /* display: flex;
+    gap: var(--size-5);
+    padding-right: var(--size-5); */
+            /* will-change: transform;  */
+            /* We should be nice to the browser - let it know what we're going to animate. */
+            animation: scrolling 20s linear infinite;
+          }
+
+          .event-card-1 {
+            /* flex: 0 0 100%;  */
+            /* Ensures each card takes up 100% of the carousel's width */
+            /* scroll-snap-align: center;  */
+            /* Snaps the card to the center of the scroll container */
+            /* color: var(--foreground-secondary); */
+            /* border-radius: var(--radius-3); */
+            /* box-shadow: var(--shadow-3); */
+            /* padding: var(--size-3); */
+            /* The card is now its own flex container to center its content */
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* min-height: 200px; */
+            /* Use the fluid font size token */
+            /* font-size: var(--font-size-fluid); */
+            /* background: var(--foreground-muted); */
+          }
+        </style>
+      </div>
       <div style="display: contents">
         <div style="display: contents">
           <div class="w-html-embed">
@@ -736,7 +851,7 @@
                 <div style="display: contents">
                   <div class="w-element c16hxk3o c14u6nxx c1g4fpo0 c1nw3pd4">
                     <ul
-                      class="w-element c1g4fpo0 c17y6ntw c1s4ookq c8xpt5r c37bj1t c1ah412g cwxmyq1 ckb73m1 c1yatyr3 c15yuqlq cm44h5q ccnc6wf cg65sdj c1snht1w"
+                      class="w-element c1g4fpo0 c17y6ntw c1s4ookq c8xpt5r c37bj1t c1ah412g cmf2xhb cwxmyq1 ckb73m1 c1yatyr3 c15yuqlq cm44h5q ccnc6wf cg65sdj c1snht1w"
                     >
                       <li
                         class="w-element c96rloa c12vydxu c1ct3ny9 ckf2sd7 li-menu-item"
@@ -913,7 +1028,7 @@
                             class="w-element c16hxk3o c14u6nxx c1g4fpo0 c1nw3pd4"
                           >
                             <ul
-                              class="w-element c1g4fpo0 c17y6ntw c1s4ookq c8xpt5r c37bj1t c1ah412g cwxmyq1 ckb73m1 c1yatyr3 c15yuqlq cm44h5q ccnc6wf cg65sdj c1snht1w"
+                              class="w-element c1g4fpo0 c17y6ntw c1s4ookq c8xpt5r c37bj1t c1ah412g cmf2xhb cwxmyq1 ckb73m1 c1yatyr3 c15yuqlq cm44h5q ccnc6wf cg65sdj c1snht1w"
                             >
                               <li
                                 class="w-element c96rloa c12vydxu c1ct3ny9 ckf2sd7 li-menu-item"
@@ -1050,9 +1165,9 @@
         </section>
         <section id="features" class="w-box c1fug1v6 c1hf3o8a c1kh4ri6">
           <div
-            class="w-box c1h4u1zl c37y94b c18ffmnj c1tp4776 cnyfm53 c1yq9r6w c1g4fpo0 c9z6e5w cami5y c12c1scn cj8c0g7 c1hheij2"
+            class="w-box c1h4u1zl c37y94b c1lqxzwd c7dj7s0 cnyfm53 c1yq9r6w c1g4fpo0 c9z6e5w cami5y c12c1scn cj8c0g7 c1hheij2 crzsyon c1svul8x cwg9xbe ctqlwp9"
           >
-            <div class="w-element c1g4fpo0 ch4e87b c1liwetm">
+            <div class="w-element c1g4fpo0 ch4e87b cwxmyq1 c1liwetm">
               <div class="w-element c1tqp04k c16hxk3o"></div>
               <div class="w-element c1tqp04k cx8lzes">
                 <h3
@@ -1072,7 +1187,7 @@
                 </p>
               </div>
             </div>
-            <div class="w-element c1g4fpo0 ch4e87b c1liwetm">
+            <div class="w-element c1g4fpo0 ch4e87b cwxmyq1 c1liwetm">
               <div class="w-element c1tqp04k cx8lzes">
                 <h3
                   class="w-element c1mtaqvs cazwrok c1xds4jz cit30l3 c1ok9ali"
@@ -1091,7 +1206,7 @@
               </div>
               <div class="w-element c1tqp04k c16hxk3o"></div>
             </div>
-            <div class="w-element c1g4fpo0 ch4e87b c1liwetm">
+            <div class="w-element c1g4fpo0 ch4e87b cwxmyq1 c1liwetm">
               <div class="w-element c1tqp04k c16hxk3o"></div>
               <div class="w-element c1tqp04k cx8lzes">
                 <h3
@@ -1117,38 +1232,38 @@
           class="w-box c1fug1v6 c1hf3o8a clois1c cihilq7 c1md4hs3 c1t52glg c73cz8"
         >
           <div
-            class="w-box c1h4u1zl c37y94b c18ffmnj c1tp4776 cnyfm53 c1yq9r6w c1g4fpo0 c9z6e5w cami5y c12c1scn c1867kps c13gzjma cr59fh4 cj8c0g7 c1hheij2"
+            class="w-box c1h4u1zl c37y94b c1lqxzwd c7dj7s0 cnyfm53 c1yq9r6w c1g4fpo0 c9z6e5w cami5y c12c1scn c1867kps c13gzjma cr59fh4 cj8c0g7 c1hheij2 cxfasvc crqxwv3 c5dihak c51t0xb"
           >
             <style>
-              @keyframes ws-scroll-animation-_R3q_ {
+              @keyframes ws-scroll-animation-_R72_ {
                 from {
                 }
               }
 
               @media (prefers-reduced-motion: no-preference) {
-                [data-ws-animate-id="_R3q_"]
+                [data-ws-animate-id="_R72_"]
                   > :not(
                     :is([data-ws-animate-id], [data-ws-no-initial-animation])
                   ),
-                [data-ws-animate-id="_R3q_"]
-                  > [data-ws-animate-id]
-                  > :not(
-                    :is([data-ws-animate-id], [data-ws-no-initial-animation])
-                  ),
-                [data-ws-animate-id="_R3q_"]
-                  > [data-ws-animate-id]
+                [data-ws-animate-id="_R72_"]
                   > [data-ws-animate-id]
                   > :not(
                     :is([data-ws-animate-id], [data-ws-no-initial-animation])
                   ),
-                [data-ws-animate-id="_R3q_"]
-                  > [data-ws-animate-id]
+                [data-ws-animate-id="_R72_"]
                   > [data-ws-animate-id]
                   > [data-ws-animate-id]
                   > :not(
                     :is([data-ws-animate-id], [data-ws-no-initial-animation])
                   ),
-                [data-ws-animate-id="_R3q_"]
+                [data-ws-animate-id="_R72_"]
+                  > [data-ws-animate-id]
+                  > [data-ws-animate-id]
+                  > [data-ws-animate-id]
+                  > :not(
+                    :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                  ),
+                [data-ws-animate-id="_R72_"]
                   > [data-ws-animate-id]
                   > [data-ws-animate-id]
                   > [data-ws-animate-id]
@@ -1156,7 +1271,7 @@
                   > :not(
                     :is([data-ws-animate-id], [data-ws-no-initial-animation])
                   ) {
-                  animation-name: ws-scroll-animation-_R3q_;
+                  animation-name: ws-scroll-animation-_R72_;
                   animation-fill-mode: backwards;
                   animation-play-state: paused;
                   animation-duration: 1ms;
@@ -1164,29 +1279,29 @@
               }</style
             ><noscript
               ><style>
-                [data-ws-animate-id="_R3q_"]
+                [data-ws-animate-id="_R72_"]
                   > :not(
                     :is([data-ws-animate-id], [data-ws-no-initial-animation])
                   ),
-                [data-ws-animate-id="_R3q_"]
-                  > [data-ws-animate-id]
-                  > :not(
-                    :is([data-ws-animate-id], [data-ws-no-initial-animation])
-                  ),
-                [data-ws-animate-id="_R3q_"]
-                  > [data-ws-animate-id]
+                [data-ws-animate-id="_R72_"]
                   > [data-ws-animate-id]
                   > :not(
                     :is([data-ws-animate-id], [data-ws-no-initial-animation])
                   ),
-                [data-ws-animate-id="_R3q_"]
-                  > [data-ws-animate-id]
+                [data-ws-animate-id="_R72_"]
                   > [data-ws-animate-id]
                   > [data-ws-animate-id]
                   > :not(
                     :is([data-ws-animate-id], [data-ws-no-initial-animation])
                   ),
-                [data-ws-animate-id="_R3q_"]
+                [data-ws-animate-id="_R72_"]
+                  > [data-ws-animate-id]
+                  > [data-ws-animate-id]
+                  > [data-ws-animate-id]
+                  > :not(
+                    :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                  ),
+                [data-ws-animate-id="_R72_"]
                   > [data-ws-animate-id]
                   > [data-ws-animate-id]
                   > [data-ws-animate-id]
@@ -1199,12 +1314,12 @@
               </style></noscript
             >
             <div
-              data-ws-animate-id="_R3q_"
+              data-ws-animate-id="_R72_"
               class="c9jm5i1"
               style="display: contents"
             >
               <style>
-                @keyframes ws-scroll-animation-_R6jq_ {
+                @keyframes ws-scroll-animation-_Rd72_ {
                   from {
                     opacity: 0%;
                     translate: 0 100px;
@@ -1212,29 +1327,29 @@
                 }
 
                 @media (prefers-reduced-motion: no-preference) {
-                  [data-ws-animate-id="_R6jq_"]
+                  [data-ws-animate-id="_Rd72_"]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_R6jq_"]
-                    > [data-ws-animate-id]
-                    > :not(
-                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
-                    ),
-                  [data-ws-animate-id="_R6jq_"]
-                    > [data-ws-animate-id]
+                  [data-ws-animate-id="_Rd72_"]
                     > [data-ws-animate-id]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_R6jq_"]
-                    > [data-ws-animate-id]
+                  [data-ws-animate-id="_Rd72_"]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_R6jq_"]
+                  [data-ws-animate-id="_Rd72_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rd72_"]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
@@ -1242,7 +1357,7 @@
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ) {
-                    animation-name: ws-scroll-animation-_R6jq_;
+                    animation-name: ws-scroll-animation-_Rd72_;
                     animation-fill-mode: backwards;
                     animation-play-state: paused;
                     animation-duration: 1ms;
@@ -1250,29 +1365,29 @@
                 }</style
               ><noscript
                 ><style>
-                  [data-ws-animate-id="_R6jq_"]
+                  [data-ws-animate-id="_Rd72_"]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_R6jq_"]
-                    > [data-ws-animate-id]
-                    > :not(
-                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
-                    ),
-                  [data-ws-animate-id="_R6jq_"]
-                    > [data-ws-animate-id]
+                  [data-ws-animate-id="_Rd72_"]
                     > [data-ws-animate-id]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_R6jq_"]
-                    > [data-ws-animate-id]
+                  [data-ws-animate-id="_Rd72_"]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_R6jq_"]
+                  [data-ws-animate-id="_Rd72_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rd72_"]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
@@ -1284,29 +1399,29 @@
                   }
                 </style></noscript
               >
-              <div data-ws-animate-id="_R6jq_" style="display: contents">
+              <div data-ws-animate-id="_Rd72_" style="display: contents">
                 <div
-                  data-ws-subject-for="_R56jq_"
+                  data-ws-subject-for="_Rad72_"
                   class="w-stagger-animation c20ofbt"
                 >
                   <div
-                    data-ws-staggering-animation-id="_Rt6jq_"
+                    data-ws-staggering-animation-id="_R1qd72_"
                     style="display: contents"
                   >
                     <h2
-                      class="w-element cco1x2a cdwwkmh c1yd10hd c1xjkhhc ccz0q13"
+                      class="w-element cco1x2a cdwwkmh c1yd10hd c1xjkhhc c1gnl7iz"
                     >
                       Your Path to Strength,
                     </h2>
                     <h2
-                      class="w-element cco1x2a cdwwkmh c1yd10hd c1xjkhhc ccz0q13"
+                      class="w-element cco1x2a cdwwkmh c1yd10hd c1xjkhhc c1gnl7iz"
                     >
                       Discipline, and Confidence
                     </h2>
                   </div>
                 </div>
                 <style>
-                  #_R56jq_ {
+                  #_Rad72_ {
                     position: fixed;
                     visibility: hidden;
                     pointer-events: none;
@@ -1315,7 +1430,7 @@
                     contain: strict;
                   }
 
-                  #_R56jq_-sample {
+                  #_Rad72_-sample {
                     position: fixed;
                     visibility: hidden;
                     pointer-events: none;
@@ -1326,47 +1441,47 @@
                   }
                 </style>
                 <div
-                  id="_R56jq_"
+                  id="_Rad72_"
                   inert="true"
                   data-ws-no-initial-animation=""
                 ></div>
                 <div
-                  id="_R56jq_-sample"
+                  id="_Rad72_-sample"
                   inert="true"
                   data-ws-no-initial-animation=""
                 ></div>
               </div>
               <style>
-                @keyframes ws-scroll-animation-_Rajq_ {
+                @keyframes ws-scroll-animation-_Rl72_ {
                   from {
                     opacity: 0;
                   }
                 }
 
                 @media (prefers-reduced-motion: no-preference) {
-                  [data-ws-animate-id="_Rajq_"]
+                  [data-ws-animate-id="_Rl72_"]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_Rajq_"]
-                    > [data-ws-animate-id]
-                    > :not(
-                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
-                    ),
-                  [data-ws-animate-id="_Rajq_"]
-                    > [data-ws-animate-id]
+                  [data-ws-animate-id="_Rl72_"]
                     > [data-ws-animate-id]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_Rajq_"]
-                    > [data-ws-animate-id]
+                  [data-ws-animate-id="_Rl72_"]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_Rajq_"]
+                  [data-ws-animate-id="_Rl72_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rl72_"]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
@@ -1374,7 +1489,7 @@
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ) {
-                    animation-name: ws-scroll-animation-_Rajq_;
+                    animation-name: ws-scroll-animation-_Rl72_;
                     animation-fill-mode: backwards;
                     animation-play-state: paused;
                     animation-duration: 1ms;
@@ -1382,29 +1497,29 @@
                 }</style
               ><noscript
                 ><style>
-                  [data-ws-animate-id="_Rajq_"]
+                  [data-ws-animate-id="_Rl72_"]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_Rajq_"]
-                    > [data-ws-animate-id]
-                    > :not(
-                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
-                    ),
-                  [data-ws-animate-id="_Rajq_"]
-                    > [data-ws-animate-id]
+                  [data-ws-animate-id="_Rl72_"]
                     > [data-ws-animate-id]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_Rajq_"]
-                    > [data-ws-animate-id]
+                  [data-ws-animate-id="_Rl72_"]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_Rajq_"]
+                  [data-ws-animate-id="_Rl72_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rl72_"]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
@@ -1416,16 +1531,16 @@
                   }
                 </style></noscript
               >
-              <div data-ws-animate-id="_Rajq_" style="display: contents">
+              <div data-ws-animate-id="_Rl72_" style="display: contents">
                 <div
-                  class="w-element c73cz8 c1g4fpo0 cami5y c14b2vrf cqz30e c1mh84xv c1x1y0ji cnd6737"
+                  class="w-element c73cz8 c1g4fpo0 cami5y c14b2vrf c18mibi6 c72y85n cit2y1x czcwheb c1r5v7uf c1vulur8 c1wda6z9"
                 >
                   <img
                     alt=""
                     width="1080"
                     height="1062"
                     src="/assets/full-circle_mZ5dD5IUqm3e2opzER5Wf.png"
-                    class="w-image c73cz8 cau4uwn chpspui c5j9g5j"
+                    class="w-image c73cz8 cau4uwn chpspui"
                     sizes="100vw"
                     srcset="
                       /assets/full-circle_mZ5dD5IUqm3e2opzER5Wf.png   16w,
@@ -1451,7 +1566,7 @@
                 </div>
               </div>
               <style>
-                @keyframes ws-scroll-animation-_Rejq_ {
+                @keyframes ws-scroll-animation-_Rt72_ {
                   from {
                     opacity: 0%;
                     translate: 0px 100%;
@@ -1459,29 +1574,29 @@
                 }
 
                 @media (prefers-reduced-motion: no-preference) {
-                  [data-ws-animate-id="_Rejq_"]
+                  [data-ws-animate-id="_Rt72_"]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_Rejq_"]
-                    > [data-ws-animate-id]
-                    > :not(
-                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
-                    ),
-                  [data-ws-animate-id="_Rejq_"]
-                    > [data-ws-animate-id]
+                  [data-ws-animate-id="_Rt72_"]
                     > [data-ws-animate-id]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_Rejq_"]
-                    > [data-ws-animate-id]
+                  [data-ws-animate-id="_Rt72_"]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_Rejq_"]
+                  [data-ws-animate-id="_Rt72_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rt72_"]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
@@ -1489,7 +1604,7 @@
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ) {
-                    animation-name: ws-scroll-animation-_Rejq_;
+                    animation-name: ws-scroll-animation-_Rt72_;
                     animation-fill-mode: backwards;
                     animation-play-state: paused;
                     animation-duration: 1ms;
@@ -1497,29 +1612,29 @@
                 }</style
               ><noscript
                 ><style>
-                  [data-ws-animate-id="_Rejq_"]
+                  [data-ws-animate-id="_Rt72_"]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_Rejq_"]
-                    > [data-ws-animate-id]
-                    > :not(
-                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
-                    ),
-                  [data-ws-animate-id="_Rejq_"]
-                    > [data-ws-animate-id]
+                  [data-ws-animate-id="_Rt72_"]
                     > [data-ws-animate-id]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_Rejq_"]
-                    > [data-ws-animate-id]
+                  [data-ws-animate-id="_Rt72_"]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_Rejq_"]
+                  [data-ws-animate-id="_Rt72_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_Rt72_"]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
@@ -1531,9 +1646,9 @@
                   }
                 </style></noscript
               >
-              <div data-ws-animate-id="_Rejq_" style="display: contents">
+              <div data-ws-animate-id="_Rt72_" style="display: contents">
                 <div
-                  class="w-element cgwhgtj c9z6e5w c1g4fpo0 c12c1scn cami5y chrq20v ccvnl4c ci6c62w czkgmj4 cif8dze c4y8vpp"
+                  class="w-element cgwhgtj c9z6e5w c1g4fpo0 c12c1scn cami5y chrq20v ccvnl4c ci6c62w cyl3blt c1b9vmbh cif8dze c19ugyka c4y8vpp c2nocas"
                 >
                   <img
                     alt=""
@@ -1559,36 +1674,36 @@
                 </div>
               </div>
               <style>
-                @keyframes ws-scroll-animation-_Rijq_ {
+                @keyframes ws-scroll-animation-_R1572_ {
                   from {
                     translate: 0 100px;
                   }
                 }
 
                 @media (prefers-reduced-motion: no-preference) {
-                  [data-ws-animate-id="_Rijq_"]
+                  [data-ws-animate-id="_R1572_"]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_Rijq_"]
-                    > [data-ws-animate-id]
-                    > :not(
-                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
-                    ),
-                  [data-ws-animate-id="_Rijq_"]
-                    > [data-ws-animate-id]
+                  [data-ws-animate-id="_R1572_"]
                     > [data-ws-animate-id]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_Rijq_"]
-                    > [data-ws-animate-id]
+                  [data-ws-animate-id="_R1572_"]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_Rijq_"]
+                  [data-ws-animate-id="_R1572_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_R1572_"]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
@@ -1596,7 +1711,7 @@
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ) {
-                    animation-name: ws-scroll-animation-_Rijq_;
+                    animation-name: ws-scroll-animation-_R1572_;
                     animation-fill-mode: backwards;
                     animation-play-state: paused;
                     animation-duration: 1ms;
@@ -1604,29 +1719,29 @@
                 }</style
               ><noscript
                 ><style>
-                  [data-ws-animate-id="_Rijq_"]
+                  [data-ws-animate-id="_R1572_"]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_Rijq_"]
-                    > [data-ws-animate-id]
-                    > :not(
-                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
-                    ),
-                  [data-ws-animate-id="_Rijq_"]
-                    > [data-ws-animate-id]
+                  [data-ws-animate-id="_R1572_"]
                     > [data-ws-animate-id]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_Rijq_"]
-                    > [data-ws-animate-id]
+                  [data-ws-animate-id="_R1572_"]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
                     > :not(
                       :is([data-ws-animate-id], [data-ws-no-initial-animation])
                     ),
-                  [data-ws-animate-id="_Rijq_"]
+                  [data-ws-animate-id="_R1572_"]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > [data-ws-animate-id]
+                    > :not(
+                      :is([data-ws-animate-id], [data-ws-no-initial-animation])
+                    ),
+                  [data-ws-animate-id="_R1572_"]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
                     > [data-ws-animate-id]
@@ -1638,16 +1753,16 @@
                   }
                 </style></noscript
               >
-              <div data-ws-animate-id="_Rijq_" style="display: contents">
+              <div data-ws-animate-id="_R1572_" style="display: contents">
                 <div
-                  data-ws-subject-for="_R5ijq_"
+                  data-ws-subject-for="_Rb572_"
                   class="w-stagger-animation c1fh1x7u"
                 >
                   <div
-                    data-ws-staggering-animation-id="_Rtijq_"
+                    data-ws-staggering-animation-id="_R1r572_"
                     style="display: contents"
                   >
-                    <div class="w-element cc0waet">
+                    <div class="w-element cc0waet c5qmz85">
                       <p class="w-element c1mtaqvs cx0si8w">
                         At <b class="w-element">PhilKO Taekwondo</b>, we don’t
                         just teach martial arts—we shape champions in mind,
@@ -1681,7 +1796,7 @@
                   </div>
                 </div>
                 <style>
-                  #_R5ijq_ {
+                  #_Rb572_ {
                     position: fixed;
                     visibility: hidden;
                     pointer-events: none;
@@ -1690,7 +1805,7 @@
                     contain: strict;
                   }
 
-                  #_R5ijq_-sample {
+                  #_Rb572_-sample {
                     position: fixed;
                     visibility: hidden;
                     pointer-events: none;
@@ -1701,12 +1816,12 @@
                   }
                 </style>
                 <div
-                  id="_R5ijq_"
+                  id="_Rb572_"
                   inert="true"
                   data-ws-no-initial-animation=""
                 ></div>
                 <div
-                  id="_R5ijq_-sample"
+                  id="_Rb572_-sample"
                   inert="true"
                   data-ws-no-initial-animation=""
                 ></div>
@@ -1719,7 +1834,7 @@
             class="w-box c1h4u1zl c37y94b ckc2ozn cedkuye cnyfm53 c1yq9r6w c1g4fpo0 c9z6e5w cami5y c12c1scn cj8c0g7 c1hheij2 c1mkgktm c1vcscdb"
           >
             <div class="w-element ccyosah">
-              <h2 class="w-element cco1x2a">Pick Your Bundle</h2>
+              <h2 class="w-element cco1x2a c1ky01xm">Pick Your Bundle</h2>
             </div>
             <div
               class="w-element c1g4fpo0 c1l08whc c263agt c1ogkrf9 cm2gvst cami5y c14b2vrf ccnc6wf cop38ja cwxmyq1 cr93anc c1kpxxty cfn52ch ciu1cf3 cq430d0"
@@ -2179,7 +2294,9 @@
             class="w-box c1h4u1zl c37y94b ckc2ozn cedkuye cnyfm53 c1yq9r6w c1g4fpo0 c9z6e5w cami5y c12c1scn cj8c0g7 c1hheij2 c1mkgktm c1vcscdb"
           >
             <div class="w-element ccyosah">
-              <h2 class="w-element cco1x2a c1897cul c1vx2te8">Packages</h2>
+              <h2 class="w-element cco1x2a c1897cul c1vx2te8 c1ky01xm">
+                Packages
+              </h2>
             </div>
             <div
               class="w-element c263agt c1l08whc c1g4fpo0 c14b2vrf c13zl0f2 c1ogkrf9 cm2gvst cwxmyq1 c11erauh cs4dq4m c1i3x1tl cjo004h c1hzqhme c1b88wv7"
@@ -2333,7 +2450,7 @@
               <div
                 class="w-element ccyosah c20ofbt c1g4fpo0 c9z6e5w cami5y c14b2vrf"
               >
-                <h2 class="w-element cco1x2a c1yd10hd">
+                <h2 class="w-element cco1x2a c1yd10hd c1ky01xm">
                   Training Locations &amp; Class Schedules
                 </h2>
                 <h3 class="w-element chwgwgx">
@@ -2747,7 +2864,9 @@
           >
             <div class="w-element">
               <div class="w-element c20ofbt">
-                <h2 class="w-element cco1x2a">Where Dedication Meets Action</h2>
+                <h2 class="w-element cco1x2a c1ky01xm">
+                  Where Dedication Meets Action
+                </h2>
               </div>
               <div
                 class="w-element c1g4fpo0 cami5y c14b2vrf c1d83zv cbdgk63 c1ba3gyn c9jtqy9"
@@ -2829,7 +2948,7 @@
             </div>
             <div id="champion-1" class="w-element c13zl0f2">
               <div class="w-element c20ofbt">
-                <h2 class="w-element c1p8cej6">
+                <h2 class="w-element c1p8cej6 ccz0q13">
                   The 17th ATF Championship 2025
                 </h2>
               </div>
@@ -2916,7 +3035,7 @@
             </div>
             <div class="w-element c13zl0f2">
               <div class="w-element c20ofbt">
-                <h2 class="w-element c1p8cej6">
+                <h2 class="w-element c1p8cej6 ccz0q13">
                   2025 R3 MPV Regional Poomsae Taekwondo Champ
                 </h2>
               </div>
@@ -3030,7 +3149,7 @@
             </div>
             <div class="w-element c13zl0f2">
               <div class="w-element c20ofbt">
-                <h2 class="w-element c1p8cej6">
+                <h2 class="w-element c1p8cej6 ccz0q13">
                   2025 National Interschool Taekwondo Championship
                 </h2>
               </div>
@@ -3080,69 +3199,70 @@
           >
             <div class="w-element">
               <div class="w-element c20ofbt">
-                <h2 class="w-element cco1x2a">Upcoming Competition</h2>
+                <h2 class="w-element cco1x2a c1ky01xm">Upcoming Competition</h2>
               </div>
             </div>
             <div class="w-element">
-              <div class="w-element">
+              <div
+                class="w-element c1vvx87c chbc6om c1g4fpo0 cxwdgfw cxhuk6l c37y94b c1h4u1zl crm14n8 cqrwlmn c1o397zm c10zxvwn cnwuh9t c24hq8y cfuh6js c1jysce3 c5lgdti cs63arh ch54yxu c5uitfu c1l8cn2d c44qlux c1dil7d carousel-events-1"
+              >
                 <div
-                  class="w-element c1g4fpo0 c1ogkrf9 cm2gvst c1offavs c1qsija cwxmyq1"
+                  class="w-element c1g4fpo0 cu7ezdi c132mewz c11xqvu3 csaa28p c322uvt cjx30c9 event-group-1"
                 >
-                  <div class="w-element cgn0wj1">
-                    <div class="w-element">
-                      <img
-                        alt=""
-                        width="800"
-                        height="800"
-                        src="https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg"
-                        class="w-image cnyfm53"
-                        sizes="100vw"
-                        srcset="
-                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg   16w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg   32w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg   48w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg   64w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg   96w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  128w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  256w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  384w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  640w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  750w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  828w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg 1080w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg 1200w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg 1920w
-                        "
-                        decoding="async"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div class="w-element c1g4fpo0 cami5y c14b2vrf">
+                  <div
+                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1cmk8ys c154j0mp c1m0srx4 ccqmsqo cuxwgiu"
+                  >
+                    <img
+                      alt=""
+                      width="800"
+                      src="https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg"
+                      class="w-image cody2dl"
+                      sizes="100vw"
+                      srcset="
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg   16w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg   32w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg   48w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg   64w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg   96w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  128w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  256w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  384w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  640w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  750w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  828w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg 1080w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg 1200w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg 1920w
+                      "
+                      decoding="async"
+                      loading="lazy"
+                    />
+                    <div class="w-element c1g4fpo0 cami5y c14b2vrf c1kmebbh">
                       <div
                         id="countdown-1"
                         class="w-element cami5y c20ofbt c37y94b c1h4u1zl countdown"
                       >
                         <ul class="w-element c1g4fpo0 cnwuh9t cami5y c14b2vrf">
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 days"></span
                             ><span class="w-element">Days</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 hours"></span
                             ><span class="w-element">Hours</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 minutes"></span
                             ><span class="w-element">Minutes</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 seconds"></span
                             ><span class="w-element">Seconds</span>
@@ -3152,35 +3272,36 @@
                       </div>
                     </div>
                   </div>
-                  <div class="w-element cgn0wj1">
-                    <div class="w-element">
-                      <img
-                        alt=""
-                        width="800"
-                        height="800"
-                        src="https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg"
-                        class="w-image cnyfm53"
-                        sizes="100vw"
-                        srcset="
-                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg   16w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg   32w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg   48w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg   64w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg   96w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  128w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  256w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  384w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  640w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  750w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  828w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg 1080w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg 1200w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg 1920w
-                        "
-                        decoding="async"
-                        loading="lazy"
-                      />
-                    </div>
+                  <div
+                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1cmk8ys cb53gre c1m0srx4 ccqmsqo cuxwgiu c1jess14"
+                  >
+                    <img
+                      alt=""
+                      width="1462"
+                      src="https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg"
+                      class="w-image"
+                      sizes="100vw"
+                      srcset="
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg   16w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg   32w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg   48w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg   64w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg   96w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  128w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  256w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  384w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  640w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  750w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  828w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg 1080w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg 1200w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg 1920w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg 2048w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg 3840w
+                      "
+                      decoding="async"
+                      loading="lazy"
+                    />
                     <div class="w-element">
                       <div
                         id="countdown-2"
@@ -3188,25 +3309,152 @@
                       >
                         <ul class="w-element c1g4fpo0 cnwuh9t cami5y c14b2vrf">
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 days"></span
                             ><span class="w-element">Days</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 hours"></span
                             ><span class="w-element">Hours</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 minutes"></span
                             ><span class="w-element">Minutes</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 seconds"></span
+                            ><span class="w-element">Seconds</span>
+                          </li>
+                        </ul>
+                        <h3 class="w-element headline"></h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1cmk8ys c154j0mp c1m0srx4 ccqmsqo cuxwgiu"
+                  >
+                    <img
+                      alt=""
+                      width="720"
+                      src="https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg"
+                      class="w-image"
+                      sizes="100vw"
+                      srcset="
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg   16w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg   32w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg   48w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg   64w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg   96w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  128w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  256w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  384w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  640w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  750w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  828w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg 1080w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg 1200w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg 1920w
+                      "
+                      decoding="async"
+                      loading="lazy"
+                    />
+                    <div class="w-element">
+                      <div
+                        id="countdown-3"
+                        class="w-element cami5y c20ofbt c37y94b c1h4u1zl countdown"
+                      >
+                        <ul
+                          class="w-element c1g4fpo0 cnwuh9t cami5y c14b2vrf counter"
+                        >
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 days"></span
+                            ><span class="w-element">Days</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 hours"></span
+                            ><span class="w-element">Hours</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 minutes"></span
+                            ><span class="w-element">Minutes</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 seconds"></span
+                            ><span class="w-element">Seconds</span>
+                          </li>
+                        </ul>
+                        <h3 class="w-element c1kmebbh headline"></h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1cmk8ys c154j0mp c1m0srx4 ccqmsqo cuxwgiu"
+                  >
+                    <img
+                      alt=""
+                      width="595"
+                      src="https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg"
+                      class="w-image"
+                      sizes="100vw"
+                      srcset="
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg   16w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg   32w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg   48w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg   64w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg   96w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  128w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  256w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  384w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  640w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  750w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  828w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg 1080w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg 1200w
+                      "
+                      decoding="async"
+                      loading="lazy"
+                    />
+                    <div class="w-element">
+                      <div
+                        id="countdown-4"
+                        class="w-element cami5y c20ofbt c37y94b c1h4u1zl c19hlkr2 c1oadoov countdown"
+                      >
+                        <ul class="w-element c1g4fpo0 cnwuh9t cami5y c14b2vrf">
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 days"></span
+                            ><span class="w-element">Days</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 hours"></span
+                            ><span class="w-element">Hours</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 minutes"></span
+                            ><span class="w-element">Minutes</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 seconds"></span
                             ><span class="w-element">Seconds</span>
@@ -3218,63 +3466,62 @@
                   </div>
                 </div>
                 <div
-                  class="w-element c1g4fpo0 c1ogkrf9 cm2gvst c1offavs c1qsija cwxmyq1"
+                  class="w-element c1g4fpo0 cu7ezdi c132mewz c11xqvu3 csaa28p c322uvt cjx30c9 event-group-1"
                 >
-                  <div class="w-element cgn0wj1">
-                    <div class="w-element">
-                      <img
-                        alt=""
-                        width="800"
-                        height="800"
-                        src="https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg"
-                        class="w-image"
-                        sizes="100vw"
-                        srcset="
-                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg   16w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg   32w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg   48w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg   64w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg   96w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  128w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  256w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  384w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  640w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  750w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  828w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg 1080w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg 1200w,
-                          https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg 1920w
-                        "
-                        decoding="async"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div class="w-element">
+                  <div
+                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1cmk8ys c154j0mp c1m0srx4 ccqmsqo cuxwgiu"
+                  >
+                    <img
+                      alt=""
+                      width="800"
+                      src="https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg"
+                      class="w-image cody2dl"
+                      sizes="100vw"
+                      srcset="
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg   16w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg   32w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg   48w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg   64w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg   96w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  128w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  256w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  384w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  640w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  750w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg  828w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg 1080w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg 1200w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=760&amp;iH=760&amp;oX=0&amp;oY=28&amp;cW=760&amp;cH=702/47b21346f49ab1099b4b418c23af2342/522612438-728459796639400-179838390554791141-n.jpg 1920w
+                      "
+                      decoding="async"
+                      loading="lazy"
+                    />
+                    <div class="w-element c1g4fpo0 cami5y c14b2vrf c1kmebbh">
                       <div
-                        id="countdown-3"
+                        id="countdown-1b"
                         class="w-element cami5y c20ofbt c37y94b c1h4u1zl countdown"
                       >
                         <ul class="w-element c1g4fpo0 cnwuh9t cami5y c14b2vrf">
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 days"></span
                             ><span class="w-element">Days</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 hours"></span
                             ><span class="w-element">Hours</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 minutes"></span
                             ><span class="w-element">Minutes</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 seconds"></span
                             ><span class="w-element">Seconds</span>
@@ -3284,61 +3531,189 @@
                       </div>
                     </div>
                   </div>
-                  <div class="w-element cgn0wj1">
-                    <div class="w-element">
-                      <img
-                        alt=""
-                        width="800"
-                        height="800"
-                        src="https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg"
-                        class="w-image"
-                        sizes="100vw"
-                        srcset="
-                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg   16w,
-                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg   32w,
-                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg   48w,
-                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg   64w,
-                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg   96w,
-                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  128w,
-                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  256w,
-                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  384w,
-                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  640w,
-                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  750w,
-                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  828w,
-                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg 1080w,
-                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg 1200w,
-                          https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg 1920w
-                        "
-                        decoding="async"
-                        loading="lazy"
-                      />
-                    </div>
+                  <div
+                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1cmk8ys cb53gre c1m0srx4 ccqmsqo cuxwgiu c1jess14"
+                  >
+                    <img
+                      alt=""
+                      width="1462"
+                      src="https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg"
+                      class="w-image"
+                      sizes="100vw"
+                      srcset="
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg   16w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg   32w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg   48w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg   64w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg   96w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  128w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  256w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  384w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  640w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  750w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg  828w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg 1080w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg 1200w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg 1920w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg 2048w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=1462&amp;iH=1462&amp;oX=0&amp;oY=378&amp;cW=1462&amp;cH=706/e6b2763fee9c1fedf8935d90b7cd1960/Batang-pinoy-2025.jpg 3840w
+                      "
+                      decoding="async"
+                      loading="lazy"
+                    />
                     <div class="w-element">
                       <div
-                        id="countdown-4"
+                        id="countdown-2b"
                         class="w-element cami5y c20ofbt c37y94b c1h4u1zl c19hlkr2 c1oadoov countdown"
                       >
                         <ul class="w-element c1g4fpo0 cnwuh9t cami5y c14b2vrf">
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 days"></span
                             ><span class="w-element">Days</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 hours"></span
                             ><span class="w-element">Hours</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 minutes"></span
                             ><span class="w-element">Minutes</span>
                           </li>
                           <li
-                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1mncnga ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 seconds"></span
+                            ><span class="w-element">Seconds</span>
+                          </li>
+                        </ul>
+                        <h3 class="w-element headline"></h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1cmk8ys c154j0mp c1m0srx4 ccqmsqo cuxwgiu"
+                  >
+                    <img
+                      alt=""
+                      width="720"
+                      src="https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg"
+                      class="w-image"
+                      sizes="100vw"
+                      srcset="
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg   16w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg   32w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg   48w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg   64w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg   96w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  128w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  256w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  384w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  640w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  750w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg  828w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg 1080w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg 1200w,
+                        https://cloud-1de12d.b-cdn.net/media/iW=720&amp;iH=1026&amp;oX=0&amp;oY=36&amp;cW=720&amp;cH=954/b9a620f7f6351e2b2d0628ae98d3014b/att-PGQTIvT4DEv4PzRC12SG-sEtH93c4ecS6kTI-ihKdsc.jpg 1920w
+                      "
+                      decoding="async"
+                      loading="lazy"
+                    />
+                    <div class="w-element">
+                      <div
+                        id="countdown-3b"
+                        class="w-element cami5y c20ofbt c37y94b c1h4u1zl countdown"
+                      >
+                        <ul
+                          class="w-element c1g4fpo0 cnwuh9t cami5y c14b2vrf counter"
+                        >
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 days"></span
+                            ><span class="w-element">Days</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 hours"></span
+                            ><span class="w-element">Hours</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 minutes"></span
+                            ><span class="w-element">Minutes</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 seconds"></span
+                            ><span class="w-element">Seconds</span>
+                          </li>
+                        </ul>
+                        <h3 class="w-element c1kmebbh headline"></h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="w-element c1fykdyw cs63arh c169rqou c1cqf9xn c5kv0eo cuxc7d5 c1g4fpo0 cami5y c12c1scn c9z6e5w cv1sbgn cnyfm53 c1cmk8ys c154j0mp c1m0srx4 ccqmsqo cuxwgiu"
+                  >
+                    <img
+                      alt=""
+                      width="595"
+                      src="https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg"
+                      class="w-image"
+                      sizes="100vw"
+                      srcset="
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg   16w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg   32w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg   48w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg   64w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg   96w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  128w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  256w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  384w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  640w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  750w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg  828w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg 1080w,
+                        https://cloud-1de12d.b-cdn.net/media/original/e38fde2ea060177b6c169211910aba34/att-8ubo4m1H3jm6tf7hyUouEYRwhTgmgic52AHF3JJjHIM.jpg 1200w
+                      "
+                      decoding="async"
+                      loading="lazy"
+                    />
+                    <div class="w-element">
+                      <div
+                        id="countdown-4b"
+                        class="w-element cami5y c20ofbt c37y94b c1h4u1zl c19hlkr2 c1oadoov countdown"
+                      >
+                        <ul class="w-element c1g4fpo0 cnwuh9t cami5y c14b2vrf">
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 days"></span
+                            ><span class="w-element">Days</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 hours"></span
+                            ><span class="w-element">Hours</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
+                          >
+                            <span class="w-element cdyccz3 minutes"></span
+                            ><span class="w-element">Minutes</span>
+                          </li>
+                          <li
+                            class="w-element c1rq3u7j c8xpt5r c1fxuyt2 c1kmebbh ccyzivu cazwrok c3m28dm cbd9o7m c1iom500 c167hiw8 c76rhdw cnfu876 cw3qn93"
                           >
                             <span class="w-element cdyccz3 seconds"></span
                             ><span class="w-element">Seconds</span>
@@ -3358,7 +3733,7 @@
             class="w-box c1h4u1zl c37y94b c18ffmnj c1tp4776 cnyfm53 c1yq9r6w c1g4fpo0 c9z6e5w cami5y c12c1scn cj8c0g7 c1hheij2"
           >
             <div class="w-element">
-              <h2 class="w-element cco1x2a">Our Awesome Team</h2>
+              <h2 class="w-element cco1x2a ccyosah">Our Awesome Team</h2>
             </div>
             <div
               class="w-element c1g4fpo0 c6ffdiq c7hjct6 cbljs81 cn97074 ccityyr cjjt3e6 c1xmn5t4 cq430d0 cwxmyq1"
@@ -3656,7 +4031,9 @@
                 </div>
                 <div class="w-element">
                   <div class="w-element c1gswf1x">
-                    <h3 class="w-element chwgwgx c2prnr5">Affiliated with</h3>
+                    <h3 class="w-element chwgwgx c2prnr5 claf26z">
+                      Affiliated with
+                    </h3>
                   </div>
                   <div
                     class="w-element c1g4fpo0 cami5y c14b2vrf cgviwlw c1i3x1tl cjo004h cl0tgci"
@@ -3788,18 +4165,18 @@
       {}
     </script>
     <script
-      src="/assets/entries/entry-server-routing.BSxZkn00.js"
+      src="/assets/entries/entry-server-routing.vzqhyAPI.js"
       type="module"
       async
     ></script>
     <link
       rel="modulepreload"
-      href="/assets/entries/pages_index.DgRSwF4L.js"
+      href="/assets/entries/pages_index.BG7s14Ne.js"
       as="script"
       type="text/javascript"
     /><link
       rel="modulepreload"
-      href="/assets/chunks/chunk-CVMYhyGY.js"
+      href="/assets/chunks/chunk-BnucqAaj.js"
       as="script"
       type="text/javascript"
     /><link
